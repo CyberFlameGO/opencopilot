@@ -4,8 +4,8 @@ TODO: What dependencies are needed...
 """
 import os.path
 
-from backend.src.domain.copilot import validate_copilot_files
-from backend.src.domain.copilot.validate_copilot_files import ValidateCopilotResult
+from opencopilot.src.domain.copilot import validate_copilot_files
+from opencopilot.src.domain.copilot.validate_copilot_files import ValidateCopilotResult
 from sdk.utils import env_utils, print_utils
 
 

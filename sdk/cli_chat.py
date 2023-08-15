@@ -1,6 +1,6 @@
 import uuid
 
-from backend.scripts import chat
+from opencopilot.scripts import chat
 from sdk.utils import env_utils
 
 
