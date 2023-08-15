@@ -1,9 +1,8 @@
 # OpenCopilot 🕊️
 
-[![Unit tests](https://github.com/nftport/opencopilot/actions/workflows/unit_test.yml/badge.svg)](https://github.com/nftport/opencopilot/actions/workflows/unit_test.yml)
-[![E2E Test Linux Native OpenAI](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml/badge.svg)](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml)
-[![E2E Test Linux CLI](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_cli.yml/badge.svg)](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_cli.yml)
-[![E2E Test Linux CLI JWT](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_cli_jwt.yml/badge.svg)](https://github.com/nftport/opencopilot/actions/workflows/e2e_test_cli_jwt.yml)
+[![Unit tests](https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml)
+[![E2E Test Linux Native](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml)
+[![E2E Test Linux CLI](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_cli.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_cli.yml)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/opencopilot.svg?style=social&label=Follow%20%40OpenCopilot)](https://twitter.com/OpenCopilot)
 ![Discord](https://img.shields.io/discord/1133675019478782072?logo=discord&label=OpenCopilot)
 
