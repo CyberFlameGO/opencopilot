@@ -1,0 +1,44 @@
+{
+  "examples": [
+    {
+      "query": "What's the Unity asset store website URL?",
+      "answer": "The Unity Asset Store website can be accessed at this URL: [https://assetstore.unity.com/](https://assetstore.unity.com/). Here, you can find a wide variety of assets including textures, models, animations, entire project examples, tutorials, and Editor extensions.\n\nDo you need help with anything else?"
+    },
+    {
+      "query": "What platforms does Unity Ads support?",
+      "answer": "Unity Ads is an ad network for iOS (iTunes) and Android (Google Play).\n\nUnity Ads does not currently support the following:\n\nWeb platforms such as WebPlayer or WebGL.\nWindows Phone.\nAmazon App Store, Amazon Marketplace for downloadable Android games. Note that you can implement Unity Ads in Android games downloaded through Amazon, but all of our campaigns currently advertise apps for the Google Play store. Therefore, ad impressions will not generate revenue unless the user also has access to the Google Play store.\nUnity is always exploring the option of adding new platforms and features."
+    },
+    {
+      "query": "Why do I get a \"Advertisements does not exist in the namespace UnityEngine\" compiler error?",
+      "answer": "This error is typically caused by one of two issues:\n\nYou are building for a platform that Unity Ads does not support.\nYou have not imported the Unity Ads package into your project yet.\nTry the following to resolve the problem:\n\nEnsure that you have installed Unity Ads, either by using the Package Manage or the Asset Store package (but not both).\nEnsure that you've selected iOS or Android as a build target (File > Build Settings...).\nIf you're building your project for an unsupported platform, you can add a UNITY_ADS conditional define that allows you to build with Unity Ads without affecting other platforms.\nFor more information, refer to platform dependent compilation."
+    },
+    {
+      "query": "How much does a subscription to Unity cost, and for how long can I subscribe?",
+      "answer": "You can find a full list of Unity's license subscriptions and payment plans on the Unity store and in this Knowledge Base article: What subscription tiers are available?"
+    },
+    {
+      "query": "What subscription tiers can I subscribe to with Unity?",
+      "answer": "Unity currently has different plans according to your tier eligibility, subject to the Unity Terms of Service.\n\nUnity Personal (annual revenue/ funding cap of $100K)\nUnity Plus (annual revenue/ funding cap of $200K)\nUnity Pro (no revenue cap)\nUnity Enterprise (no revenue cap, no seat minimum)\nFor further information, see the Knowledge Base article: What subscription tiers are available?"
+    },
+    {
+      "query": "What is the “Made with Unity” splash screen?",
+      "answer": "The Unity Splash Screen is uniform across all platforms. It displays promptly while the first Scene loads asynchronously in the background. This is different from your own introductory screens or animations, which can take time to appear due to Unity having to load the entire engine and first Scene before displaying them.\n\nThe Unity Editor allows you to configure a Splash Screen for your project. The level to which you can customize the Unity Splash Screen depends on your Unity subscription. Depending on whether you have Unity Personal, Unity Plus, or Unity Pro, you can disable the Unity Splash Screen entirely, disable the Unity logo, and add your own logos, among other options.\n\nFor more information about configuring the Splash Screen, see our Documentation page."
+    },
+    {
+      "query": "I just subscribed but I need to assign a seat. How do I do that?",
+      "answer": "To access your new subscription, you will need to assign yourself a seat to receive a serial key and activate your license. If you purchased the subscription on behalf of an organization, you need to assign each user a seat before they can activate their license.\n\nPlease see the following Knowledge Base article for a step-by-step guide: How do I assign a seat to a user?"
+    },
+    {
+      "query": "I am seeing the error 'Your serial number is not valid’ when attempting to activate through the Unity Hub. What does this mean?",
+      "answer": "The most common cause for this error is the license key running out of activations. If you have recently updated your OS or changed any hardware, this can alter the hardware ID to which the Unity License File (.ULF) is attached, effectively making the current .ULF redundant.\n\nAnother cause for the error 'Your serial number is not valid' is a connection issue between your machine and the Unity license servers.\n\nFor more information, please see the Knowledge base article: I am seeing the error 'Your serial number is not valid’ when attempting to activate through the Unity Hub. What does this mean?"
+    },
+    {
+      "query": "What do I get with a subscription to Unity?",
+      "answer": "All Unity subscriptions include access to our powerful, real-time 3D Engine alongside various services to help manage, operate, and monetize your projects.\n\nFor the full details on what's included with each subscription, take a look at the Compare Plans table on the Unity webstore."
+    },
+    {
+      "query": "Can we use the code/art/assets in Unity Technologies' example projects?",
+      "answer": "Assets in our tutorial and example projects are well known, and therefore we recommend you don’t use them in commercial games and content. They are meant to be used in non-commercial content for educational purposes only.\n\nFor more detailed information about asset licensing, please see the Knowledge Base article: Can I use assets from the Asset Store in my commercial game?"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "examples": [
+    {
+      "query": "How Can I integrate Ready Player Me Unity SDK?",
+      "answer": "Before you begin, make sure you:\n  Sign in to Studio (Developer Dashboard) and copy your subdomain. This will allow you to create and load an avatar in your domain at a later step.\n    Make sure you have downloaded and installed Unity 2020.3.0f1 LTS or later.\n    For this to work, you need to have Git installed on your machine, which can be downloaded from here. After installation, you will also need to restart Unity.\n    Open your Unity Project\nOnce you have done that, follow the 5 step process described below:\n    Import the Ready Player Me Unity SDK.\n    Enter your subdomain.\n    Set up your avatar configuration. Your avatar configuration will be used when you load an avatar.\n    Open the runtime example scene and load your personal avatar.\n    Run your project by clicking Play. Wait a moment for your avatar to load and animate with a basic third-person controller setup."
+    },
+    {
+      "query": "How can I import the Ready Player Me Unity SDK?",
+      "answer": "Import the package via Window -> Package Manager -> + icon -> Add Package from git URL. Paste this URL for the code module: https://github.com/readyplayerme/rpm-unity-sdk-core.git"
+    },
+    {
+      "query": "How can I enter my subdomain in Unity?",
+      "answer": "When you import the package for the first time, you will be greeted with our Setup Guide editor window to guide you through the setup process.\nHere you should edit the UI field demo and replace it with your own subdomain. e.g yourappname\nIf you are not a partner or do now have your own subdomain please click the tickbox next to the \"I don't have an account. Use demo subdomain instead\" field. Then click the Next button. "
+    },
+    {
+      "query": "How can I set up the avatar configuration in Unity?",
+      "answer": "You are required to set your avatar configuration that will be used when you load an avatar.\nClick the Avatar config editable field to select the configuration you want to use. To see the configs included by default you will need to click the eye icon image the top right.\nAlternatively, you can create your own Avatar Config, you can do this by right-clicking in the Assets tab and going to Create > Ready Player Me > Avatar Configuration. Then adjust the settings as you need, more information on avatar configuration can be found here (https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration)."
+    },
+    {
+      "query": "How can I open the runtime example scene in Unity?",
+      "answer": "Go to Assets -> Samples-> Ready Player Me Avatar Loader-> [VERSION_NUMBER]-> QuickStart -> QuickStart and double-click to open the scene."
+    },
+    {
+      "query": "How can I load my (personal) avatar in Unity?",
+      "answer": "Next, you need an avatar URL. If you don't have one, you can create one in your own subdomain https://[your-subdomain].readyplayer.me/avatar. You can get your subdomain from Studio (https://studio.readyplayer.me/).\nAfter creating your avatar, copy the URL. Return to the Quick Start Scene.\nIn the hierarchy, select the RPM Player game object and open the Third Person Loader Component.\nPaste the Avatar URL into the Avatar Url Property."
+    },
+    {
+      "query": "How can I enable avatar caching in Unreal Engine?",
+      "answer": "The Ready Player Me SDK provides an avatar caching functionality. If avatar caching is enabled, every time an avatar is loaded, the assets are stored locally. If you subsequently try to load the avatar again, the system checks if the avatar needs to be updated, and if so, downloads and saves the updated avatar locally. If the avatar does not need to be updated, the avatar is loaded from the locally stored file.\n\nAvatar caching is available at runtime and includes support for Avatar Configurations.\nEnable caching\n\nAvatar caching is disabled by default. To enable avatar caching, do the following:\n\n    Open Edit > Project Settings.\n    In the Game section, select Ready Player Me.\n    Check Enable Avatar Caching.\n\nStored avatar data location\n\nDownloaded avatar data is stored based not only on the avatar GUID, but also the assigned Avatar Configuration parameters. This means that multiple instances of an avatar's data may exist in cache at any given time.\n\nAvatar data is stored at\n\n<Persistent Data Path>/Avatars/<avatar GUID>/<Avatar Config parameters hash>/\nCached avatar data use and updating\n\n    At runtime, when caching is enabled, the avatar loader checks the state of the avatar on the Ready Player Me server before downloading. If the avatar has not been modified since it was last stored in the client-side cache, the avatar data for the given avatar GUID and Avatar Config parameters are loaded from the cache.\n    If changes were made to the avatar on the Ready Player Me server, the client-side cache for the given avatar GUID is cleared and recreated when subsequent load requests are made.\n    If the avatar download is interrupted or aborted during data transmission, any corrupt client-side cache data is deleted and recreated the next time the avatar is downloaded.\n\nDisable caching\n\n    Open Edit > Project Settings.\n    In the Game section, select Ready Player Me.\n    Uncheck Enable Avatar Caching."
+    },
+    {
+      "query": "What platforms do you support?",
+      "answer": "Ready Player Me avatars can be created on any device capable of WebGL rendering, that is, all modern web browsers.\n\nFor developers, we provide integration guidelines and SDKs for integrating Ready Player Me avatars into the web, Unity, Unreal Engine, or any other platform supporting postMessage and REST technology.\n\nSee Integration Guides (https://docs.readyplayer.me/ready-player-me/integration-guides/overview)."
+    },
+    {
+      "query": "Can I create custom outfits?",
+      "answer": "Yes, you can create custom outfits as long as they meet Ready Player Me specifications. This document (https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits#modelling) explains how to create a full-body avatar outfit that meets Ready Player Me technical specifications and functions properly in your application.."
+    },
+    {
+      "query": "Is there any way to get the skin color from the head? Or is it an image map?",
+      "answer": "You can check the json metadata for the avatar by changing the .glb at the end of the url to .json\neg\nhttps://models.readyplayer.me/63d2408223fe23d34bf73840.glb\nhttps://models.readyplayer.me/63d2408223fe23d34bf73840.json\nThis will give you a skinTone color as a hex value.\nAlternatively you could also just check the top left pixel of the texture itself to get a pretty accurate color also."
+    },
+    {
+      "query": "I am using web version of realplayer.me is there a way to download a png image of avatar",
+      "answer": "You can just change the ending of your avatar-url from .glb to .png and you'll get the default render of your avatar.\n- Avatar URL: https://api.readyplayer.me/v1/avatars/62b5d41848960be56e02eefe.glb\n- Avatar PNG URL:\nhttps://api.readyplayer.me/v1/avatars/62b5d41848960be56e02eefe.png\nYou can then modify it with certain parameters. Check out the docs. https://docs.readyplayer.me/ready-player-me/avatar-api/2d-avatars"
+    },
+    {
+      "query": "Hi all, I'm new to 3D modelling and would love to test RPM avatar to create some scene.\nI just downloaded my custom avatar from RPM website and uploaded the base RPM avatar to Mixamo to try out some animation. Here's is the .fbx file that I got from Mixamo which works perfectly.\nOnce I applied the animation back to my custom RPM avatar, the animation somehow distorted(only affecting the arm movement and it looks swapped the position of my left and right arm). Anyone know why's that happened?",
+      "answer": "If you export the model with skin, that should resolve the issue."
+    },
+    {
+      "query": "Hello\nI am having trouble with getting my ReadyPlayerMe exported file (.fbx) from Blender to Mixamo , once finished uploading the characters skins textures are not appearing after putting path mode to copy\nI'v been following the RPM docs Blender FBX export to UE but are having no luck https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-sdk/blender-to-unreal-export\nDoes anyone have a solution or a tutorial of getting this working within Unreal Engine 5.03?",
+      "answer": "If you need the avatar to be loaded runtime, you shouldn't use the Blender, the exported FBX files from blender don't work with Runtime loading the avatars. For runtime avatar loading you should rather use this guide https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-sdk/mixamo-animations ."
+    },
+    {
+      "query": "Hi, im trying to create a half-body avatar without hands, but no clue in the docs.\nAny way to remove hands in threejs?",
+      "answer": "In the GET - 3D avatars endpoint, you can set the useHands property that toggles hands for half-body VR avatars. If you set it to false, you will get a model without hands. Here's the documentation page for that endpoint https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+    },
+    {
+      "query": "Hi guys , I'm wondering if someone tried to use audio2lipsync with RPM avatars? I mean get audio and map it to the visemes/morph-targets/blendshapes? I'm working on this but i feel It's far away to achive good results",
+      "answer": "If you'd like to do lip-sync RPM avatars with audio then we support that. Read about OculusLipSync integration with RPM avatars for Unreal here: https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+    }
+  ]
+}

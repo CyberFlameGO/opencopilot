@@ -1,0 +1,8 @@
+{
+	"examples": [
+        {
+		    "query": "How do I install Unity?",
+		    "answer": "You can install Unity primarily using the Unity Hub. Here are the steps:\n\nDownload and install the Unity Hub from the official Unity website.\nOpen the Unity Hub and log in to your Unity account.\nClick on the \n\" Installs \" tab on the left side.\nClick on the \" Add \" button on the right side.\nSelect the Unity version you want to install and click \" Next \".\nChoose the components you want to install along with the Unity Editor (like Android Build Support, iOS Build Support, etc.) and click \" Next \".\nAccept the terms and conditions and click \" Done \".\nThe Unity Hub will then download and install the Unity Editor and the selected components.\n\nYou can also install Unity from the command line or install it offline without using the Hub. For more details, please refer to the official Unity documentation here and here.\n\nWould you like to know more about:\n\nHow to install Unity from the command line ?\nHow to install Unity offline without the Hub ?\nHow to manage multiple Unity versions using the Unity Hub"
+	    }
+    ]
+}

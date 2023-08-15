@@ -1,0 +1,71 @@
+version: "3.9"
+services:
+  web:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: docker/services/web/Dockerfile
+    volumes:
+      - ./shared:/home/appuser/shared
+      - ./logs:/home/appuser/logs
+      - ../data:/home/data
+      - ./conversations:/home/appuser/conversations
+      - ./conversation_logs:/home/appuser/conversation_logs
+      - ./conversation_contexts:/home/appuser/conversation_contexts
+      - ../copilots:/home/copilots
+      - ./copilot_configurations:/home/appuser/copilot_configurations
+      - ./copilots:/home/appuser/copilots
+    entrypoint: ./entrypoint.sh
+    expose:
+      - "8000"
+    restart: unless-stopped
+    depends_on:
+      - weaviate
+  dashboard:
+    ports:
+      - 8501:8501
+    build:
+      context: .
+      dockerfile: ./docker/services/web/Dockerfile
+    volumes:
+      - ./conversations:/home/appuser/conversations
+      - ./conversation_logs:/home/appuser/conversation_logs
+      - ./conversation_contexts:/home/appuser/conversation_contexts
+    entrypoint: ./entrypoint_streamlit.sh
+    restart: unless-stopped
+    depends_on:
+      - web
+  nginx:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: docker/services/nginx/Dockerfile
+    volumes:
+      - ./shared:/usr/share
+    ports:
+      - ${API_PORT}:3000
+    restart: unless-stopped
+    depends_on:
+      - web
+  weaviate:
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - '8080'
+      - --scheme
+      - http
+    image: semitechnologies/weaviate:1.19.6
+    ports:
+      - 8080:8080
+    restart: on-failure
+    environment:
+      CONTEXTIONARY_URL: contextionary:9999
+      QUERY_DEFAULTS_LIMIT: 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+      CLUSTER_HOSTNAME: 'node1'
+    volumes:
+      - /var/weaviate:/var/lib/weaviate

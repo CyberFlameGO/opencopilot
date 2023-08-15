@@ -1,0 +1,3904 @@
+{
+    "examples": [
+        {
+            "query": "How can I integrate the Avatar Creator into my app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatar-creator"
+            ]
+        },
+        {
+            "query": "What are the events emitted by the iframe?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I configure features of the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I set a different default language for the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatar-creator"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'clearCache' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatar-creator"
+            ]
+        },
+        {
+            "query": "How do I access the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api"
+            ]
+        },
+        {
+            "query": "Do I need authentication to use the GET avatar endpoints?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api"
+            ]
+        },
+        {
+            "query": "What does each HTTP response code mean when using the Avatar API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api"
+            ]
+        },
+        {
+            "query": "What file format are the 3D avatars delivered in?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api"
+            ]
+        },
+        {
+            "query": "How can I generate an API Key for accessing other endpoints?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api"
+            ]
+        },
+        {
+            "query": "What are the main modules of the Ready Player Me Unity SDK 2.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk"
+            ]
+        },
+        {
+            "query": "What dependencies are included in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk"
+            ]
+        },
+        {
+            "query": "How can I import and update the plugins of the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk"
+            ]
+        },
+        {
+            "query": "What are the classes available in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'ready-player-me-webview' module in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk"
+            ]
+        },
+        {
+            "query": "How can I register my app and create a subdomain for the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I modify the default body type setting in the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator"
+            ]
+        },
+        {
+            "query": "Can I disable the language picker in the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I prevent users from accessing their avatars via URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator"
+            ]
+        },
+        {
+            "query": "Can I display a QR code that represents a link to the avatar GLB after successful avatar creation?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator"
+            ]
+        },
+        {
+            "query": "What are the requirements for creating a full-body avatar outfit for Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+            ]
+        },
+        {
+            "query": "What are the file requirements for the completed outfit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+            ]
+        },
+        {
+            "query": "What are the steps to create a full-body outfit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+            ]
+        },
+        {
+            "query": "What are some recommendations and tips for modeling and texture baking?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+            ]
+        },
+        {
+            "query": "What should be considered when doing UV mapping?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+            ]
+        },
+        {
+            "query": "How can I access the Ready Player Me developer dashboard?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/studio-developer-dashboard"
+            ]
+        },
+        {
+            "query": "What is the first step to take if it's my first time in the Ready Player Me Studio?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/studio-developer-dashboard"
+            ]
+        },
+        {
+            "query": "How can I visit my Avatar Creator in the Ready Player Me Studio?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/studio-developer-dashboard"
+            ]
+        },
+        {
+            "query": "Can I customize the appearance of my Avatar Creator in the Ready Player Me Studio?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/studio-developer-dashboard"
+            ]
+        },
+        {
+            "query": "Are the changes I make in my Avatar Creator immediately visible to users?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/studio-developer-dashboard"
+            ]
+        },
+        {
+            "query": "How can I upload and manage my custom outfits for Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits"
+            ]
+        },
+        {
+            "query": "What is the Studio (Developer Dashboard) and how can it be used to manage custom outfits?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits"
+            ]
+        },
+        {
+            "query": "What is the Assets REST API and how can it be used to manage custom outfits?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits"
+            ]
+        },
+        {
+            "query": "Can I create content tools using the Assets REST API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits"
+            ]
+        },
+        {
+            "query": "Is there a web interface available for managing custom outfits?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits"
+            ]
+        },
+        {
+            "query": "How can I get my own Ready Player Me subdomain?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/1.-quickstart"
+            ]
+        },
+        {
+            "query": "What can I do with my Ready Player Me subdomain?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/1.-quickstart"
+            ]
+        },
+        {
+            "query": "How can I create my first personal avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/1.-quickstart"
+            ]
+        },
+        {
+            "query": "What platforms can I integrate Ready Player Me avatars with?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/1.-quickstart"
+            ]
+        },
+        {
+            "query": "Where can I find help or ask questions about Ready Player Me integration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/1.-quickstart"
+            ]
+        },
+        {
+            "query": "How can I load 3D full-body and half-body avatars, or 2D avatars, into my runtime environment?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/2.-integrate"
+            ]
+        },
+        {
+            "query": "How can I get my own Avatar Creator subdomain and configure it for my game or app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/2.-integrate"
+            ]
+        },
+        {
+            "query": "How can I integrate the ready-to-use and customizable Avatar Creator directly into my game or app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/2.-integrate"
+            ]
+        },
+        {
+            "query": "Are Ready Player Me full-body avatars compatible with Mixamo animations?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/2.-integrate"
+            ]
+        },
+        {
+            "query": "Can I request avatars with multiple blend shapes for facial expressions?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/2.-integrate"
+            ]
+        },
+        {
+            "query": "How can I access my own subdomain for Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/3.-customize"
+            ]
+        },
+        {
+            "query": "What can I modify in the Avatar Creator's appearance?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/3.-customize"
+            ]
+        },
+        {
+            "query": "How can I upload a custom outfit to my avatar creator in Studio?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/3.-customize"
+            ]
+        },
+        {
+            "query": "Can I manage the outfits my players wear in my game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/3.-customize"
+            ]
+        },
+        {
+            "query": "What is the Ready Player Me Studio?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/3.-customize"
+            ]
+        },
+        {
+            "query": "How can I adjust the level of detail (LOD) for the Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/4.-optimize"
+            ]
+        },
+        {
+            "query": "What is the maximum and minimum texture size I can choose for the avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/4.-optimize"
+            ]
+        },
+        {
+            "query": "What is the purpose of using a texture atlas?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/4.-optimize"
+            ]
+        },
+        {
+            "query": "How can morph targets affect the size of an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/4.-optimize"
+            ]
+        },
+        {
+            "query": "What is Draco compression and how can it benefit my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/4.-optimize"
+            ]
+        },
+        {
+            "query": "How can I use Ready Player Me branding in my app, game, or website?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/5.-launch"
+            ]
+        },
+        {
+            "query": "What should I do to use the social media templates provided in the Media Kit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/5.-launch"
+            ]
+        },
+        {
+            "query": "What are the guidelines for using the social media templates?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/5.-launch"
+            ]
+        },
+        {
+            "query": "How can I use a custom Ready Player Me avatar for marketing purposes?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/5.-launch"
+            ]
+        },
+        {
+            "query": "How can I list my app/game on the Ready Player Me Hub?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/5.-launch"
+            ]
+        },
+        {
+            "query": "How do I create a Ready Player Me avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+            ]
+        },
+        {
+            "query": "What are the costs associated with using Ready Player Me avatars and the SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+            ]
+        },
+        {
+            "query": "Can I use the Ready Player Me Avatar SDK for a commercial project for free?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+            ]
+        },
+        {
+            "query": "Do Ready Player Me collect photos from people who create avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+            ]
+        },
+        {
+            "query": "What types of avatars does Ready Player Me support?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+            ]
+        },
+        {
+            "query": "How can I report a bug I've encountered while using Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/bug-reports-and-feature-requests"
+            ]
+        },
+        {
+            "query": "What should I do if I have a feature request for Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/bug-reports-and-feature-requests"
+            ]
+        },
+        {
+            "query": "What if my issue is not addressed by the documentation provided?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/bug-reports-and-feature-requests"
+            ]
+        },
+        {
+            "query": "Is there a community I can connect with for support and discussions related to Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/bug-reports-and-feature-requests"
+            ]
+        },
+        {
+            "query": "How can I submit a ticket for a problem I found with Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/bug-reports-and-feature-requests"
+            ]
+        },
+        {
+            "query": "What is the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/glossary-of-terms"
+            ]
+        },
+        {
+            "query": "What does the term 'cross-platform avatar' mean?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/glossary-of-terms"
+            ]
+        },
+        {
+            "query": "What is a GLB file?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/glossary-of-terms"
+            ]
+        },
+        {
+            "query": "What is the Ready Player Me HUB?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/glossary-of-terms"
+            ]
+        },
+        {
+            "query": "What is the purpose of the shortcode in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/glossary-of-terms"
+            ]
+        },
+        {
+            "query": "How can I contact the Ready Player Me team for support?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/how-to-contact-us"
+            ]
+        },
+        {
+            "query": "Is there a community platform where I can connect with other developers using Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/how-to-contact-us"
+            ]
+        },
+        {
+            "query": "What is the best way to get help with issues I'm facing with the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/how-to-contact-us"
+            ]
+        },
+        {
+            "query": "Can I get real-time support for Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/how-to-contact-us"
+            ]
+        },
+        {
+            "query": "Is there a specific channel on Discord for developers using Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/how-to-contact-us"
+            ]
+        },
+        {
+            "query": "What are the terms for non-commercial use of Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/terms-of-use"
+            ]
+        },
+        {
+            "query": "How can I use Ready Player Me avatars for commercial use?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/terms-of-use"
+            ]
+        },
+        {
+            "query": "What is the cost of using Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/terms-of-use"
+            ]
+        },
+        {
+            "query": "Can I mint Ready Player Me avatars as NFTs?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/terms-of-use"
+            ]
+        },
+        {
+            "query": "How does Ready Player Me handle user photos and privacy?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/support/terms-of-use"
+            ]
+        },
+        {
+            "query": "What is the default texture size for full-body avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars"
+            ]
+        },
+        {
+            "query": "Can I request an avatar with a more separated mesh?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars"
+            ]
+        },
+        {
+            "query": "What are the different Levels of Detail (LODs) I can select for avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars"
+            ]
+        },
+        {
+            "query": "Can I modify the texture size of the avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars"
+            ]
+        },
+        {
+            "query": "How can I create my own full-body avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars"
+            ]
+        },
+        {
+            "query": "What are the blend shapes that come with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets"
+            ]
+        },
+        {
+            "query": "How can I use the ARKit-compatible blend shapes with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets"
+            ]
+        },
+        {
+            "query": "Can I use Ready Player Me avatars with the Oculus Lipsync API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets"
+            ]
+        },
+        {
+            "query": "What is the purpose of the blend shapes in Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets"
+            ]
+        },
+        {
+            "query": "Are there any specific instructions or guidelines to follow while using Ready Player Me avatars with Oculus Lipsync API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets"
+            ]
+        },
+        {
+            "query": "What materials are included with every half-body avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/vr-avatar"
+            ]
+        },
+        {
+            "query": "What are the mesh components of a half-body avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/vr-avatar"
+            ]
+        },
+        {
+            "query": "How can I control the eye rotation of the avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/vr-avatar"
+            ]
+        },
+        {
+            "query": "Do VR avatars include hands by default?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/vr-avatar"
+            ]
+        },
+        {
+            "query": "How can I create a VR half-body avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/vr-avatar"
+            ]
+        },
+        {
+            "query": "How can I upload custom assets for my game using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets"
+            ]
+        },
+        {
+            "query": "What are the steps to create custom outfits for Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets"
+            ]
+        },
+        {
+            "query": "How can I manage my library of outfits using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets"
+            ]
+        },
+        {
+            "query": "How can I add a custom asset to my application using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets"
+            ]
+        },
+        {
+            "query": "How can I remove a custom asset from my application using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets"
+            ]
+        },
+        {
+            "query": "How can I retrieve 3D avatars using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars"
+            ]
+        },
+        {
+            "query": "Is there a way to retrieve 2D avatars using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars"
+            ]
+        },
+        {
+            "query": "How can I get the metadata of the avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars"
+            ]
+        },
+        {
+            "query": "Where can I find the changes made in the API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars"
+            ]
+        },
+        {
+            "query": "What kind of data can I expect when retrieving avatars and their metadata?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars"
+            ]
+        },
+        {
+            "query": "What does the IsCacheEmpty() method do in AvatarCache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarcache"
+            ]
+        },
+        {
+            "query": "How can I clear all avatar data from the persistent cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarcache"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ClearAvatar(string guid) method in AvatarCache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarcache"
+            ]
+        },
+        {
+            "query": "How can I get the number of avatars stored in the persistent cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarcache"
+            ]
+        },
+        {
+            "query": "What does the GetCacheSize() method return?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarcache"
+            ]
+        },
+        {
+            "query": "How can I define the level of detail for my avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarconfig"
+            ]
+        },
+        {
+            "query": "What does the 'Pose' property in the AvatarConfig do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarconfig"
+            ]
+        },
+        {
+            "query": "How can I set a limit on the texture size for my avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarconfig"
+            ]
+        },
+        {
+            "query": "Is it possible to include hands with half-body avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarconfig"
+            ]
+        },
+        {
+            "query": "How can I include specific morph targets on my avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarconfig"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AvatarObjectLoader class in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarloader"
+            ]
+        },
+        {
+            "query": "What does the LoadAvatar method do in the AvatarObjectLoader class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarloader"
+            ]
+        },
+        {
+            "query": "How can I cancel the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarloader"
+            ]
+        },
+        {
+            "query": "What events are triggered during the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarloader"
+            ]
+        },
+        {
+            "query": "How can I use the AvatarObjectLoader class to load an avatar from a URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarloader"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AvatarRenderLoader class in Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarrenderloader"
+            ]
+        },
+        {
+            "query": "How can I set the timeout for the avatar render loader in Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarrenderloader"
+            ]
+        },
+        {
+            "query": "What does the LoadRender method do in the AvatarRenderLoader class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarrenderloader"
+            ]
+        },
+        {
+            "query": "What are the different types of AvatarRenderScene in Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarrenderloader"
+            ]
+        },
+        {
+            "query": "What are the actions or events associated with the AvatarRenderLoader class in Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/avatarrenderloader"
+            ]
+        },
+        {
+            "query": "What is the function of the EyeAnimationHandler in the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras"
+            ]
+        },
+        {
+            "query": "How does the VoiceHandler component work in the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras"
+            ]
+        },
+        {
+            "query": "Can I use the EyeAnimationHandler to control the avatar's eye movements?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras"
+            ]
+        },
+        {
+            "query": "Is it possible to animate the avatar's mouth using the VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras"
+            ]
+        },
+        {
+            "query": "Can the VoiceHandler be used to animate other parts of the avatar apart from the mouth?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras"
+            ]
+        },
+        {
+            "query": "What is the purpose of the SDKLogger in the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/sdklogger"
+            ]
+        },
+        {
+            "query": "What is the 'logEnabled' property in the SDKLogger?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/sdklogger"
+            ]
+        },
+        {
+            "query": "How can I disable the logging feature of the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/sdklogger"
+            ]
+        },
+        {
+            "query": "Is the logging feature of the avatar loading process enabled by default?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/sdklogger"
+            ]
+        },
+        {
+            "query": "Can I control the amount of information logged during the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/sdklogger"
+            ]
+        },
+        {
+            "query": "How can I check if the WebView is up to date for displaying the Ready Player Me website?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/webview"
+            ]
+        },
+        {
+            "query": "What does the 'CreateWebview()' method do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/webview"
+            ]
+        },
+        {
+            "query": "How can I set the screen padding of the WebView window?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/webview"
+            ]
+        },
+        {
+            "query": "What does the 'ClearAvatarData()' method do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/webview"
+            ]
+        },
+        {
+            "query": "What happens when the 'KeepSessionAlive' property is set to false?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/webview"
+            ]
+        },
+        {
+            "query": "What is the main function of the ReadyPlayerMeActor class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeactor"
+            ]
+        },
+        {
+            "query": "What is the role of the SkeletalMeshComponent property in the ReadyPlayerMeActor class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeactor"
+            ]
+        },
+        {
+            "query": "What does the ReadyPlayerMeComponent property do in the ReadyPlayerMeActor class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeactor"
+            ]
+        },
+        {
+            "query": "How can I use the ReadyPlayerMeActor class to load avatars in my game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeactor"
+            ]
+        },
+        {
+            "query": "Can I modify the SkeletalMeshComponent property during the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeactor"
+            ]
+        },
+        {
+            "query": "How can I customize the configuration for the avatar loader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarconfig"
+            ]
+        },
+        {
+            "query": "What does the MeshLod property in ReadyPlayerMeAvatarConfig do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarconfig"
+            ]
+        },
+        {
+            "query": "What does the TextureAtlas property do in ReadyPlayerMeAvatarConfig?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarconfig"
+            ]
+        },
+        {
+            "query": "What is the purpose of the bUseHands property in ReadyPlayerMeAvatarConfig?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarconfig"
+            ]
+        },
+        {
+            "query": "What does the bUseDracoMeshCompression property do in ReadyPlayerMeAvatarConfig?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarconfig"
+            ]
+        },
+        {
+            "query": "How does the AvatarLoader class function in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarloader"
+            ]
+        },
+        {
+            "query": "What is the purpose of the LoadAvatar function in the ReadyPlayerMeAvatarLoader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarloader"
+            ]
+        },
+        {
+            "query": "What does the CancelAvatarLoad function do in the ReadyPlayerMeAvatarLoader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarloader"
+            ]
+        },
+        {
+            "query": "What parameters are required for the LoadAvatar function in the ReadyPlayerMeAvatarLoader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarloader"
+            ]
+        },
+        {
+            "query": "What happens if I change the SkeletalMeshConfig property in the LoadAvatar function?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeavatarloader"
+            ]
+        },
+        {
+            "query": "How can I delete all locally stored avatars using Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeblueprintlibrary"
+            ]
+        },
+        {
+            "query": "What does the ClearAvatarCache() function do in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeblueprintlibrary"
+            ]
+        },
+        {
+            "query": "What is the return type of the ClearAvatarCache() function in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeblueprintlibrary"
+            ]
+        },
+        {
+            "query": "Can I call the ClearAvatarCache() function directly from Blueprints?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeblueprintlibrary"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ReadyPlayerMeBlueprintLibrary in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermeblueprintlibrary"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent"
+            ]
+        },
+        {
+            "query": "What is the UrlShortcode property used for in the ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent"
+            ]
+        },
+        {
+            "query": "What is the role of the SkeletalMeshComponent property in the ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent"
+            ]
+        },
+        {
+            "query": "What does the LoadAvatar function do in the ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent"
+            ]
+        },
+        {
+            "query": "What happens when the CancelAvatarLoad function is called in the ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent"
+            ]
+        },
+        {
+            "query": "What is the main purpose of the ReadyPlayerMeMemoryCache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent-1"
+            ]
+        },
+        {
+            "query": "What does the 'Preload' function do in the ReadyPlayerMeMemoryCache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent-1"
+            ]
+        },
+        {
+            "query": "How can I add an already loaded avatar to the memory cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent-1"
+            ]
+        },
+        {
+            "query": "How can I remove a specific avatar from the memory cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent-1"
+            ]
+        },
+        {
+            "query": "What happens when I use the 'RemoveAvatar' function without any parameters?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecomponent-1"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ReadyPlayerMeCustomMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecustommorphgroup"
+            ]
+        },
+        {
+            "query": "What type of data is the MorphTargets property?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecustommorphgroup"
+            ]
+        },
+        {
+            "query": "What does the MorphTargets property do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecustommorphgroup"
+            ]
+        },
+        {
+            "query": "How can I customize the ReadyPlayerMeCustomMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecustommorphgroup"
+            ]
+        },
+        {
+            "query": "What is the role of morph targets in the ReadyPlayerMeCustomMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermecustommorphgroup"
+            ]
+        },
+        {
+            "query": "How can I clear the avatar cache using ReadyPlayerMeFunctionLibrary?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermefunctionlibrary"
+            ]
+        },
+        {
+            "query": "What function should I use to clear a specific avatar from the persistent cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermefunctionlibrary"
+            ]
+        },
+        {
+            "query": "How can I check if there are any avatars present in the persistent cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermefunctionlibrary"
+            ]
+        },
+        {
+            "query": "What function should I use to get the total number of avatars stored in the persistent cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermefunctionlibrary"
+            ]
+        },
+        {
+            "query": "How can I get the unique id of an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermefunctionlibrary"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ReadyPlayerMeMorphTargetGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermemorphtargetgroup"
+            ]
+        },
+        {
+            "query": "What does the GetTargets function do in ReadyPlayerMeMorphTargetGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermemorphtargetgroup"
+            ]
+        },
+        {
+            "query": "Can I override the ReadyPlayerMeMorphTargetGroup for customization?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermemorphtargetgroup"
+            ]
+        },
+        {
+            "query": "What should I override for customization instead of ReadyPlayerMeMorphTargetGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermemorphtargetgroup"
+            ]
+        },
+        {
+            "query": "What does the ReadyPlayerMeMorphTargetGroup return?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermemorphtargetgroup"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AvatarRenderLoader class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermerenderloader"
+            ]
+        },
+        {
+            "query": "What is the role of the ReadyPlayerMeRenderLoader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermerenderloader"
+            ]
+        },
+        {
+            "query": "What are the parameters of the Load() function in ReadyPlayerMeRenderLoader?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermerenderloader"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'const FDownloadImageCompleted& OnCompleted' parameter in the Load() function?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermerenderloader"
+            ]
+        },
+        {
+            "query": "What happens if the render operation fails?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermerenderloader"
+            ]
+        },
+        {
+            "query": "What does the bEnableAvatarCaching property do in ReadyPlayerMeSettings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermesettings"
+            ]
+        },
+        {
+            "query": "How can I enable or disable avatar caching in ReadyPlayerMeSettings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermesettings"
+            ]
+        },
+        {
+            "query": "What is the purpose of the SetAvatarCaching function in ReadyPlayerMeSettings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermesettings"
+            ]
+        },
+        {
+            "query": "What type of data does the SetAvatarCaching function in ReadyPlayerMeSettings accept?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermesettings"
+            ]
+        },
+        {
+            "query": "What happens if I enable avatar caching in ReadyPlayerMeSettings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermesettings"
+            ]
+        },
+        {
+            "query": "What is the purpose of the ReadyPlayerMeStandardMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermestandardmorphgroup"
+            ]
+        },
+        {
+            "query": "What does the GetTargets function do in the ReadyPlayerMeStandardMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermestandardmorphgroup"
+            ]
+        },
+        {
+            "query": "How can I customize the ReadyPlayerMeStandardMorphGroup?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermestandardmorphgroup"
+            ]
+        },
+        {
+            "query": "What parameters does the GetTargets function take?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermestandardmorphgroup"
+            ]
+        },
+        {
+            "query": "What is the return type of the GetTargets function?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermestandardmorphgroup"
+            ]
+        },
+        {
+            "query": "What is the purpose of the EAvatarGender enumeration in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermetypes"
+            ]
+        },
+        {
+            "query": "What is the EAvatarBodyType enumeration used for in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermetypes"
+            ]
+        },
+        {
+            "query": "What does the FAvatarMetadata structure represent in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermetypes"
+            ]
+        },
+        {
+            "query": "What is the purpose of the EAvatarMorphTarget enumeration in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermetypes"
+            ]
+        },
+        {
+            "query": "What does the ERenderSceneType enumeration represent in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/readyplayermetypes"
+            ]
+        },
+        {
+            "query": "What is an avatar shortcode in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-shortcodes"
+            ]
+        },
+        {
+            "query": "How can I use the avatar shortcode in my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-shortcodes"
+            ]
+        },
+        {
+            "query": "In what scenarios are avatar shortcodes especially useful?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-shortcodes"
+            ]
+        },
+        {
+            "query": "How can I enable the Avatar Shortcode setting?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-shortcodes"
+            ]
+        },
+        {
+            "query": "Can I use shortcodes with the Ready Player Me Unity and Unreal Engine SDKs?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-shortcodes"
+            ]
+        },
+        {
+            "query": "What does the unique URL of an avatar represent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-urls"
+            ]
+        },
+        {
+            "query": "What happens when I paste the avatar's URL into a browser?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-urls"
+            ]
+        },
+        {
+            "query": "What happens to the URL when an avatar is updated or changed by the user?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-urls"
+            ]
+        },
+        {
+            "query": "Is there a different URL for each avatar configuration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-urls"
+            ]
+        },
+        {
+            "query": "How can I access the .GLB file of an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/avatar-creator/avatar-urls"
+            ]
+        },
+        {
+            "query": "How can I test my outfit's mesh deformation with animations using Mixamo?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/skinning-and-testing"
+            ]
+        },
+        {
+            "query": "What should I do to avoid errors when uploading to Mixamo?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/skinning-and-testing"
+            ]
+        },
+        {
+            "query": "How can I perform skinning and testing in Blender?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/skinning-and-testing"
+            ]
+        },
+        {
+            "query": "What should I do if I see clipping or other issues in Blender?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/skinning-and-testing"
+            ]
+        },
+        {
+            "query": "What should the final blend file contain?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/skinning-and-testing"
+            ]
+        },
+        {
+            "query": "How can I install the Ready Player Me Asset Validation tool?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/validation-tool-for-blender"
+            ]
+        },
+        {
+            "query": "What does the Import & Validate button do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/validation-tool-for-blender"
+            ]
+        },
+        {
+            "query": "How can I use the Validation tool?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/validation-tool-for-blender"
+            ]
+        },
+        {
+            "query": "What do the different colors in the Validation tool represent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/validation-tool-for-blender"
+            ]
+        },
+        {
+            "query": "What should I do for more detailed information on a check?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits/validation-tool-for-blender"
+            ]
+        },
+        {
+            "query": "What file format is accepted for model upload in the Asset Manager?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/asset-manager-in-studio"
+            ]
+        },
+        {
+            "query": "What are the size limits for the model and preview icon files?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/asset-manager-in-studio"
+            ]
+        },
+        {
+            "query": "How can I make a custom outfit available for both male and female avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/asset-manager-in-studio"
+            ]
+        },
+        {
+            "query": "What happens if I edit an existing asset?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/asset-manager-in-studio"
+            ]
+        },
+        {
+            "query": "How can I handle errors if asset validation fails?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/asset-manager-in-studio"
+            ]
+        },
+        {
+            "query": "How do I get and authorize with an API Key for Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/manage-custom-outfits-using-the-api"
+            ]
+        },
+        {
+            "query": "What is the process to upload a custom outfit in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/manage-custom-outfits-using-the-api"
+            ]
+        },
+        {
+            "query": "How can I add an asset to an application in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/manage-custom-outfits-using-the-api"
+            ]
+        },
+        {
+            "query": "How can I remove an asset from an application in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/manage-custom-outfits-using-the-api"
+            ]
+        },
+        {
+            "query": "How can I retrieve a list of all uploaded assets in my organization on Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/customizing-guides/upload-and-manage-custom-outfits/manage-custom-outfits-using-the-api"
+            ]
+        },
+        {
+            "query": "How can I integrate the Ready Player Me Avatar Creator in my React application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I customize the AvatarCreator component?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "What does the AvatarCreator component return?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I configure the avatar output for quality or speed?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I receive the results from the AvatarCreator component?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I display the avatar result to my users in my React project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/load-avatars"
+            ]
+        },
+        {
+            "query": "What parameters can I use to customize how I display the avatars to my users?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/load-avatars"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'loadingNode' parameter in the AvatarCreatorViewer component?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I be notified when the Avatar is finished loading on to the screen?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I customize the avatar's appearance?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I get my subdomain for Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/quickstart"
+            ]
+        },
+        {
+            "query": "How do I install the Ready Player Me React SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/quickstart"
+            ]
+        },
+        {
+            "query": "What are the main components of the Ready Player Me React SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/quickstart"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/quickstart"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'onAvatarExported' callback?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/react/quickstart"
+            ]
+        },
+        {
+            "query": "How can I integrate the Ready Player Me Avatar Creator into my Unity application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator"
+            ]
+        },
+        {
+            "query": "What is the Avatar Creator in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator"
+            ]
+        },
+        {
+            "query": "Are there any customization options available for the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my Android or iOS game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my VR or PC game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples"
+            ]
+        },
+        {
+            "query": "What versions of Unity are the Ready Player Me code samples compatible with?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples"
+            ]
+        },
+        {
+            "query": "What types of avatars does the demo domain for code samples provide?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples"
+            ]
+        },
+        {
+            "query": "Can I use my own subdomain instead of the default domain for the code samples?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'Distance based LODs' sample?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples"
+            ]
+        },
+        {
+            "query": "How can I cache avatars locally to reuse them without downloading each time?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/faq-for-unity"
+            ]
+        },
+        {
+            "query": "Is it possible to create an avatar directly in-engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/faq-for-unity"
+            ]
+        },
+        {
+            "query": "What are the steps to customize a GLB model in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/faq-for-unity"
+            ]
+        },
+        {
+            "query": "How do I change the Render Pipeline of my Unity Project with avatars to URP?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/faq-for-unity"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my VR application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/faq-for-unity"
+            ]
+        },
+        {
+            "query": "What type of data does the Ready Player Me SDK track for analytics?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/help-us-improve-the-unity-sdk"
+            ]
+        },
+        {
+            "query": "How can I enable SDK Analytics in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/help-us-improve-the-unity-sdk"
+            ]
+        },
+        {
+            "query": "What should I do if I previously checked 'Never Ask Again' but now want to allow tracking?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/help-us-improve-the-unity-sdk"
+            ]
+        },
+        {
+            "query": "How can I disable SDK Analytics in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/help-us-improve-the-unity-sdk"
+            ]
+        },
+        {
+            "query": "Is the collected analytics data shared with third parties?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/help-us-improve-the-unity-sdk"
+            ]
+        },
+        {
+            "query": "How can I load 3D avatars into my Unity game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/load-avatars"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AvatarRenderLoader class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I save avatars as NPCs in my Unity project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/load-avatars"
+            ]
+        },
+        {
+            "query": "What happens when I check the 'Use Eye Animations' option while loading an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/load-avatars"
+            ]
+        },
+        {
+            "query": "Where is the avatar prefab stored after it is loaded into the scene?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I add Mixamo animations to Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "What settings should I use when downloading animations from Mixamo for Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "How can I automatically configure the FBX import settings in Unity for Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "How do I separate the animation from the FBX file for use with the Ready Player Me avatar in my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "What should I do if I'm using an SDK version before 1.8.0 for Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "How can I optimize Ready Player Me avatars to match with my available compute and graphics power?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize"
+            ]
+        },
+        {
+            "query": "What does Avatar Configuration mean in the context of Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize"
+            ]
+        },
+        {
+            "query": "How can I manage the client-side avatar cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize"
+            ]
+        },
+        {
+            "query": "What is the purpose of Avatar Caching in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize"
+            ]
+        },
+        {
+            "query": "Can I fine-tune the visual quality of Ready Player Me avatars to meet my performance goals?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for integrating Ready Player Me avatar in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+            ]
+        },
+        {
+            "query": "How do I import the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+            ]
+        },
+        {
+            "query": "How do I set up my subdomain in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+            ]
+        },
+        {
+            "query": "How can I configure my avatar in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+            ]
+        },
+        {
+            "query": "How do I load my personal avatar in the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+            ]
+        },
+        {
+            "query": "What are the common errors I might encounter when integrating Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter avatar loading issues?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting"
+            ]
+        },
+        {
+            "query": "Are there any known issues with integrating Ready Player Me Avatar SDK on iOS?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting"
+            ]
+        },
+        {
+            "query": "I'm using an earlier version of the SDK. How can I update it?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter issues related to firewall when integrating Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting"
+            ]
+        },
+        {
+            "query": "How can I add Mixamo animations to Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations"
+            ]
+        },
+        {
+            "query": "How can I export Ready Player Me Avatars from Blender as FBX for use in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations"
+            ]
+        },
+        {
+            "query": "How can I apply Oculus Lip Sync facial animations to the Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations"
+            ]
+        },
+        {
+            "query": "What are the steps to integrate animations to Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations"
+            ]
+        },
+        {
+            "query": "Can I use facial animations with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations"
+            ]
+        },
+        {
+            "query": "How can I integrate the Ready Player Me Avatar Creator with my Unreal Engine application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "What version of Unreal Engine is required for the Avatar Creator integration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "Which platforms does the Avatar Creator in Unreal Engine support?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "Where can I download the sample code for the Avatar Creator integration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I learn how the Avatar Creator integration works and how it is set up?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "Are the provided code samples compatible with Unreal Engine 4?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples"
+            ]
+        },
+        {
+            "query": "What is the Lyra Example Project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples"
+            ]
+        },
+        {
+            "query": "Are there any specific examples for integrating the Avatar Creator with Unreal Engine 5?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples"
+            ]
+        },
+        {
+            "query": "Can I use the same code samples for both Unreal Engine 4 and 5?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples"
+            ]
+        },
+        {
+            "query": "Where can I find examples of integrating the Avatar Creator and avatars with my Unreal Engine projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples"
+            ]
+        },
+        {
+            "query": "How can I enable avatar caching in Unreal Engine SDK 0.18.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/faq-for-unreal-engine"
+            ]
+        },
+        {
+            "query": "Is it possible to create an avatar directly in the Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/faq-for-unreal-engine"
+            ]
+        },
+        {
+            "query": "How can I use a 3rd person avatar in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/faq-for-unreal-engine"
+            ]
+        },
+        {
+            "query": "Why do I experience lag when loading an avatar into a scene?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/faq-for-unreal-engine"
+            ]
+        },
+        {
+            "query": "Can I run the Ready Player Me Avatar Creator website in Unreal Engine 5?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/faq-for-unreal-engine"
+            ]
+        },
+        {
+            "query": "What data is collected when I enable analytics in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/help-us-improve-the-unreal-engine-sdk"
+            ]
+        },
+        {
+            "query": "How can I enable SDK Analytics when I import the SDK into Unreal?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/help-us-improve-the-unreal-engine-sdk"
+            ]
+        },
+        {
+            "query": "Can I enable or disable SDK Analytics at any time?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/help-us-improve-the-unreal-engine-sdk"
+            ]
+        },
+        {
+            "query": "Is the data collected by the Ready Player Me SDK shared with third parties?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/help-us-improve-the-unreal-engine-sdk"
+            ]
+        },
+        {
+            "query": "What is the purpose of enabling analytics in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/help-us-improve-the-unreal-engine-sdk"
+            ]
+        },
+        {
+            "query": "How can I load avatars into my Unreal Engine project using Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/load-avatars"
+            ]
+        },
+        {
+            "query": "What is the role of the SkeletalMeshComponent in the Ready Player Me Unreal Engine plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/load-avatars"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AnimClass property in the SkeletalMeshComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/load-avatars"
+            ]
+        },
+        {
+            "query": "What is the ReadyPlayerMeComponent and what is its function?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/load-avatars"
+            ]
+        },
+        {
+            "query": "What are the two methods for loading an avatar with the Ready Player Me Actor Blueprint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/load-avatars"
+            ]
+        },
+        {
+            "query": "How can I optimize Ready Player Me avatars to match with my available compute and graphics power?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize"
+            ]
+        },
+        {
+            "query": "What does Avatar Configuration mean in the context of optimizing Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize"
+            ]
+        },
+        {
+            "query": "What is the purpose of Avatar Caching in optimizing Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize"
+            ]
+        },
+        {
+            "query": "How does Avatar Preloading contribute to the optimization of Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize"
+            ]
+        },
+        {
+            "query": "Can I fine-tune the visual quality of Ready Player Me avatars to meet my performance goals?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize"
+            ]
+        },
+        {
+            "query": "What is the first step before integrating the Unreal Engine SDK for my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart"
+            ]
+        },
+        {
+            "query": "Which versions of Unreal Engine are compatible with the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart"
+            ]
+        },
+        {
+            "query": "Can I integrate Ready Player Me SDK into both C++ and Blueprint Projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart"
+            ]
+        },
+        {
+            "query": "Is there a demo I can run to see the avatar in action?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart"
+            ]
+        },
+        {
+            "query": "Where can I find the guide to set up C++ and Blueprint Projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart"
+            ]
+        },
+        {
+            "query": "What are the known issues with the UE Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting"
+            ]
+        },
+        {
+            "query": "What changes were made in the Unreal SDK 0.17.0 that could affect my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting"
+            ]
+        },
+        {
+            "query": "How can I troubleshoot avatar loading issues in my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting"
+            ]
+        },
+        {
+            "query": "What should I be aware of when updating from earlier versions of the Unreal SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting"
+            ]
+        },
+        {
+            "query": "How can I resolve animation issues with Ready Player Me avatars in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator in my game or app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I subscribe to events from the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "What are the currently supported events and their sample outputs?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "What messages can be posted to the iframe after the 'v1.frame.ready' event has been emitted?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I configure the Avatar Creator features?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/avatar-creator-integration"
+            ]
+        },
+        {
+            "query": "How can I optimize the avatars for my game?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/optimize"
+            ]
+        },
+        {
+            "query": "What is the purpose of appending parameters to the Avatar URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/optimize"
+            ]
+        },
+        {
+            "query": "How do I get the base URL of the avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/optimize"
+            ]
+        },
+        {
+            "query": "What happens when I make a request with the optimized URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/optimize"
+            ]
+        },
+        {
+            "query": "Where can I see all the options for optimizing avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/optimize"
+            ]
+        },
+        {
+            "query": "How can I integrate the Ready Player Me Avatar Creator with an HTML page?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/quickstart"
+            ]
+        },
+        {
+            "query": "What happens when I click 'Open Ready Player Me'?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/quickstart"
+            ]
+        },
+        {
+            "query": "What is the 'v1.avatar.exported' event?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/quickstart"
+            ]
+        },
+        {
+            "query": "How can I display the avatar URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/quickstart"
+            ]
+        },
+        {
+            "query": "What should I do if I have a subdomain?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/quickstart"
+            ]
+        },
+        {
+            "query": "Are Ready Player Me avatars compatible with Apple ARKit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/apple-arkit"
+            ]
+        },
+        {
+            "query": "Can I use real-time facial tracking with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/apple-arkit"
+            ]
+        },
+        {
+            "query": "What are some of the blend shapes compatible with Apple ARKit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/apple-arkit"
+            ]
+        },
+        {
+            "query": "Are there additional blend shapes apart from those compatible with Apple ARKit?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/apple-arkit"
+            ]
+        },
+        {
+            "query": "Can I use the blend shapes for both eyes and mouth movements?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/apple-arkit"
+            ]
+        },
+        {
+            "query": "Do both half-body and full-body Ready Player Me avatars support the Oculus LipSync API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync"
+            ]
+        },
+        {
+            "query": "What is the purpose of the blend shapes in Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync"
+            ]
+        },
+        {
+            "query": "What are some of the blend shapes supported by Ready Player Me avatars for Oculus LipSync SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync"
+            ]
+        },
+        {
+            "query": "Are there additional blend shapes apart from the ones compatible with Oculus LipSync SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync"
+            ]
+        },
+        {
+            "query": "Can I use the Oculus LipSync API for real-time facial animation based on audio input with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/avatars/morph-targets/oculus-ovr-libsync"
+            ]
+        },
+        {
+            "query": "How can I remove an asset from an application using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/delete-remove-asset-from-application"
+            ]
+        },
+        {
+            "query": "What parameters do I need to provide to remove an asset from an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/delete-remove-asset-from-application"
+            ]
+        },
+        {
+            "query": "What does the 201 response mean when I try to remove an asset from an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/delete-remove-asset-from-application"
+            ]
+        },
+        {
+            "query": "What does a 400 response mean when I try to remove an asset from an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/delete-remove-asset-from-application"
+            ]
+        },
+        {
+            "query": "What does a 403 response mean when I try to remove an asset from an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/delete-remove-asset-from-application"
+            ]
+        },
+        {
+            "query": "How can I use the GET - List Assets endpoint to fetch a paginated list of assets?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/get-list-assets"
+            ]
+        },
+        {
+            "query": "What query parameters can I use with the GET - List Assets endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/get-list-assets"
+            ]
+        },
+        {
+            "query": "How can I order the assets in a descending order using the GET - List Assets endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/get-list-assets"
+            ]
+        },
+        {
+            "query": "What is the structure of the response from the GET - List Assets endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/get-list-assets"
+            ]
+        },
+        {
+            "query": "How can I fetch the second page of assets using the GET - List Assets endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/get-list-assets"
+            ]
+        },
+        {
+            "query": "What is the purpose of the PATCH - Update Asset endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/patch-update-asset"
+            ]
+        },
+        {
+            "query": "What parameters do I need to provide to update an asset?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/patch-update-asset"
+            ]
+        },
+        {
+            "query": "What are the possible values for the 'type' and 'gender' parameters when updating an asset?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/patch-update-asset"
+            ]
+        },
+        {
+            "query": "What should the 'modelUrl' and 'iconUrl' parameters point to?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/patch-update-asset"
+            ]
+        },
+        {
+            "query": "What are the possible responses I can get from the PATCH - Update Asset endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/patch-update-asset"
+            ]
+        },
+        {
+            "query": "How do I add an asset to an application using the Ready Player Me API?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-add-asset-to-application"
+            ]
+        },
+        {
+            "query": "What parameters are required to add an asset to an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-add-asset-to-application"
+            ]
+        },
+        {
+            "query": "What are the possible responses when adding an asset to an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-add-asset-to-application"
+            ]
+        },
+        {
+            "query": "What information is returned in a successful response when adding an asset to an application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-add-asset-to-application"
+            ]
+        },
+        {
+            "query": "What happens if I try to add an asset to an application with an invalid id?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-add-asset-to-application"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'data' object in the POST - Create Asset request?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-create-asset"
+            ]
+        },
+        {
+            "query": "What are the possible values for the 'data.type' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-create-asset"
+            ]
+        },
+        {
+            "query": "What type of file should the 'data.modelUrl' and 'data.iconUrl' parameters point to?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-create-asset"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'data.organizationId' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-create-asset"
+            ]
+        },
+        {
+            "query": "What happens if the 'data.applicationIds' array is left empty?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-create-asset"
+            ]
+        },
+        {
+            "query": "What is the purpose of the POST - Upload Asset Files endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-upload-model"
+            ]
+        },
+        {
+            "query": "What type of content should be in the header when using the POST - Upload Asset Files endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-upload-model"
+            ]
+        },
+        {
+            "query": "What type of file should be included in the body when using the POST - Upload Asset Files endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-upload-model"
+            ]
+        },
+        {
+            "query": "What does the POST - Upload Asset Files endpoint return upon a successful request?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-upload-model"
+            ]
+        },
+        {
+            "query": "How long are files stored when uploaded using the POST - Upload Asset Files endpoint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/assets/post-upload-model"
+            ]
+        },
+        {
+            "query": "How can I get a 2D render of an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+            ]
+        },
+        {
+            "query": "What parameters can I use when requesting a 2D avatar render?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+            ]
+        },
+        {
+            "query": "What are the possible values for the 'scene' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+            ]
+        },
+        {
+            "query": "How can I use the 'blendShapes' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+            ]
+        },
+        {
+            "query": "What happens if the avatar I request is not available?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+            ]
+        },
+        {
+            "query": "How can I get a 3D avatar GLB file with specific performance and configuration settings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+            ]
+        },
+        {
+            "query": "What does the 'quality' parameter do in the avatar request?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I control the triangle count of the avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'textureAtlas' parameter?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I include specific morph targets in the avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I retrieve the metadata of an avatar using the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+            ]
+        },
+        {
+            "query": "What information does the avatar metadata include?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+            ]
+        },
+        {
+            "query": "What happens if I try to get metadata for an avatar that does not exist?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+            ]
+        },
+        {
+            "query": "What is the format of the avatar ID?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+            ]
+        },
+        {
+            "query": "How can I interpret the returned value when I request metadata for an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+            ]
+        },
+        {
+            "query": "How can I add eye blinking to my Ready Player Me avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/eyeanimationhandler"
+            ]
+        },
+        {
+            "query": "What does the 'BlinkSpeed' property do in the EyeAnimationHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/eyeanimationhandler"
+            ]
+        },
+        {
+            "query": "What is the purpose of the 'BlinkInterval' property in the EyeAnimationHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/eyeanimationhandler"
+            ]
+        },
+        {
+            "query": "Can I control the speed and frequency of eye blinking in the Ready Player Me avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/eyeanimationhandler"
+            ]
+        },
+        {
+            "query": "How can I add the EyeRotationHandler to my avatar in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/eyeanimationhandler"
+            ]
+        },
+        {
+            "query": "How can I add mouth animations to my avatar using the VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/voicehandler"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AudioClip property in VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/voicehandler"
+            ]
+        },
+        {
+            "query": "What is the AudioSource property used for in the VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/voicehandler"
+            ]
+        },
+        {
+            "query": "What does the AudioProviderType property do in the VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/voicehandler"
+            ]
+        },
+        {
+            "query": "How can I use the PlayAudioClip method in the VoiceHandler?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/extras/voicehandler"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for integrating Ready Player Me avatars into a Unity application for Android and iOS?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-android-and-ios"
+            ]
+        },
+        {
+            "query": "How can I create a scene with a WebView in my Unity project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-android-and-ios"
+            ]
+        },
+        {
+            "query": "What happens when an avatar is created by the user in the WebViewExample script?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-android-and-ios"
+            ]
+        },
+        {
+            "query": "How can I deploy my app on Android?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-android-and-ios"
+            ]
+        },
+        {
+            "query": "How can I deploy my app on iOS?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-android-and-ios"
+            ]
+        },
+        {
+            "query": "What is the Vuplex plugin used for in the Ready Player Me Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-vr-and-pc"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for using the Ready Player Me Avatar Creator for VR and PC?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-vr-and-pc"
+            ]
+        },
+        {
+            "query": "Where can I find an example project for the Ready Player Me Avatar Creator using the Vuplex plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-vr-and-pc"
+            ]
+        },
+        {
+            "query": "What issues might I encounter with older versions of Vuplex?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-vr-and-pc"
+            ]
+        },
+        {
+            "query": "What issues might I encounter with the non-Gecko Engine based version of Vuplex Android WebView?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-vr-and-pc"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for integrating Ready Player Me Avatar Creator for WebGL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-webgl"
+            ]
+        },
+        {
+            "query": "Where can I find an example project for integrating Ready Player Me Avatar Creator for WebGL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-webgl"
+            ]
+        },
+        {
+            "query": "How can I learn how the Ready Player Me WebGL Example project works?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-webgl"
+            ]
+        },
+        {
+            "query": "How can users create Ready Player Me avatars in my Unity WebGL application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-webgl"
+            ]
+        },
+        {
+            "query": "Where can I find the download and setup instructions for the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/avatar-creator/avatar-creator-for-webgl"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator with my Unity desktop project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-desktop"
+            ]
+        },
+        {
+            "query": "Where can I find a sample Unity Project for integrating the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-desktop"
+            ]
+        },
+        {
+            "query": "What steps should I follow to set up and learn how the Unity-Vuplex-Example works?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-desktop"
+            ]
+        },
+        {
+            "query": "What plugin does the sample project use to run the Ready Player Me Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-desktop"
+            ]
+        },
+        {
+            "query": "How can I load the Ready Player Me avatar into my application at runtime?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-desktop"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator with a mobile app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-mobile"
+            ]
+        },
+        {
+            "query": "Where can I find the sample code for integrating the Avatar Creator on mobile?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-mobile"
+            ]
+        },
+        {
+            "query": "What steps should I follow to run the project on a mobile device?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-mobile"
+            ]
+        },
+        {
+            "query": "What happens after the avatar creation is complete?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-mobile"
+            ]
+        },
+        {
+            "query": "Can users create Ready Player Me avatars directly in a WebView browser displayed in Unity at runtime on mobile devices?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-mobile"
+            ]
+        },
+        {
+            "query": "How can I integrate the Avatar Creator into my Unity WebGL project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-webgl"
+            ]
+        },
+        {
+            "query": "What does the sample project on GitHub provide?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-webgl"
+            ]
+        },
+        {
+            "query": "What Unity versions is the example compatible with?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-webgl"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter build errors?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-webgl"
+            ]
+        },
+        {
+            "query": "How can I use the provided template for my Unity version?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/avatar-creator-webgl"
+            ]
+        },
+        {
+            "query": "How can I import the AvatarLod example into my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/distance-based-lods"
+            ]
+        },
+        {
+            "query": "Where can I find the code sample for the AvatarLod example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/distance-based-lods"
+            ]
+        },
+        {
+            "query": "What is the purpose of enabling LOD in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/distance-based-lods"
+            ]
+        },
+        {
+            "query": "How does the AvatarLod example work with the Avatar API and Avatar Configurations?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/distance-based-lods"
+            ]
+        },
+        {
+            "query": "Are there any limitations to the AvatarLod example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/distance-based-lods"
+            ]
+        },
+        {
+            "query": "What is the purpose of the AvatarRenderLoader in the code sample?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-2d-avatars"
+            ]
+        },
+        {
+            "query": "What does the LoadRender() function do?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-2d-avatars"
+            ]
+        },
+        {
+            "query": "Can the 2D render use the same avatar URL as the 3D render?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-2d-avatars"
+            ]
+        },
+        {
+            "query": "What versions of Unity has the example been tested in?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-2d-avatars"
+            ]
+        },
+        {
+            "query": "What is the potential use of this approach?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-2d-avatars"
+            ]
+        },
+        {
+            "query": "What versions of Unity are the examples tested on?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I load a single avatar at runtime in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I load multiple avatars at runtime in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-3d-avatars"
+            ]
+        },
+        {
+            "query": "What is the purpose of the Debug Panel?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I disable the Debug Panel?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/code-samples/loading-3d-avatars"
+            ]
+        },
+        {
+            "query": "How can I enable avatar caching in Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "What happens if a Ready Player Me user changes an existing avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "What are the custom Avatar Configuration parameters?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "Where is the downloaded avatar data stored?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "How can I manage avatar cache data?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "How can I specify the Avatar Configuration parameters when loading avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What are the Avatar Configuration templates included in the SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "How can I create a new Avatar Configuration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "How can I apply an Avatar Configuration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What happens if no Avatar Configuration is assigned to an AvatarObjectLoader instance?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What is the purpose of a 'defer agent' in glTFast?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/defer-agents"
+            ]
+        },
+        {
+            "query": "What are the two types of defer agents provided by glTFast?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/defer-agents"
+            ]
+        },
+        {
+            "query": "What is the default defer agent if none is specified?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/defer-agents"
+            ]
+        },
+        {
+            "query": "How can I set a 'TimeBudgetPerFrameDeferAgent'?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/defer-agents"
+            ]
+        },
+        {
+            "query": "How can I create and use a custom defer agent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/defer-agents"
+            ]
+        },
+        {
+            "query": "What could be the reason if avatar loading works in the Unity Editor but not in the built application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "How can I fix the issue of avatars not loading in the built application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "Where can I find the Preloaded Shaders list in the Unity Editor?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "What should I add to the Preloaded Shaders list to fix the avatar loading issue?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "What is the role of glTFast shaders in avatar loading?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "What could be the reason if I'm unable to access the Ready Player Me avatar creation and customization web interface?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/firewall-issues"
+            ]
+        },
+        {
+            "query": "Which domains need to be resolvable from my client to access the Ready Player Me avatar creation and customization web interface?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/firewall-issues"
+            ]
+        },
+        {
+            "query": "What could prevent me from downloading the resulting avatars from Ready Player Me?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/firewall-issues"
+            ]
+        },
+        {
+            "query": "What should I do if my corporate firewall prevents access to Ready Player Me server?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/firewall-issues"
+            ]
+        },
+        {
+            "query": "What could be the reason for not being able to access the Ready Player Me server from a private network?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/firewall-issues"
+            ]
+        },
+        {
+            "query": "What is the minimum iOS version that supports WebView?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/ios-issues"
+            ]
+        },
+        {
+            "query": "What might be the issue if WebView is not loading on my iOS device?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/ios-issues"
+            ]
+        },
+        {
+            "query": "What should I do if WebView is not loading on my iOS device?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/ios-issues"
+            ]
+        },
+        {
+            "query": "Is WebView supported on all iOS versions?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/ios-issues"
+            ]
+        },
+        {
+            "query": "What can cause iOS WebView not to load?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/ios-issues"
+            ]
+        },
+        {
+            "query": "What can cause Unity to get stuck while importing assets after adding the core package?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/package-installation-issues"
+            ]
+        },
+        {
+            "query": "What steps can I take if Unity gets stuck during the installation of the Unity packages?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/package-installation-issues"
+            ]
+        },
+        {
+            "query": "What should I check if I'm having problems importing any RPM unity packages from the git URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/package-installation-issues"
+            ]
+        },
+        {
+            "query": "Why is it important to ensure the git URL is valid when importing RPM unity packages?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/package-installation-issues"
+            ]
+        },
+        {
+            "query": "Why do I need to have Git and Git LFS installed on my machine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/package-installation-issues"
+            ]
+        },
+        {
+            "query": "What are the main modules of the Ready Player Me Unity SDK 2.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/unity-sdk-2.0-migration-guide"
+            ]
+        },
+        {
+            "query": "What is the new location for the SDK modules in Unity?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/unity-sdk-2.0-migration-guide"
+            ]
+        },
+        {
+            "query": "What is the new plugin used for loading avatar models from .glb files?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/unity-sdk-2.0-migration-guide"
+            ]
+        },
+        {
+            "query": "What changes have been made to the AvatarLoader class?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/unity-sdk-2.0-migration-guide"
+            ]
+        },
+        {
+            "query": "What steps should I follow to import the new Ready Player Me Unity SDK into a project with the old Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/unity-sdk-2.0-migration-guide"
+            ]
+        },
+        {
+            "query": "How can I update to the latest version of the Ready Player Me Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/updating-from-earlier-versions"
+            ]
+        },
+        {
+            "query": "What precautions should I take before updating the Unity SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/updating-from-earlier-versions"
+            ]
+        },
+        {
+            "query": "What should I do if I have an earlier version of the SDK installed?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/updating-from-earlier-versions"
+            ]
+        },
+        {
+            "query": "What happens after I click the Update button for the SDK modules?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/updating-from-earlier-versions"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter issues after updating the SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/updating-from-earlier-versions"
+            ]
+        },
+        {
+            "query": "What is the main issue with building for WebGL on Unity 2021?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/webgl-issues"
+            ]
+        },
+        {
+            "query": "What is the suggested solution for WebGL build issues on Unity 2021?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/webgl-issues"
+            ]
+        },
+        {
+            "query": "Does the issue with WebGL builds on Unity 2021 occur with all builds or only those that include Newtonsoft JSON?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/webgl-issues"
+            ]
+        },
+        {
+            "query": "What should I change in my build device's OS to potentially resolve WebGL build issues on Unity 2021?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/webgl-issues"
+            ]
+        },
+        {
+            "query": "What could be the reason for encountering build issues with WebGL on Unity 2021?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/troubleshooting/webgl-issues"
+            ]
+        },
+        {
+            "query": "How can I export a Ready Player Me avatar from Blender as FBX for use in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/blender-to-unreal-export"
+            ]
+        },
+        {
+            "query": "What are the recommended FBX Export Settings when exporting a Ready Player Me avatar from Blender?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/blender-to-unreal-export"
+            ]
+        },
+        {
+            "query": "Why do I need to upload the exported FBX to Mixamo before importing it into Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/blender-to-unreal-export"
+            ]
+        },
+        {
+            "query": "How can I import a Ready Player Me avatar into Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/blender-to-unreal-export"
+            ]
+        },
+        {
+            "query": "What should I do if I don't see the 'Import Morph Targets' option when importing a Ready Player Me avatar into Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/blender-to-unreal-export"
+            ]
+        },
+        {
+            "query": "How can I add Mixamo animations to Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "Why do I need to unpack the 'RPM_Animation_Reference.zip' file?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "What should I do if the animation is imported with the wrong rotation?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "What settings should I use when downloading the animation from Mixamo?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "How can I add the imported animation to my own animation blueprint?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+            ]
+        },
+        {
+            "query": "What is Oculus Lipsync?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for integrating OVRLipSync?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+            ]
+        },
+        {
+            "query": "How can I integrate the OVRLipSync plugin with Ready Player Me avatars?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+            ]
+        },
+        {
+            "query": "What are the two ways to integrate the OVRLipSync plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+            ]
+        },
+        {
+            "query": "What changes do I need to make in the OVRLipSync plugin for UE5?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/oculus-lipsync-integration"
+            ]
+        },
+        {
+            "query": "What is the minimum version of Unreal Engine required to integrate the Ready Player Me Custom Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration/custom-avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I add the AvatarCreator widget to my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration/custom-avatar-creator"
+            ]
+        },
+        {
+            "query": "What events do I need to subscribe to when using the AvatarCreator widget?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration/custom-avatar-creator"
+            ]
+        },
+        {
+            "query": "What customization options are available when spawning the Avatar Creator widget?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration/custom-avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I create a completely different UI for the Avatar Creator?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/avatar-creator-integration/custom-avatar-creator"
+            ]
+        },
+        {
+            "query": "How can I integrate Ready Player Me avatars with the UE5 Lyra project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/lyra-project-integration-example"
+            ]
+        },
+        {
+            "query": "What is the purpose of the IK Retargeter in the Lyra project integration example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/lyra-project-integration-example"
+            ]
+        },
+        {
+            "query": "How can I preload avatars in the Lyra project integration example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/lyra-project-integration-example"
+            ]
+        },
+        {
+            "query": "How can I enable avatar caching in the Lyra project integration example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/lyra-project-integration-example"
+            ]
+        },
+        {
+            "query": "Why do I need to disable Niagara effects in the Lyra project integration example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/lyra-project-integration-example"
+            ]
+        },
+        {
+            "query": "What is the difference between the integration of Ready Player Me avatars in UE4 and UE5?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-4-legacy"
+            ]
+        },
+        {
+            "query": "Where can I find an example project for integrating Ready Player Me avatars into a UE4 Third Person template project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-4-legacy"
+            ]
+        },
+        {
+            "query": "Is the animation retargeting system in UE5 compatible with UE4?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-4-legacy"
+            ]
+        },
+        {
+            "query": "What should I use for animation retargeting in UE4?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-4-legacy"
+            ]
+        },
+        {
+            "query": "Are these examples applicable for Unreal Engine versions other than 4?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-4-legacy"
+            ]
+        },
+        {
+            "query": "Where can I find examples of Ready Player Me integrations into Unreal Engine 5 projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-5-samples"
+            ]
+        },
+        {
+            "query": "How can I use the code from the GitHub repository for my own Unreal Engine projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-5-samples"
+            ]
+        },
+        {
+            "query": "What examples can I find in the ReadyPlayerMe folder of the project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-5-samples"
+            ]
+        },
+        {
+            "query": "How can I integrate Ready Player Me avatars into my Unreal Engine project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-5-samples"
+            ]
+        },
+        {
+            "query": "What features can I implement with Ready Player Me avatars in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/code-samples/unreal-engine-5-samples"
+            ]
+        },
+        {
+            "query": "How does the avatar caching functionality of the Ready Player Me SDK work?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "What happens when a Ready Player Me user makes changes to an existing avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "How can I enable avatar caching in my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "Where is the downloaded avatar data stored?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "What happens if the avatar download is interrupted or aborted during data transmission?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-caching"
+            ]
+        },
+        {
+            "query": "How can I apply specific configurations when loading avatars with the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What should I do if I have a saved URL in my project and I want to use Avatar Configurations?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "How can I create an Avatar Configuration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What are the considerations when setting Morph Target Group in the Avatar Configuration?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "How can I apply an Avatar Configuration to an avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-configuration"
+            ]
+        },
+        {
+            "query": "What is the main use case for the avatar preloading functionality?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-preloading"
+            ]
+        },
+        {
+            "query": "How can I preload multiple versions of the same avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-preloading"
+            ]
+        },
+        {
+            "query": "How can I use the memory cache in ReadyPlayerMeComponent?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-preloading"
+            ]
+        },
+        {
+            "query": "What should I do if the preloaded avatars are not needed anymore?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-preloading"
+            ]
+        },
+        {
+            "query": "Is it possible to remove a specific avatar from the memory cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/optimize/avatar-preloading"
+            ]
+        },
+        {
+            "query": "How can I import my ReadyPlayerMe avatar into Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/exploring-the-demo"
+            ]
+        },
+        {
+            "query": "Where can I find the Ready Player Me Component in Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/exploring-the-demo"
+            ]
+        },
+        {
+            "query": "What should I do if I have trouble creating my project with the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/exploring-the-demo"
+            ]
+        },
+        {
+            "query": "How can I use my own avatar URL in the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/exploring-the-demo"
+            ]
+        },
+        {
+            "query": "What should I expect to see after pressing Play in the Ready Player Me SDK demo?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/exploring-the-demo"
+            ]
+        },
+        {
+            "query": "What are the two options for integrating the Unreal Engine SDK with a Blueprint project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-blueprint-projects"
+            ]
+        },
+        {
+            "query": "What should I be aware of when using the Blueprint Only version of the plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-blueprint-projects"
+            ]
+        },
+        {
+            "query": "Where can I download the SDK for Blueprint Projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-blueprint-projects"
+            ]
+        },
+        {
+            "query": "What steps should I follow to set up my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-blueprint-projects"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter problems while creating my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-blueprint-projects"
+            ]
+        },
+        {
+            "query": "What are the prerequisites for setting up a C++ project with Unreal Engine?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-c++-projects"
+            ]
+        },
+        {
+            "query": "What is the Ready Player Me Unreal SDK for C++ Projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-c++-projects"
+            ]
+        },
+        {
+            "query": "How can I add the ReadyPlayerMe and glTFRuntime plugins to my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-c++-projects"
+            ]
+        },
+        {
+            "query": "How can I update the ReadyPlayerMe and glTFRuntime plugins?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-c++-projects"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter problems while setting up my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/quickstart/setup-c++-projects"
+            ]
+        },
+        {
+            "query": "Why are animations not playing on my character in packaged builds?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/animation-issues"
+            ]
+        },
+        {
+            "query": "What should I check if animations are not playing after loading a packaged build?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/animation-issues"
+            ]
+        },
+        {
+            "query": "How can I set up my character Blueprint correctly to avoid animation issues?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/animation-issues"
+            ]
+        },
+        {
+            "query": "What property on my Blueprint's SkeletalMeshComponent should I check to resolve animation issues?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/animation-issues"
+            ]
+        },
+        {
+            "query": "What should I do in the editor before running the application to ensure animations play correctly?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/animation-issues"
+            ]
+        },
+        {
+            "query": "What is the main issue with certain avatars in the glTFRuntime plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-lighting-issues"
+            ]
+        },
+        {
+            "query": "Which versions of the glTFRuntime plugin are affected by the avatar lighting issue?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-lighting-issues"
+            ]
+        },
+        {
+            "query": "What is the recommended solution to fix the avatar lighting issue?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-lighting-issues"
+            ]
+        },
+        {
+            "query": "Has the avatar lighting issue been addressed in the latest version of the glTFRuntime plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-lighting-issues"
+            ]
+        },
+        {
+            "query": "What happens if I continue using the 20230225 or earlier versions of the glTFRuntime plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-lighting-issues"
+            ]
+        },
+        {
+            "query": "What causes significant lag when loading avatars at runtime?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "Are there any improvements being made to address the lag issue?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "How can I get in touch with the developers of the glTFRuntime plugin?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "Is there a way to avoid the lag when loading avatars at runtime?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "What is the role of the glTFRuntime plugin in the avatar loading process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/avatar-loading-issues"
+            ]
+        },
+        {
+            "query": "What type of project is recommended for integrating the Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/blueprint-project-issues"
+            ]
+        },
+        {
+            "query": "Can I use the Ready Player Me Avatar SDK in a Blueprint Only project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/blueprint-project-issues"
+            ]
+        },
+        {
+            "query": "Where can I find the correct version of the plugin for my Blueprint project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/blueprint-project-issues"
+            ]
+        },
+        {
+            "query": "How should the plugin be installed for Blueprint Only projects?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/blueprint-project-issues"
+            ]
+        },
+        {
+            "query": "Where can I find instructions to setup a Blueprint project with Ready Player Me Avatar SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/blueprint-project-issues"
+            ]
+        },
+        {
+            "query": "Where should I extract the plugin Zip file when importing it into my Unreal C++ project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/c++-project-compilation-issues"
+            ]
+        },
+        {
+            "query": "What is the most common fix if I encounter errors that prevent me from compiling my C++ project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/c++-project-compilation-issues"
+            ]
+        },
+        {
+            "query": "Which folders and files should I delete if I encounter compilation errors?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/c++-project-compilation-issues"
+            ]
+        },
+        {
+            "query": "What should I do after deleting the necessary files and folders to fix compilation errors?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/c++-project-compilation-issues"
+            ]
+        },
+        {
+            "query": "What should I do if the common fix does not resolve my compilation issues?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/c++-project-compilation-issues"
+            ]
+        },
+        {
+            "query": "What is a common cause of crashes on built applications using the Ready Player Me SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/crashes-on-built-applications"
+            ]
+        },
+        {
+            "query": "How can I fix the missing materials error that causes crashes on built applications?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/crashes-on-built-applications"
+            ]
+        },
+        {
+            "query": "Where can I find the 'Additional Asset Directories to Cook' setting in the Project Settings?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/crashes-on-built-applications"
+            ]
+        },
+        {
+            "query": "What folder should I add to the 'Additional Asset Directories to Cook' to fix the missing materials error?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/crashes-on-built-applications"
+            ]
+        },
+        {
+            "query": "What happens if I don't add the /glTFRuntime folder to the 'Additional Asset Directories to Cook'?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/crashes-on-built-applications"
+            ]
+        },
+        {
+            "query": "What is the recommended process for updating the Unreal Engine SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-plugin-download"
+            ]
+        },
+        {
+            "query": "What should I do if I cannot compile or open the project after upgrading the plugins?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-plugin-download"
+            ]
+        },
+        {
+            "query": "What precautions should I take if I'm not using a version control system like Git on my project?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-plugin-download"
+            ]
+        },
+        {
+            "query": "Where can I download an earlier version of the Unreal Engine SDK?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-plugin-download"
+            ]
+        },
+        {
+            "query": "What should I do when a popup opens after reopening the project post SDK update?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-plugin-download"
+            ]
+        },
+        {
+            "query": "What is the change in the FAvatarDownloadCompleted delegate in Unreal SDK 1.0.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-sdk-breaking-changes"
+            ]
+        },
+        {
+            "query": "Why was the ReadyPlayerMeComponent::LoadRender function removed?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-sdk-breaking-changes"
+            ]
+        },
+        {
+            "query": "What changes were made to the avatar caching logic in Unreal SDK 0.18.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-sdk-breaking-changes"
+            ]
+        },
+        {
+            "query": "What is the AvatarConfig parameter added to the ReadyPlayerMeAvatarLoader in Unreal SDK 0.18.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-sdk-breaking-changes"
+            ]
+        },
+        {
+            "query": "What should I do if I encounter issues due to the renaming of ReadyPlayerMeActorComponent to ReadyPlayerMeComponent in Unreal SDK 0.17.0?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/troubleshooting/unreal-sdk-breaking-changes"
+            ]
+        },
+        {
+            "query": "How can I integrate Ready Player Me into my native Android application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/android-native"
+            ]
+        },
+        {
+            "query": "What is the purpose of the MainActivity.kt file in the integration example?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/android-native"
+            ]
+        },
+        {
+            "query": "What does the WebViewActivity.kt file do in the integration process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/android-native"
+            ]
+        },
+        {
+            "query": "How does the WebViewInterface.kt file contribute to the integration process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/android-native"
+            ]
+        },
+        {
+            "query": "How can I use my Ready Player Me partner subdomain in the integration process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/android-native"
+            ]
+        },
+        {
+            "query": "How can I integrate Ready Player Me into my native iOS application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios"
+            ]
+        },
+        {
+            "query": "What do I need to do to retrieve the avatar URL from the Ready Player Me web platform?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios"
+            ]
+        },
+        {
+            "query": "What happens once the avatar creation process is complete on the Ready Player Me web platform?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios"
+            ]
+        },
+        {
+            "query": "How can I load the downloaded avatar .glb file into a 3D scene?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios"
+            ]
+        },
+        {
+            "query": "What should I do after retrieving the generated Avatar URL?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios"
+            ]
+        },
+        {
+            "query": "How can I integrate Ready Player Me into my React Native application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/react-native"
+            ]
+        },
+        {
+            "query": "What is the general process for integrating Ready Player Me into a React Native application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/react-native"
+            ]
+        },
+        {
+            "query": "Where can I find an example of Ready Player Me integration built for React Native?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/react-native"
+            ]
+        },
+        {
+            "query": "Can I try a live example of Ready Player Me integration with React Native?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/react-native"
+            ]
+        },
+        {
+            "query": "How do I retrieve the avatar 3D model in the integration process?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/react-native"
+            ]
+        },
+        {
+            "query": "How can I display a Ready Player Me avatar on my website or app?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/web"
+            ]
+        },
+        {
+            "query": "What is model-viewer?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/web"
+            ]
+        },
+        {
+            "query": "How can I use model-viewer to load a Ready Player Me avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/web"
+            ]
+        },
+        {
+            "query": "Where can I find the full documentation for model-viewer?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/web"
+            ]
+        },
+        {
+            "query": "What is the purpose of the code provided in the integration guide?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/web"
+            ]
+        },
+        {
+            "query": "How can I integrate the Ready Player Me Avatar Creator into a native iOS application?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios/swift-example"
+            ]
+        },
+        {
+            "query": "How can I edit the URL for the Avatar Creator to point to my own subdomain?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios/swift-example"
+            ]
+        },
+        {
+            "query": "How can I retrieve the URL of the generated avatar?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios/swift-example"
+            ]
+        },
+        {
+            "query": "How can I initialize the WebView and inject the Javascript snippet?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios/swift-example"
+            ]
+        },
+        {
+            "query": "How can I clear the web view browser's cookies and cache?",
+            "documents": [
+                "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples/native-ios/swift-example"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "mock_name": {
+        "copilot_id": "mock_name",
+        "github_url": "https://github.com/mock/mock",
+        "creator_email": "mock email",
+        "status": "SYNCED",
+        "git_hash": "1ae7f9080454c555f59059d6dc1d34916ffcf998",
+        "git_message": "mock msg",
+        "vs_index_name": "abcdefg",
+        "relative_directory_path": "copilots/mock_name",
+        "private_key_path": "tests/assets/copilot_configurations/.ssh/mock_name"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "example_messages": ["Who are you?", "What can you help me with?", "Introduce yourself."],
+  "title": "Hi, I am a cool copilot!",
+  "description": "I’m here to help developers like you with any questions you have about RPM \nso you can integrate avatars into your app fast, without any previous experience. \n I can help you debug, provide code, tutorials and much more. \n",
+  "footer": "Copilot may produce inaccurate information about people, places, or facts.",
+  "allowed_emails": [
+    "taivo@nftport.xyz"
+}

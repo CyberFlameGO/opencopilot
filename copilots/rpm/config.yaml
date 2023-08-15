@@ -1,0 +1,35 @@
+data:
+  loaders:
+    gitbook:
+      sources: 
+        - "https://docs.readyplayer.me/ready-player-me/"
+      output: "serialized_documents_rpm_gitbook.json"
+    url:
+      sources:
+        - "https://docs.readyplayer.me/asset-creation-guide/asset-creation/overview"
+        - "https://readyplayer.me/company/about-us"
+        - "https://readyplayer.me/developers"
+        - "https://readyplayer.me/brands-creators"
+        - "https://readyplayer.me/case-studies/adidas-originals-uses-ai-to-create-10-million-personal-avatars"
+        - "https://readyplayer.me/case-studies/bmws-immersive-experiences-with-3d-avatars"
+        - "https://readyplayer.me/case-studies/look-great-anywhere-with-tommy-hilfiger-parallel-collection"
+      output: "serialized_documents_rpm_pages.json"
+    blog:
+      sources: 
+        - "https://readyplayer.me/blog-categories/for-developers"
+        - "https://readyplayer.me/blog-categories/changelog"
+      output: "serialized_documents_rpm_blog.json"
+  ignore:
+    - "https://docs.readyplayer.me/ready-player-me/"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/overview"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/unity"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/react"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration"
+    - "https://docs.readyplayer.me/ready-player-me/integration-guides/web-and-native-integration/integration-examples"
+    - "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk"
+    - "https://docs.readyplayer.me/ready-player-me/api-reference/avatars"
+    - "https://docs.readyplayer.me/ready-player-me/support/product-newsletter"
+    - "https://docs.readyplayer.me/ready-player-me/api-reference/unreal-engine-sdk/changelog"
+    - "https://docs.readyplayer.me/ready-player-me/api-reference/unity-sdk/changelog"
+    - "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/changelog"

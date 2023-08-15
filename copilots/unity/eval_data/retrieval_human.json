@@ -1,0 +1,10 @@
+{
+  "examples": [
+    {
+      "query": "How to use Firebase",
+      "documents": [
+        "https://docs.unity3d.com/Manual/udp-firebase.html"
+      ]
+    }
+  ]
+}

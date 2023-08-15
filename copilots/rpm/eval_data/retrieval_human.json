@@ -1,0 +1,83 @@
+{
+  "examples": [
+    {
+      "query": "How Can I integrate Ready Player Me Unity SDK?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I import the Ready Player Me Unity SDK?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I enter my subdomain in Unity?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I set up the avatar configuration in Unity?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I open the runtime example scene in Unity?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I load my (personal) avatar in Unity?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart"
+      ]
+    },
+    {
+      "query": "How can I enable avatar caching in Unreal Engine?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/optimize/avatar-caching"
+      ]
+    },
+    {
+      "query": "What platforms do you support?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/getting-started/faq"
+      ]
+    },
+    {
+      "query": "Can I create custom outfits?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/customizing-guides/create-custom-outfits"
+      ]
+    },
+    {
+      "query": "Is there any way to get the skin color from the head? Or is it an image map?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-metadata"
+      ]
+    },
+    {
+      "query": "I am using web version of realplayer.me is there a way to download a png image of avatar",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/api-reference/rest-api/avatars/get-2d-avatars"
+      ]
+    },
+    {
+      "query": "Hi all, I'm new to 3D modelling and would love to test RPM avatar to create some scene.\n\nI just downloaded my custom avatar from RPM website and uploaded the base RPM avatar to Mixamo to try out some animation. Here's is the .fbx file that I got from Mixamo which works perfectly.\n\nOnce I applied the animation back to my custom RPM avatar, the animation somehow distorted(only affecting the arm movement and it looks swapped the position of my left and right arm). Anyone know why's that happened?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unity/loading-mixamo-animations",
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+      ]
+    },
+    {
+      "query": "Hello\n\nI am having trouble with getting my ReadyPlayerMe exported file (.fbx) from Blender to Mixamo , once finished uploading the characters skins textures are not appearing after putting path mode to copy\n\nI'v been following the RPM docs Blender FBX export to UE but are having no luck https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-sdk/blender-to-unreal-export\n\nDoes anyone have a solution or a tutorial of getting this working within Unreal Engine 5.03?",
+      "documents": [
+        "https://docs.readyplayer.me/ready-player-me/integration-guides/unreal-engine/animations/loading-mixamo-animations"
+      ]
+    }
+  ]
+}

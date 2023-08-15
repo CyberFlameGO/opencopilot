@@ -1,0 +1,13 @@
+/**/*.log
+/**/*.log.*
+venv
+htmlcov
+reports
+tests/htmlcov
+.ipynb_checkpoints
+.coverage
+.idea
+**/__pycache__
+**/.DS_Store
+data/
+downloads/

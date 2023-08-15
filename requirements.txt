@@ -1,0 +1,9 @@
+langchain==0.0.236
+pypdf==3.14.0
+omegaconf==2.3.0
+pypdf==3.14.0
+python-dotenv==1.0.0
+requests==2.31.0
+rich==12.6.0
+typer[all]==0.7.0
+unstructured==0.7.2

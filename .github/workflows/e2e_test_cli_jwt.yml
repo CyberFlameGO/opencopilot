@@ -1,0 +1,57 @@
+name: E2E Test Linux CLI JWT
+
+on:
+  push:
+    branches: [ master, custom-document-store ]
+
+jobs:
+  e2e-test-linux-cli-jwt:
+    runs-on: nftport-ubuntu-4core
+    strategy:
+      max-parallel: 5
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Set up Python 3.10"
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: "Add conda to system path"
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
+      - name: "Install SDK"
+        run: |
+          pip install -r requirements.txt
+          # Backend dependency
+          pip install omegaconf==2.3.0
+      - name: "Setup .envs"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          HELICONE_API_KEY: ${{ secrets.HELICONE_API_KEY }}
+        run: |
+          cd backend
+          cp template.env .env
+          sed -i "s/host.docker.internal/0.0.0.0/g" .env
+          # sed -i "s/API_PORT=3000/API_PORT=5000/g" .env
+          sed -i "s/FILL_IN_OPENAI_API_KEY/$OPENAI_API_KEY/g" .env
+          sed -i "s/AUTH_TYPE=\"none\"/AUTH_TYPE=\"jwt\"/g" .env
+          echo "HELICONE_API_KEY = \"$HELICONE_API_KEY\"" >> .env
+          echo "Backend .env"
+          cat .env
+          cd ../frontend
+          cp .env.example .env
+          sed -i "s/host.docker.internal/0.0.0.0/g" .env
+          echo "\nFrontend .env"
+          cat .env
+      - name: "Run App"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          PYTHONPATH=. python sdk/cli.py start
+      - name: "Chat"
+        run: |
+          PYTHONPATH=. python sdk/cli.py chat "Hello"
+      - name: "Test Backend"
+        run: |
+          cd backend && PYTHONPATH=. python tests/e2e/test_backend.py

@@ -1,0 +1,40 @@
+name: Unit tests
+
+on: [ push ]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Set up Python 3.10"
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: "Add conda to system path"
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
+      - name: "Setup Backend"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cd backend
+          cp template.env .env
+          sed -i "s/host.docker.internal/0.0.0.0/g" .env
+          sed -i "s/API_PORT=3000/API_PORT=5000/g" .env
+          sed -i "s/OPTIONAL-API-KEY-IF-MODEL-gpt-3.5-turbo-16k-OR-gpt-4/$OPENAI_API_KEY/g" .env
+          conda env update --file environment.yml --name base
+      - name: "Backend Unit tests"
+        run: |
+          cd backend && python -m pytest tests/unit
+      - name: "Backend Unit tests Code Coverage"
+        run: |
+          cd backend && python -m pytest tests/unit \
+            --cov-report html:tests/reports/coverage/htmlcov \
+            --cov-report xml:tests/reports/coverage/cobertura-coverage.xml \
+            --cov-report term \
+            --cov=src

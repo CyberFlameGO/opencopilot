@@ -1,0 +1,29 @@
+data:
+  loaders:
+    openai_docs:
+      sources: 
+        - "https://platform.openai.com/docs/"
+      output: "serialized_documents_openai_docs.json"
+    openai_api_docs:
+      sources:
+        - "https://platform.openai.com/docs/api-reference"
+      output: "serialized_documents_openai_api_docs.json"
+    anthropic_docs:
+      sources:
+        - "https://docs.anthropic.com/claude/docs"
+        - "https://docs.anthropic.com/claude/reference/"
+      output: "serialized_documents_anthropic.json"
+    url:
+      sources:
+        - "https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/"
+        - "https://www.sequoiacap.com/article/llm-stack-perspective/"
+        - "https://huyenchip.com/2023/04/11/llm-engineering.html"
+      output: "serialized_documents_blogs.json"
+    prompting_guide_docs:
+      sources:
+        - "https://www.promptingguide.ai/"
+      output: "serialized_documents_prompting_guide_docs.json"
+    fullstack_deeplearning:
+      sources:
+        - "https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/"
+      output: "serialized_documents_fullstack_deeplearning.json"
