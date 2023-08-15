@@ -22,7 +22,7 @@ Copilots are becoming the new dominant way users are interacting with LLM-based 
 1. Download the repo
 
 ```bash
-git clone git@github.com:nftport/opencopilot.git && cd OpenCopilot
+git clone git@github.com:opencopilotdev/opencopilot.git && cd opencopilot
 ```
 
 2. Make sure you have the following dependancies:
@@ -102,7 +102,7 @@ Hot-loading is supported meaning you can change the prompt file any time and dur
 
 You can use Debug mode in the front-end which helps you test and iterate your Copilot. 
 
-<img width="1339" alt="Screenshot 2023-07-26 at 15 53 53" src="https://github.com/nftport/opencopilot/assets/3767980/09a6d81e-3382-4202-a2c1-311edecea84e">
+<img width="1339" alt="Debug mode" src="https://i.imgur.com/MhZaadl.png">
 
 ### Evaluating
 
