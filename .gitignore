@@ -1,5 +1,7 @@
 .idea
 
+.env
+
 opencopilot/.github
 opencopilot/venv
 opencopilot/htmlcov
@@ -16,7 +18,6 @@ opencopilot/**/.DS_Store
 opencopilot/cobertura-coverage.xml
 backend/logs/**/*.log
 backend/logs/**/*.log.*
-opencopilot/.env
 backend/shared/*.*
 backend/shared/nginx/*.log
 opencopilot/embedding_models/*
