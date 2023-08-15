@@ -4,11 +4,11 @@ import sys
 
 from fastapi import APIRouter
 
-import settings
-from logger import api_logger
-from src.routers.routes import auth_router
-from src.routers.routes import chat_router
-from src.routers.routes import debug_router
+from opencopilot import settings
+from opencopilot.logger import api_logger
+from opencopilot.src.routers.routes import auth_router
+from opencopilot.src.routers.routes import chat_router
+from opencopilot.src.routers.routes import debug_router
 
 TAG_ROOT = "root"
 

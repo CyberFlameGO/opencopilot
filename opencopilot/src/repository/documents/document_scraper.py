@@ -3,17 +3,17 @@ import os
 from typing import Callable
 from typing import List
 
-import settings
+from opencopilot import settings
 from langchain.schema import Document
-from src.utils.loaders import anthropic_docs_loader_use_case
-from src.utils.loaders import blog_loader_use_case
-from src.utils.loaders import fullstack_deeplearning_loader_use_case
-from src.utils.loaders import gitbook_loader_use_case
-from src.utils.loaders import html_loader_use_case
-from src.utils.loaders import openai_api_docs_loader_use_case
-from src.utils.loaders import openai_docs_loader_use_case
-from src.utils.loaders import prompting_guide_docs_loader_use_case
-from src.utils.loaders import url_loader_use_case
+from opencopilot.src.utils.loaders import anthropic_docs_loader_use_case
+from opencopilot.src.utils.loaders import blog_loader_use_case
+from opencopilot.src.utils.loaders import fullstack_deeplearning_loader_use_case
+from opencopilot.src.utils.loaders import gitbook_loader_use_case
+from opencopilot.src.utils.loaders import html_loader_use_case
+from opencopilot.src.utils.loaders import openai_api_docs_loader_use_case
+from opencopilot.src.utils.loaders import openai_docs_loader_use_case
+from opencopilot.src.utils.loaders import prompting_guide_docs_loader_use_case
+from opencopilot.src.utils.loaders import url_loader_use_case
 
 LOADERS_MAP = {
     "gitbook": gitbook_loader_use_case.execute,

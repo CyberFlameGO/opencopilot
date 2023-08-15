@@ -15,7 +15,7 @@ API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1/")
 ENVIRONMENT = os.getenv("PLATFORM_ENVIRONMENT", "local")
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*")
 APPLICATION_NAME = os.getenv("APPLICATION_NAME", "backend-service")
-LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "logs/logs-backend-service.log")
+LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "../logs/logs-backend-service.log")
 
 WEAVIATE_URL = os.getenv("WEAVIATE_URL", "")
 assert WEAVIATE_URL
@@ -35,7 +35,7 @@ MAX_TOKEN_COUNT: int = 2048
 MAX_DOCUMENT_SIZE_MB = int(os.getenv("MAX_DOCUMENT_SIZE_MB", 50))
 
 COPILOT_NAME = os.getenv("COPILOT_NAME", "rpm")
-COPILOT_DIRECTORY = f"../copilots/{COPILOT_NAME}"
+COPILOT_DIRECTORY = f"copilots/{COPILOT_NAME}"
 
 UNITY_COPILOT_URL = os.getenv("UNITY_COPILOT_URL", "")
 FUNCTIONS_MODEL = os.getenv("FUNCTIONS_MODEL", "gpt-4-0613")

@@ -15,19 +15,20 @@ from langchain.schema import Document
 from langchain.schema import FunctionMessage
 from langchain.schema import HumanMessage
 
-import settings
-from logger import api_logger
-from src.domain.chat import get_token_count_use_case
-from src.domain.chat import utils
-from src.domain.chat.entities import LoadingMessage
-from src.domain.chat.entities import UserMessageInput
-from src.domain.chat.results import format_context_documents_use_case
-from src.domain.chat.results import get_llm
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from src.repository.conversation_user_context_repository import \
+from opencopilot import settings
+from opencopilot.logger import api_logger
+from opencopilot.src.domain.chat import get_token_count_use_case
+from opencopilot.src.domain.chat import utils
+from opencopilot.src.domain.chat.entities import LoadingMessage
+from opencopilot.src.domain.chat.entities import UserMessageInput
+from opencopilot.src.domain.chat.results import format_context_documents_use_case
+from opencopilot.src.domain.chat.results import get_llm
+from opencopilot.src.repository.conversation_history_repository import \
+    ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.repository.conversation_user_context_repository import \
     ConversationUserContextRepositoryLocal
-from src.utils.callbacks.callback_handler import CustomAsyncIteratorCallbackHandler
+from opencopilot.src.utils.callbacks.callback_handler import CustomAsyncIteratorCallbackHandler
 
 logger = api_logger.get()
 

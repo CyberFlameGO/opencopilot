@@ -4,8 +4,8 @@ import jwt
 from fastapi import Security
 from fastapi.security import APIKeyHeader
 
-import settings
-from src.service import error_responses
+from opencopilot import settings
+from opencopilot.src.service import error_responses
 
 API_KEY_NAME = "Authorization"
 API_KEY_HEADER = APIKeyHeader(name=API_KEY_NAME, auto_error=False)

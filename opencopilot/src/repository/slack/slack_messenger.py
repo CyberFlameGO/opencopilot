@@ -2,8 +2,8 @@ import json
 
 import requests
 
-import settings
-from logger import api_logger
+from opencopilot import settings
+from opencopilot.logger import api_logger
 
 url = settings.SLACK_WEBHOOK
 HEADERS = {

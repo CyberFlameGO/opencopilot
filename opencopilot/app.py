@@ -1,15 +1,15 @@
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel
-from src.repository.documents import document_store
 from starlette.middleware.cors import CORSMiddleware
 
-import settings
-from src.routers import main_router
-from src.routers import routing_utils
-from src.service.exception_handlers.exception_handlers import custom_exception_handler
-from src.service.middleware.main_middleware import MainMiddleware
-from src.service.middleware.request_enrichment_middleware import RequestEnrichmentMiddleware
+from . import settings
+from .src.repository.documents import document_store
+from .src.routers import main_router
+from .src.routers import routing_utils
+from .src.service.exception_handlers.exception_handlers import custom_exception_handler
+from .src.service.middleware.main_middleware import MainMiddleware
+from .src.service.middleware.request_enrichment_middleware import RequestEnrichmentMiddleware
 
 app = FastAPI()
 

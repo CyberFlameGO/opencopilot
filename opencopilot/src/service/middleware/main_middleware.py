@@ -6,11 +6,11 @@ from starlette.requests import Request
 from starlette.responses import Response
 from starlette.types import ASGIApp
 
-from logger import api_logger
-from src.service.error_responses import APIErrorResponse
-from src.service.middleware import util
-from src.service.middleware.entitites import RequestStateKey
-from src.utils.http_headers import add_response_headers
+from opencopilot.logger import api_logger
+from opencopilot.src.service.error_responses import APIErrorResponse
+from opencopilot.src.service.middleware import util
+from opencopilot.src.service.middleware.entitites import RequestStateKey
+from opencopilot.src.utils.http_headers import add_response_headers
 
 logger = api_logger.get()
 

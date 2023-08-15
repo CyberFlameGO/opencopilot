@@ -1,16 +1,16 @@
 from datetime import datetime
 
-from logger import api_logger
-from src.domain.chat import validate_urls_use_case
-from src.domain.chat.entities import MessageModel
-from src.domain.chat.entities import UserMessageInput
-from src.domain.chat.results import get_gpt_result_use_case
-from src.domain.chat.utils import get_system_message
-from src.domain.chat.utils import get_unity_communication_prompt
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
-from src.repository.documents.document_store import DocumentStore
+from opencopilot.logger import api_logger
+from opencopilot.src.domain.chat import validate_urls_use_case
+from opencopilot.src.domain.chat.entities import MessageModel
+from opencopilot.src.domain.chat.entities import UserMessageInput
+from opencopilot.src.domain.chat.results import get_gpt_result_use_case
+from opencopilot.src.domain.chat.utils import get_system_message
+from opencopilot.src.domain.chat.utils import get_unity_communication_prompt
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
+from opencopilot.src.repository.documents.document_store import DocumentStore
 
 logger = api_logger.get()
 

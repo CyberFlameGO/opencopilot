@@ -1,6 +1,6 @@
-from src.domain.evaluation import evaluate_prediction_use_case
-from src.service.debug.entities import EvaluationInput
-from src.service.debug.entities import EvaluationResponse
+from opencopilot.src.domain.evaluation import evaluate_prediction_use_case
+from opencopilot.src.service.debug.entities import EvaluationInput
+from opencopilot.src.service.debug.entities import EvaluationResponse
 
 
 async def execute(request: EvaluationInput) -> EvaluationResponse:

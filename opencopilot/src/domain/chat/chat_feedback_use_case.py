@@ -1,6 +1,6 @@
-from src.domain.chat.entities import ChatFeedbackInput
-from src.domain.chat.entities import ChatFeedbackOutput
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.domain.chat.entities import ChatFeedbackInput
+from opencopilot.src.domain.chat.entities import ChatFeedbackOutput
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 
 
 def execute(

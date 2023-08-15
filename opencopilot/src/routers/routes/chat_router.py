@@ -9,23 +9,26 @@ from pydantic import BaseModel
 from pydantic import Field
 from pydantic import validator
 
-from logger import api_logger
-from src.authorization import validate_api_key_use_case
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
-from src.repository.documents import document_store
-from src.routers import routing_utils
-from src.service import utils
-from src.service.chat import chat_context_service
-from src.service.chat import chat_service, chat_feedback_service, chat_streaming_service, \
+from opencopilot.logger import api_logger
+from opencopilot.src.authorization import validate_api_key_use_case
+from opencopilot.src.repository.conversation_history_repository import \
+    ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.repository.conversation_user_context_repository import \
+    ConversationUserContextRepositoryLocal
+from opencopilot.src.repository.documents import document_store
+from opencopilot.src.routers import routing_utils
+from opencopilot.src.service import utils
+from opencopilot.src.service.chat import chat_context_service
+from opencopilot.src.service.chat import chat_service, chat_feedback_service, \
+    chat_streaming_service, \
     chat_history_service
-from src.service.chat.entities import ChatFeedbackRequest
-from src.service.chat.entities import ChatContextRequest
-from src.service.chat.entities import ChatRequest
-from src.service.chat.entities import ChatResponse
-from src.service.chat.entities import ChatHistoryRequest, ChatHistoryResponse
-from src.service.entities import ApiResponse
+from opencopilot.src.service.chat.entities import ChatContextRequest
+from opencopilot.src.service.chat.entities import ChatFeedbackRequest
+from opencopilot.src.service.chat.entities import ChatHistoryRequest, ChatHistoryResponse
+from opencopilot.src.service.chat.entities import ChatRequest
+from opencopilot.src.service.chat.entities import ChatResponse
+from opencopilot.src.service.entities import ApiResponse
 
 TAG = "Chat"
 router = APIRouter()
@@ -85,10 +88,11 @@ class ConversationInput(BaseModel):
 )
 async def handle_conversation(
         email: str | None = Header(default=None),
-        conversation_id: str = Path(..., description="The ID of the conversation. To start a new conversation, you should pass in a random uuid (Python: `import uuid; uuid.uuid4()`). To continue a conversation, re-use the same uuid."),
+        conversation_id: str = Path(...,
+                                    description="The ID of the conversation. To start a new conversation, you should pass in a random uuid (Python: `import uuid; uuid.uuid4()`). To continue a conversation, re-use the same uuid."),
         payload: ConversationInput = Body(...,
                                           description="Input and parameters for the conversation."),
-        user_id: str =Depends(validate_api_key_use_case.execute)                               
+        user_id: str = Depends(validate_api_key_use_case.execute)
 ):
     request = ChatRequest(
         chat_id=conversation_id,
@@ -161,7 +165,7 @@ async def handle_conversation_streaming(
         conversation_id: str = Path(..., description="The ID of the conversation."),
         payload: ConversationInput = Body(...,
                                           description="Input and parameters for the conversation."),
-        user_id: str =Depends(validate_api_key_use_case.execute)
+        user_id: str = Depends(validate_api_key_use_case.execute)
 ):
     request = ChatRequest(
         chat_id=conversation_id,

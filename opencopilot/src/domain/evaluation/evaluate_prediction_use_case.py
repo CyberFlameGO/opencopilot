@@ -5,9 +5,9 @@ from langchain.callbacks.manager import Callbacks
 from langchain.chat_models import ChatOpenAI
 from langchain.evaluation import QAEvalChain
 
-from src.domain.evaluation.entities import EvaluationInput
-from src.domain.evaluation.entities import EvaluationOutput
-from src.eval import endtoend
+from opencopilot.src.domain.evaluation.entities import EvaluationOutput
+from opencopilot.src.domain.evaluation.entities import EvaluationInput
+from opencopilot.src.eval import endtoend
 
 
 async def execute(domain_input: EvaluationInput) -> EvaluationOutput:

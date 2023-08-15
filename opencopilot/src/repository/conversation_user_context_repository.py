@@ -5,9 +5,9 @@ from typing import Optional
 from uuid import UUID
 from datetime import datetime
 
-from logger import api_logger
+from opencopilot.logger import api_logger
 from langchain.schema import Document
-from src.domain.chat.entities import ChatContextInput
+from opencopilot.src.domain.chat.entities import ChatContextInput
 
 DEFAULT_CONTEXTS_DIR = "conversation_contexts"
 

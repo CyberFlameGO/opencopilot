@@ -1,12 +1,12 @@
 from typing import List
-import settings
+from opencopilot import settings
 
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.evaluation.qa import QAEvalChain
 
 
-from src.eval.entities import (
+from opencopilot.src.eval.entities import (
     EndToEndExample,
     EndToEndResult,
     EndToEndDataset,

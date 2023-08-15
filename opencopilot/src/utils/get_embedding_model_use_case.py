@@ -3,9 +3,9 @@ from typing import List
 import xxhash
 import pickle
 import os
-import settings
+from opencopilot import settings
 
-from logger import api_logger
+from opencopilot.logger import api_logger
 
 logger = api_logger.get()
 

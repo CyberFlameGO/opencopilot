@@ -7,9 +7,9 @@ from starlette.requests import Request
 from starlette.responses import Response
 from starlette.types import ASGIApp
 
-from logger import api_logger
-from src.service.middleware import util
-from src.service.middleware.entitites import RequestStateKey
+from opencopilot.logger import api_logger
+from opencopilot.src.service.middleware import util
+from opencopilot.src.service.middleware.entitites import RequestStateKey
 
 logger = api_logger.get()
 

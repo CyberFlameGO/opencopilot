@@ -1,9 +1,9 @@
-from src.domain.chat import chat_context_use_case
-from src.domain.chat.entities import ChatContextInput
-from src.service.chat.entities import ChatContextRequest
-from src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
-from src.service.entities import ApiResponse
-from src.service.utils import get_uuid
+from opencopilot.src.domain.chat import chat_context_use_case
+from opencopilot.src.domain.chat.entities import ChatContextInput
+from opencopilot.src.service.chat.entities import ChatContextRequest
+from opencopilot.src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
+from opencopilot.src.service.entities import ApiResponse
+from opencopilot.src.service.utils import get_uuid
 
 
 def execute(

@@ -1,6 +1,6 @@
-from src.domain.chat.entities import ChatContextInput
-from src.domain.chat.entities import ChatContextOutput
-from src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
+from opencopilot.src.domain.chat.entities import ChatContextInput
+from opencopilot.src.domain.chat.entities import ChatContextOutput
+from opencopilot.src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
 
 
 def execute(

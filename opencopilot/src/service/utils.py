@@ -1,5 +1,5 @@
 from uuid import UUID
-from src.service.error_responses import ValidationAPIError
+from opencopilot.src.service.error_responses import ValidationAPIError
 
 
 def get_uuid(_id: str, param: str = "") -> UUID:

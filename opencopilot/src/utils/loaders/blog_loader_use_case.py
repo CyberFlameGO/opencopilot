@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 from langchain.schema import Document
 
-from src.utils.loaders import url_loader_use_case
+from opencopilot.src.utils.loaders import url_loader_use_case
 
 
 def execute(blog_urls: List[str]) -> List[Document]:

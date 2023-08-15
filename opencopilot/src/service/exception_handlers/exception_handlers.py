@@ -10,11 +10,11 @@ from fastapi.exception_handlers import request_validation_exception_handler
 from fastapi.exceptions import RequestValidationError
 from starlette.responses import JSONResponse
 
-from src.service.error_responses import APIErrorResponse
-from src.service.error_responses import InternalServerAPIError
-from src.utils import format_pydantic_validation_error
-from src.utils import http_headers
-from src.utils.format_pydantic_validation_error import PydanticErrorResponseModel
+from opencopilot.src.service.error_responses import APIErrorResponse
+from opencopilot.src.service.error_responses import InternalServerAPIError
+from opencopilot.src.utils import format_pydantic_validation_error
+from opencopilot.src.utils import http_headers
+from opencopilot.src.utils.format_pydantic_validation_error import PydanticErrorResponseModel
 
 
 async def custom_exception_handler(

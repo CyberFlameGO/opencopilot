@@ -1,4 +1,4 @@
-from src.eval.entities import (
+from opencopilot.src.eval.entities import (
     RetrievalExample,
     RetrievalResult,
     RetrievalSingleEvaluation,

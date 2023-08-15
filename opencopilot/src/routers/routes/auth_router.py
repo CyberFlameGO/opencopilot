@@ -1,11 +1,9 @@
 from fastapi import APIRouter
 from fastapi import Body
-from fastapi import Path
-
-from logger import api_logger
-from src.service.authorization.entities import TokenRequest
-from src.service.authorization.entities import TokenResponse
-from src.service.authorization import token_service
+from opencopilot.logger import api_logger
+from opencopilot.src.service.authorization import token_service
+from opencopilot.src.service.authorization.entities import TokenRequest
+from opencopilot.src.service.authorization.entities import TokenResponse
 
 TAG = "Authorization"
 router = APIRouter()

@@ -1,8 +1,8 @@
-from src.domain.chat import get_chat_history_use_case
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.service.chat.entities import ChatHistoryRequest
-from src.service.chat.entities import ChatHistoryResponse
-from src.service.utils import get_uuid
+from opencopilot.src.domain.chat import get_chat_history_use_case
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.service.chat.entities import ChatHistoryRequest
+from opencopilot.src.service.chat.entities import ChatHistoryResponse
+from opencopilot.src.service.utils import get_uuid
 
 
 async def execute(

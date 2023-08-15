@@ -1,9 +1,9 @@
-from src.domain.chat import chat_feedback_use_case
-from src.domain.chat.entities import ChatFeedbackInput
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.service.chat.entities import ChatFeedbackRequest
-from src.service.entities import ApiResponse
-from src.service.utils import get_uuid
+from opencopilot.src.domain.chat import chat_feedback_use_case
+from opencopilot.src.domain.chat.entities import ChatFeedbackInput
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.service.chat.entities import ChatFeedbackRequest
+from opencopilot.src.service.entities import ApiResponse
+from opencopilot.src.service.utils import get_uuid
 
 
 def execute(

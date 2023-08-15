@@ -1,12 +1,12 @@
 from typing import Optional
 
-from src.domain.debug import message_debug_use_case
-from src.domain.debug.entities import TextWithTokens
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from src.service import utils
-from src.service.debug.entities import GetMessageDebugResponse
-from src.service.debug.entities import ValueWithTokens
+from opencopilot.src.domain.debug import message_debug_use_case
+from opencopilot.src.domain.debug.entities import TextWithTokens
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.service import utils
+from opencopilot.src.service.debug.entities import GetMessageDebugResponse
+from opencopilot.src.service.debug.entities import ValueWithTokens
 
 
 def execute(

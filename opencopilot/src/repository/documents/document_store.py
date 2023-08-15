@@ -1,16 +1,16 @@
 from typing import List, Optional
 
-import settings
+from opencopilot import settings
 import tqdm
 import weaviate
 from langchain.schema import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import TextSplitter
 from langchain.vectorstores import Weaviate
-from logger import api_logger
-from src.repository.documents import document_loader, document_scraper
-from src.utils import get_embedding_model_use_case
-from src.utils.get_embedding_model_use_case import CachedOpenAIEmbeddings
+from opencopilot.logger import api_logger
+from opencopilot.src.repository.documents import document_loader, document_scraper
+from opencopilot.src.utils import get_embedding_model_use_case
+from opencopilot.src.utils.get_embedding_model_use_case import CachedOpenAIEmbeddings
 
 logger = api_logger.get()
 

@@ -3,10 +3,10 @@ from typing import List
 from typing import Optional
 from uuid import UUID
 
-from src.domain.debug.entities import MessageDebugResult
-from src.domain.debug.entities import TextWithTokens
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.domain.debug.entities import MessageDebugResult
+from opencopilot.src.domain.debug.entities import TextWithTokens
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
 
 
 def execute(

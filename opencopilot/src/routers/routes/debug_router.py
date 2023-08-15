@@ -2,14 +2,14 @@ from fastapi import APIRouter
 from fastapi import Body
 from fastapi import Path
 
-from logger import api_logger
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from src.service.debug import message_debug_service
-from src.service.debug.entities import EvaluationInput
-from src.service.debug.entities import EvaluationResponse
-from src.service.debug.entities import GetMessageDebugResponse
-from src.service.evaluate import evaluation_service
+from opencopilot.logger import api_logger
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.src.service.debug import message_debug_service
+from opencopilot.src.service.debug.entities import EvaluationInput
+from opencopilot.src.service.debug.entities import EvaluationResponse
+from opencopilot.src.service.debug.entities import GetMessageDebugResponse
+from opencopilot.src.service.evaluate import evaluation_service
 
 TAG = "Debug"
 router = APIRouter()

@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from pydantic import Field
 
-from src.service.entities import ApiResponse
+from opencopilot.src.service.entities import ApiResponse
 
 
 class TokenRequest(BaseModel):

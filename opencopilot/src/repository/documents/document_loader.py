@@ -4,14 +4,14 @@ import os
 import re
 from typing import List
 
-import settings
+from opencopilot import settings
 from langchain.document_loaders import CSVLoader
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import UnstructuredExcelLoader
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.schema import Document
-from logger import api_logger
+from opencopilot.logger import api_logger
 
 logger = api_logger.get()
 

@@ -6,7 +6,7 @@ from uuid import UUID
 
 from langchain.schema import Document
 
-from logger import api_logger
+from opencopilot.logger import api_logger
 
 logger = api_logger.get()
 

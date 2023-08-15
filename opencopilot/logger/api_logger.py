@@ -1,5 +1,5 @@
 import logging
-import settings
+from opencopilot import settings
 from uuid import UUID
 from pythonjsonlogger import jsonlogger
 

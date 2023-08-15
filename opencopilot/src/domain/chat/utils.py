@@ -2,9 +2,9 @@ import os
 from dataclasses import dataclass
 from uuid import UUID
 
-import settings
-from src.domain.chat.entities import UserMessageInput
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot import settings
+from opencopilot.src.domain.chat.entities import UserMessageInput
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 
 
 @dataclass(frozen=True)

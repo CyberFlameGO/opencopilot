@@ -1,13 +1,12 @@
 import json
-from datetime import datetime
 from typing import Dict
 from typing import List
 from typing import Optional
 from uuid import UUID
 
-import settings
-from logger import api_logger
-from src.domain.chat.entities import ChatFeedbackInput
+from opencopilot import settings
+from opencopilot.logger import api_logger
+from opencopilot.src.domain.chat.entities import ChatFeedbackInput
 
 DEFAULT_CONVERSATIONS_DIR = "conversations"
 

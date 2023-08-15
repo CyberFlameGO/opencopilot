@@ -1,5 +1,5 @@
-from src.authorization import create_access_token
-from src.service.authorization.entities import TokenRequest, TokenResponse
+from opencopilot.src.authorization import create_access_token
+from opencopilot.src.service.authorization.entities import TokenRequest, TokenResponse
 
 
 def execute(request: TokenRequest) -> TokenResponse:

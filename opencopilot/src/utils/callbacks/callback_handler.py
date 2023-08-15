@@ -7,7 +7,7 @@ import json
 from langchain.callbacks.base import AsyncCallbackHandler
 from langchain.schema import LLMResult
 
-from src.domain.chat.entities import LoadingMessage
+from opencopilot.src.domain.chat.entities import LoadingMessage
 
 
 # TODO If used by two LLM runs in parallel this won't work as expected

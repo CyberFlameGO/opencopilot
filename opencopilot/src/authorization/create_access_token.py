@@ -1,8 +1,8 @@
 import jwt
 import time
 
-import settings
-from src.service import error_responses
+from opencopilot import settings
+from opencopilot.src.service import error_responses
 
 
 def execute(client_id: str, client_secret: str, user_id: str) -> str:

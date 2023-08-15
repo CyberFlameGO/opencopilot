@@ -3,8 +3,8 @@ from typing import Dict, Optional
 import openai
 from langchain.chat_models import ChatOpenAI
 
-import settings
-from src.utils.callbacks.callback_handler import CustomAsyncIteratorCallbackHandler
+from opencopilot import settings
+from opencopilot.src.utils.callbacks.callback_handler import CustomAsyncIteratorCallbackHandler
 
 
 def execute(

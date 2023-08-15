@@ -1,9 +1,9 @@
 from typing import Callable
 
+import uvicorn
 from langchain.schema import Document
 
-
-# from .app import app
+from .app import app
 
 
 class OpenCopilot:
@@ -31,7 +31,7 @@ class OpenCopilot:
 
         print("All Docs:", self.documents)
 
-        # uvicorn.run(app, port=self.api_port)
+        uvicorn.run(app, port=self.api_port)
 
     def data_loader(
             self,

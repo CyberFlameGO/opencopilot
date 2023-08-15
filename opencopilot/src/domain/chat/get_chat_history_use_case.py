@@ -1,6 +1,6 @@
-from logger import api_logger
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
-from src.service.chat.entities import ChatHistoryItem
+from opencopilot.logger import api_logger
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.service.chat.entities import ChatHistoryItem
 
 logger = api_logger.get()
 
