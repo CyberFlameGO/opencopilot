@@ -2,7 +2,7 @@ name: E2E Test Linux Native
 
 on:
   push:
-    branches: [ master, custom-document-store]
+    branches: [ main, reconfigure-ci ]
 
 jobs:
   e2e-test-linux-native:

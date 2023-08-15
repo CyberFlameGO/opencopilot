@@ -2,7 +2,7 @@ name: E2E Test MacOS CLI
 
 on:
   push:
-    branches: [ master, custom-document-store ]
+    branches: [ main, reconfigure-ci ]
 
 jobs:
   e2e-test-macos-cli:
