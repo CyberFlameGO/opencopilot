@@ -29,7 +29,7 @@ LOADERS_MAP = {
 
 
 def execute():
-    if settings.copilot_config.data.loaders:
+    if settings.copilot_config and settings.copilot_config.data.loaders:
         for data_group in settings.copilot_config.data.loaders:
             if loader := LOADERS_MAP.get(data_group):
                 configuration = settings.copilot_config.data.loaders[data_group]

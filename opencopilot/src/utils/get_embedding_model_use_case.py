@@ -9,8 +9,8 @@ from opencopilot.logger import api_logger
 
 logger = api_logger.get()
 
-class CachedOpenAIEmbeddings(OpenAIEmbeddings):
 
+class CachedOpenAIEmbeddings(OpenAIEmbeddings):
     use_local_cache: bool = False
 
     def __init__(self, *args, **kwargs):
@@ -63,8 +63,8 @@ def execute(use_local_cache: bool = False):
     openai_api_base = None
     headers = None
     if settings.HELICONE_API_KEY:
-        openai_api_base=settings.HELICONE_BASE_URL
-        headers= {
+        openai_api_base = settings.HELICONE_BASE_URL
+        headers = {
             "Helicone-Auth": "Bearer " + settings.HELICONE_API_KEY,
             "Helicone-Cache-Enabled": "true",
         }

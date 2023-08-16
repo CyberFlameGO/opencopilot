@@ -103,14 +103,12 @@ async def handle_conversation(
 
     history_repository = ConversationHistoryRepositoryLocal()
     logs_repository = ConversationLogsRepositoryLocal()
-    context_repository = ConversationUserContextRepositoryLocal()
 
     response: ChatResponse = await chat_service.execute(
         request,
         document_store.get_document_store(),
         history_repository,
         logs_repository,
-        context_repository,
     )
     return routing_utils.to_json_response({
         "generated_text": response.message,
@@ -176,7 +174,6 @@ async def handle_conversation_streaming(
 
     history_repository = ConversationHistoryRepositoryLocal()
     logs_repository = ConversationLogsRepositoryLocal()
-    context_repository = ConversationUserContextRepositoryLocal()
 
     headers = {
         'X-Content-Type-Options': 'nosniff',
@@ -188,7 +185,6 @@ async def handle_conversation_streaming(
             document_store.get_document_store(),
             history_repository,
             logs_repository,
-            context_repository,
         ),
         headers=headers,
         media_type="text/event-stream"
