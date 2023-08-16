@@ -1,12 +1,13 @@
 import json
+from datetime import datetime
 from typing import Dict
 from typing import List
 from typing import Optional
 from uuid import UUID
-from datetime import datetime
+
+from langchain.schema import Document
 
 from opencopilot.logger import api_logger
-from langchain.schema import Document
 from opencopilot.src.domain.chat.entities import ChatContextInput
 
 DEFAULT_CONTEXTS_DIR = "conversation_contexts"
@@ -29,7 +30,6 @@ class ConversationUserContextRepositoryLocal:
         except:
             logger.error(f"Error loading conversation context, id: {str(chat_id)}")
         return []
-
 
     def get_context(self, chat_id: UUID) -> List[Dict]:
         context = []
@@ -58,8 +58,8 @@ class ConversationUserContextRepositoryLocal:
             self,
             context_input: ChatContextInput
     ) -> None:
-        #context = self.get_context(context_input.conversation_id)
-        #context.append()
+        # context = self.get_context(context_input.conversation_id)
+        # context.append()
         self._write_file(
             chat_id=context_input.conversation_id,
             data=[
@@ -69,7 +69,6 @@ class ConversationUserContextRepositoryLocal:
                 }
             ],
         )
-
 
     def _get_file_path(self, chat_id: UUID):
         return f"{self.contexts_dir}/{str(chat_id)}.json"

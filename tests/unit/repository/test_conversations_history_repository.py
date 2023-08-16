@@ -2,8 +2,8 @@ import json
 import os
 from uuid import UUID
 
-from src.domain.chat.entities import ChatFeedbackInput
-from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+from opencopilot.src.domain.chat.entities import ChatFeedbackInput
+from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 
 CONVERSATIONS_DIR = "tests/assets/conversations"
 CHAT_ID = UUID("79f88a74-7a67-4336-b601-4cfbcaed55ef")
