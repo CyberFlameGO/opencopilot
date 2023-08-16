@@ -1,8 +1,8 @@
-from src.eval.retrieval import get_confusion_matrix, evaluate_retrieval_single
-from src.eval.entities import RetrievalExample, RetrievalResult, RetrievalSingleEvaluation
-
-
-
+from opencopilot.src.eval.entities import RetrievalExample
+from opencopilot.src.eval.entities import RetrievalResult
+from opencopilot.src.eval.entities import RetrievalSingleEvaluation
+from opencopilot.src.eval.retrieval import evaluate_retrieval_single
+from opencopilot.src.eval.retrieval import get_confusion_matrix
 
 
 def test_get_confusion_matrix_one_relevant():
@@ -14,7 +14,7 @@ def test_get_confusion_matrix_one_relevant():
         documents=[]
     )
     result = get_confusion_matrix(ground_truth, predicted)
-    expected = ([], [], ["A"]) # tp, fp, fn
+    expected = ([], [], ["A"])  # tp, fp, fn
     assert result == expected
 
 
@@ -27,8 +27,9 @@ def test_get_confusion_matrix_one_predicted():
         documents=["A"]
     )
     result = get_confusion_matrix(ground_truth, predicted)
-    expected = ([], ["A"], []) # tp, fp, fn
+    expected = ([], ["A"], [])  # tp, fp, fn
     assert result == expected
+
 
 def test_get_confusion_matrix_all_empty():
     ground_truth = RetrievalExample(
@@ -39,8 +40,9 @@ def test_get_confusion_matrix_all_empty():
         documents=[]
     )
     result = get_confusion_matrix(ground_truth, predicted)
-    expected = ([], [], []) # tp, fp, fn
+    expected = ([], [], [])  # tp, fp, fn
     assert result == expected
+
 
 def test_get_confusion_matrix_all_same():
     ground_truth = RetrievalExample(
@@ -51,8 +53,9 @@ def test_get_confusion_matrix_all_same():
         documents=["A", "B"]
     )
     result = get_confusion_matrix(ground_truth, predicted)
-    expected = (["A", "B"], [], []) # tp, fp, fn
+    expected = (["A", "B"], [], [])  # tp, fp, fn
     assert result == expected
+
 
 def test_get_confusion_matrix_complex():
     ground_truth = RetrievalExample(
@@ -63,8 +66,9 @@ def test_get_confusion_matrix_complex():
         documents=["C", "D", "E"]
     )
     result = get_confusion_matrix(ground_truth, predicted)
-    expected = (["C"], ["D", "E"], ["A", "B"]) # tp, fp, fn
+    expected = (["C"], ["D", "E"], ["A", "B"])  # tp, fp, fn
     assert result == expected
+
 
 def test_evaluate_retrieval_single_nothing_relevant():
     ground_truth = RetrievalExample(
@@ -85,6 +89,7 @@ def test_evaluate_retrieval_single_nothing_relevant():
         recall=1.0
     )
     assert result == expected
+
 
 def test_evaluate_retrieval_single_nothing_predicted():
     ground_truth = RetrievalExample(

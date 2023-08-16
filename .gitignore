@@ -6,9 +6,9 @@ opencopilot/.github
 opencopilot/venv
 opencopilot/htmlcov
 opencopilot/./reports
-opencopilot/tests/reports
-opencopilot/tests/htmlcov
-opencopilot/tests/integration/logger/logs
+tests/reports
+tests/htmlcov
+tests/integration/logger/logs
 opencopilot/.ipynb_checkpoints
 opencopilot/.coverage
 opencopilot/.idea

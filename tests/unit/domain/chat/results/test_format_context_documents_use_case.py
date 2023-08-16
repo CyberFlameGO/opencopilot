@@ -1,6 +1,6 @@
 from langchain.schema import Document
 
-from src.domain.chat.results import format_context_documents_use_case as use_case
+from opencopilot.src.domain.chat.results import format_context_documents_use_case as use_case
 
 
 def test_basic():

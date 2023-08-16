@@ -1,13 +1,14 @@
-import os
+import datetime
 import json
-
+import os
 from unittest.mock import patch
 from uuid import UUID
-import datetime
+
 from langchain.schema import Document
 
-from src.domain.chat.entities import ChatContextInput
-from src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
+from opencopilot.src.domain.chat.entities import ChatContextInput
+from opencopilot.src.repository.conversation_user_context_repository import \
+    ConversationUserContextRepositoryLocal
 
 CONTEXT_DIR = "tests/assets/contexts"
 CHAT_ID = UUID("46eefec7-de17-4836-9575-75f3bee5001b")
@@ -42,6 +43,7 @@ def delete_file():
     except:
         pass
 
+
 def test_get_context_documents():
     repository = ConversationUserContextRepositoryLocal(CONTEXT_DIR)
     result = repository.get_context_documents(CHAT_ID, 3)
@@ -68,7 +70,7 @@ def test_save_context():
     )
     repository = ConversationUserContextRepositoryLocal(CONTEXT_DIR)
     mock_now = datetime.datetime(2023, 7, 10, 12, 27, 5)
-    with patch("src.repository.conversation_user_context_repository.datetime") as mock_datetime:
+    with patch("opencopilot.src.repository.conversation_user_context_repository.datetime") as mock_datetime:
         mock_datetime.now.return_value = mock_now
         repository.save_context(
             context_input
@@ -84,4 +86,3 @@ def test_save_context():
         )
     ]
     assert result == expected
-

@@ -1,9 +1,9 @@
 from unittest.mock import MagicMock
 from uuid import UUID
 
-from src.domain.debug import message_debug_use_case as use_case
-from src.domain.debug.entities import MessageDebugResult
-from src.domain.debug.entities import TextWithTokens
+from opencopilot.src.domain.debug import message_debug_use_case as use_case
+from opencopilot.src.domain.debug.entities import MessageDebugResult
+from opencopilot.src.domain.debug.entities import TextWithTokens
 
 
 def test_success():

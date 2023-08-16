@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from src.domain.chat import get_token_count_use_case as use_case
+from opencopilot.src.domain.chat import get_token_count_use_case as use_case
 
 
 def test_basic():

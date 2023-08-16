@@ -3,7 +3,7 @@ from uuid import UUID
 
 import pytest
 
-import src.domain.chat.validate_urls_use_case as use_case
+import opencopilot.src.domain.chat.validate_urls_use_case as use_case
 
 TEST_UUID = UUID("e69053ac-4ffa-4aeb-8db1-dea5bc7d2b02")
 

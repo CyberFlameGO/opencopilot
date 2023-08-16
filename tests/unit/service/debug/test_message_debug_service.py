@@ -1,11 +1,11 @@
 from unittest.mock import MagicMock
 from uuid import UUID
 
-from src.domain.debug.entities import MessageDebugResult
-from src.domain.debug.entities import TextWithTokens
-from src.service.debug import message_debug_service as service
-from src.service.debug.entities import GetMessageDebugResponse
-from src.service.debug.entities import ValueWithTokens
+from opencopilot.src.domain.debug.entities import MessageDebugResult
+from opencopilot.src.domain.debug.entities import TextWithTokens
+from opencopilot.src.service.debug import message_debug_service as service
+from opencopilot.src.service.debug.entities import GetMessageDebugResponse
+from opencopilot.src.service.debug.entities import ValueWithTokens
 
 
 def setup():

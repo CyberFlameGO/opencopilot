@@ -1,7 +1,7 @@
 import pytest
 from uuid import UUID, uuid4
-from src.service.error_responses import ValidationAPIError
-from src.service.utils import get_uuid
+from opencopilot.src.service.error_responses import ValidationAPIError
+from opencopilot.src.service.utils import get_uuid
 
 
 def test_get_valid_uuid():
