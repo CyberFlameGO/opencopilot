@@ -40,7 +40,7 @@ export const CONFIG: Config = {
       },
     ],
     EMPTY_SCREEN_TITLE: "Hey, I’m Sidekik (Beta) 👋",
-    EMPTY_SCREEN_BODY: "I’m here to help you make your own copilots! This demo is based on [this](https://github.com/nftport/copilot-starter) repository. \n To create your own, follow the README [here](https://github.com/nftport/copilot-starter).",
+    EMPTY_SCREEN_BODY: "I’m here to help you make your own copilots!\n To create your own copilot, follow the README [here](https://github.com/opencopilotdev/opencopilot).",
     FOOTER: "Copilot may produce inaccurate information about people, places, or facts.",
     TAB_TITLE_BASE: "Sidekik Copilot",
     TAB_TITLE_FORMAT: "%s - Sidekik Copilot",
