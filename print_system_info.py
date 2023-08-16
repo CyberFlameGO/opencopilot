@@ -5,20 +5,14 @@ DOCKER_SETTINGS = f"{expanduser('~')}/Library/Group Containers/group.com.docker/
 
 
 def main():
-    print("### Docker Settings")
-    print(_read_file(DOCKER_SETTINGS))
-    print("\n### Docker System DF")
-    os.system('docker system df')
-    print("\n### df -h /var/lib/docker")
-    os.system('df -h /var/lib/docker')
-    print("\n### docker stats --no-stream")
-    os.system('docker stats --no-stream')
-    print("\n### cat docker_logs/output.log")
-    os.system('cat docker_logs/output.log')
-    print("\n### docker logs backend-web-1")
-    os.system('docker logs backend-web-1')
-    print("\n### cat logs/logs.log")
-    os.system('cat logs/logs.log')
+    os.system('echo "### Docker Settings" && '
+              'cat ~/Library/Group\ Containers/group.com.docker/settings.json')
+    os.system('echo "\n### Docker System DF" && docker system df')
+    os.system('echo "\n### df -h /var/lib/docker" && df -h /var/lib/docker')
+    os.system('echo "\n### docker stats --no-stream" && docker stats --no-stream')
+    os.system('echo "\n### cat docker_logs/output.log" && cat docker_logs/output.log')
+    os.system('echo "\n### docker logs backend-web-1" && docker logs backend-web-1')
+    os.system('echo "\n### cat logs/logs.log" && cat logs/logs.log')
 
 
 def _read_file(file_path):
