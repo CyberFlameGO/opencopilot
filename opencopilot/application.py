@@ -3,7 +3,8 @@ from typing import Callable
 import uvicorn
 from langchain.schema import Document
 
-from .app import app
+from . import ingest_data
+from . import settings
 
 
 class OpenCopilot:
@@ -19,7 +20,7 @@ class OpenCopilot:
             max_document_size_mb: int = 50,
             helicone_api_key: str = ""
     ):
-        self.copilot_name = copilot_name
+        settings.init_copilot(copilot_name)
         self.api_port = api_port
         self.data_loaders = []
         self.documents = []
@@ -31,7 +32,12 @@ class OpenCopilot:
 
         print("All Docs:", self.documents)
 
+        from .app import app
         uvicorn.run(app, port=self.api_port)
+
+    def ingest_data(self):
+        print("Ingesting data")
+        ingest_data.execute()
 
     def data_loader(
             self,
