@@ -1,4 +1,6 @@
 import logging
+import os
+
 from opencopilot import settings
 from uuid import UUID
 from pythonjsonlogger import jsonlogger
@@ -24,6 +26,7 @@ def get(agent_id: UUID = None):
 
 
 def get_file_logger() -> logging.FileHandler:
+    os.makedirs(os.path.dirname(settings.LOG_FILE_PATH), exist_ok=True)
     file_handler = logging.FileHandler(settings.LOG_FILE_PATH)
     file_handler.setLevel(logging.DEBUG)
     return file_handler
