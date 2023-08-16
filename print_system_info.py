@@ -9,7 +9,8 @@ def main():
     os.system('echo "\n### docker stats --no-stream" && docker stats --no-stream')
     os.system('echo "\n### cat docker_logs/output.log" && cat docker_logs/output.log')
     os.system('echo "\n### docker logs backend-web-1" && docker logs backend-web-1')
-    os.system('echo "\n### cat logs/logs.log" && cat logs/logs.log')
+    os.system('echo "\n### cat backend/logs/logs-backend-service.log" && '
+              'cat backend/logs/logs-backend-service.log')
 
 
 def _read_file(file_path):
