@@ -36,14 +36,22 @@ MAX_DOCUMENT_SIZE_MB = int(os.getenv("MAX_DOCUMENT_SIZE_MB", 50))
 
 COPILOT_NAME = os.getenv("COPILOT_NAME", "rpm")
 COPILOT_DIRECTORY = f"copilots/{COPILOT_NAME}"
+DATA_DIR = f"{COPILOT_DIRECTORY}/data/"
+copilot_config = OmegaConf.load(f'{COPILOT_DIRECTORY}/config.yaml')
+
+
+def init_copilot(copilot_name: str) -> None:
+    global COPILOT_NAME, COPILOT_DIRECTORY, DATA_DIR, copilot_config
+    COPILOT_NAME = copilot_name
+    COPILOT_DIRECTORY = f"copilots/{COPILOT_NAME}"
+    DATA_DIR = f"{COPILOT_DIRECTORY}/data/"
+    copilot_config = OmegaConf.load(f'{COPILOT_DIRECTORY}/config.yaml')
+
 
 UNITY_COPILOT_URL = os.getenv("UNITY_COPILOT_URL", "")
 FUNCTIONS_MODEL = os.getenv("FUNCTIONS_MODEL", "gpt-4-0613")
 
 PROMPTS_DIRECTORY = f"{COPILOT_DIRECTORY}/prompts/"
-
-
-copilot_config = OmegaConf.load(f'{COPILOT_DIRECTORY}/config.yaml')
 
 
 def _get_prompt_key(key: str) -> Optional[str]:
@@ -67,8 +75,6 @@ def get_max_token_count() -> int:
         return 8192
     return 2048
 
-
-DATA_DIR = f"{COPILOT_DIRECTORY}/data/"
 
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK", "")
 

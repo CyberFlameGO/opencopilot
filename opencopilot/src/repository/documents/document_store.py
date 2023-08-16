@@ -50,9 +50,11 @@ class DocumentStore:
 
     def load_documents(
             self,
-            data_dir=settings.DATA_DIR,
+            data_dir=None,
             is_loading_deprecated=False
     ) -> List[Document]:
+        if not data_dir:
+            data_dir = settings.DATA_DIR
         return document_loader.execute(data_dir, is_loading_deprecated, self.get_text_splitter())
 
     # TODO: Return Base Embeddings Model?
