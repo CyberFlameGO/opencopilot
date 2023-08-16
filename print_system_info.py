@@ -1,7 +1,4 @@
 import os
-from os.path import expanduser
-
-DOCKER_SETTINGS = f"{expanduser('~')}/Library/Group Containers/group.com.docker/settings.json"
 
 
 def main():
