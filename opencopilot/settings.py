@@ -3,8 +3,11 @@ import os
 from pathlib import Path
 from typing import Optional
 from datetime import timedelta
+from typing import Union
 
 from dotenv import load_dotenv
+from omegaconf import DictConfig
+from omegaconf import ListConfig
 from omegaconf import OmegaConf
 
 env_path = Path(".") / ".env"
@@ -34,24 +37,48 @@ MAX_CONTEXT_DOCUMENTS_COUNT: int = 4
 MAX_TOKEN_COUNT: int = 2048
 MAX_DOCUMENT_SIZE_MB = int(os.getenv("MAX_DOCUMENT_SIZE_MB", 50))
 
-COPILOT_NAME = os.getenv("COPILOT_NAME", "rpm")
+COPILOT_NAME = os.getenv("COPILOT_NAME", "default")
 COPILOT_DIRECTORY = f"copilots/{COPILOT_NAME}"
-DATA_DIR = f"{COPILOT_DIRECTORY}/data/"
-copilot_config = OmegaConf.load(f'{COPILOT_DIRECTORY}/config.yaml')
+DATA_DIR: Optional[str] = None
+copilot_config: Union[DictConfig, ListConfig, None] = None
 
 
 def init_copilot(copilot_name: str) -> None:
-    global COPILOT_NAME, COPILOT_DIRECTORY, DATA_DIR, copilot_config
+    global COPILOT_NAME, DATA_DIR, copilot_config
     COPILOT_NAME = copilot_name
-    COPILOT_DIRECTORY = f"copilots/{COPILOT_NAME}"
-    DATA_DIR = f"{COPILOT_DIRECTORY}/data/"
-    copilot_config = OmegaConf.load(f'{COPILOT_DIRECTORY}/config.yaml')
 
 
-UNITY_COPILOT_URL = os.getenv("UNITY_COPILOT_URL", "")
-FUNCTIONS_MODEL = os.getenv("FUNCTIONS_MODEL", "gpt-4-0613")
+def init_data_dir(data_dir: str) -> None:
+    global DATA_DIR
+    DATA_DIR = data_dir if os.path.exists(data_dir) else None
 
-PROMPTS_DIRECTORY = f"{COPILOT_DIRECTORY}/prompts/"
+
+def init_custom_loaders(config_file: str) -> None:
+    global copilot_config
+    try:
+        copilot_config = OmegaConf.load(config_file)
+    except:
+        pass
+
+
+PROMPT_FILE: Optional[str] = None
+
+
+def init_prompt_file_location(file_path: str) -> None:
+    global PROMPT_FILE
+    if os.path.isfile(file_path):
+        PROMPT_FILE = file_path
+
+
+DEFAULT_PROMPT: str = """Your are a Basketball Copilot. You are an expert on basketball.
+
+=========
+{context}
+=========
+
+{history}
+User: {question}
+Copilot answer in Markdown:"""
 
 
 def _get_prompt_key(key: str) -> Optional[str]:
@@ -64,8 +91,8 @@ def _get_prompt_key(key: str) -> Optional[str]:
     return None
 
 
-PROMPT_QUESTION_KEY = _get_prompt_key("question_key") or "Prompt"
-PROMPT_ANSWER_KEY = _get_prompt_key("response_key") or "Response"
+PROMPT_QUESTION_KEY = _get_prompt_key("question_key") or "User"
+PROMPT_ANSWER_KEY = _get_prompt_key("response_key") or "Copilot"
 
 
 def get_max_token_count() -> int:

@@ -27,7 +27,6 @@ opencopilot/conversations/*
 opencopilot/conversation_logs/*
 opencopilot/conversation_contexts/*
 opencopilot/copilot_configurations/*
-opencopilot/copilots/*
 
 frontend/.DS_Store
 frontend/.vscode/

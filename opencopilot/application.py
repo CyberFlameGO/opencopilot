@@ -35,7 +35,16 @@ class OpenCopilot:
         from .app import app
         uvicorn.run(app, port=self.api_port)
 
-    def ingest_data(self):
+    @staticmethod
+    def add_prompt(prompt_file: str) -> None:
+        settings.init_prompt_file_location(prompt_file)
+
+    @staticmethod
+    def add_data_dir(data_dir: str) -> None:
+        settings.init_data_dir(data_dir)
+
+    @staticmethod
+    def ingest_data() -> None:
         print("Ingesting data")
         ingest_data.execute()
 

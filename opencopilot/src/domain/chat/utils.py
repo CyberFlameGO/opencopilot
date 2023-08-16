@@ -3,7 +3,6 @@ from dataclasses import dataclass
 from uuid import UUID
 
 from opencopilot import settings
-from opencopilot.src.domain.chat.entities import UserMessageInput
 from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 
 
@@ -28,33 +27,9 @@ def add_history(
     )
 
 
-def get_system_message(prompt_directory: str = settings.PROMPTS_DIRECTORY) -> str:
-    if prompt_directory != settings.PROMPTS_DIRECTORY:
-        file_path = os.path.join(prompt_directory, "prompt_template.txt")
-    elif settings.UNITY_COPILOT_URL:
-        file_path = os.path.join(settings.PROMPTS_DIRECTORY, "prompt_template_with_unity.txt")
-    else:
-        file_path = os.path.join(prompt_directory, "prompt_template.txt")
-
-    with open(file_path, "r") as f:
-        return f.read()
-
-
-def get_function_system_message() -> str:
-    file_path = os.path.join(settings.PROMPTS_DIRECTORY, "prompt_template_unity_function.txt")
-
-    with open(file_path, "r") as f:
-        return f.read()
-
-
-def get_unity_communication_prompt(domain_input: UserMessageInput,
-                                   history_repository: ConversationHistoryRepositoryLocal):
-    if settings.UNITY_COPILOT_URL:
-        unity_history: History = add_history(
-            get_function_system_message(),
-            domain_input.chat_id,
-            history_repository,
-        )
-        return unity_history.template_with_history.replace('{question}', domain_input.message, 1)
-
-    return None
+def get_system_message() -> str:
+    try:
+        with open(settings.PROMPT_FILE, "r") as f:
+            return f.read()
+    except:
+        return settings.DEFAULT_PROMPT

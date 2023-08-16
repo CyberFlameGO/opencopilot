@@ -18,6 +18,32 @@ logger = api_logger.get()
 class DocumentStore:
     document_embed_model = "text-embedding-ada-002"
     document_chunk_size = 2000
+
+    def scrape_documents(self):
+        pass
+
+    def load_documents(self, data_dir=None, is_loading_deprecated=False) -> List[Document]:
+        return []
+
+    def get_embeddings_model(self) -> CachedOpenAIEmbeddings:
+        return get_embedding_model_use_case.execute(use_local_cache=True)
+
+    def get_text_splitter(self) -> TextSplitter:
+        return CharacterTextSplitter.from_tiktoken_encoder(
+            chunk_size=self.document_chunk_size,
+            model_name=self.document_embed_model,
+            separator=" ",
+            disallowed_special=(),
+        )
+
+    def ingest_data(self):
+        pass
+
+    def find(self, query: str, **kwargs) -> List[Document]:
+        return []
+
+
+class WeaviateDocumentStore(DocumentStore):
     ingest_batch_size = 100
 
     weaviate_index_name = "LangChain"  # TODO: Weaviate specific?
@@ -57,18 +83,6 @@ class DocumentStore:
             data_dir = settings.DATA_DIR
         return document_loader.execute(data_dir, is_loading_deprecated, self.get_text_splitter())
 
-    # TODO: Return Base Embeddings Model?
-    def get_embeddings_model(self) -> CachedOpenAIEmbeddings:
-        return get_embedding_model_use_case.execute(use_local_cache=True)
-
-    def get_text_splitter(self) -> TextSplitter:
-        return CharacterTextSplitter.from_tiktoken_encoder(
-            chunk_size=self.document_chunk_size,
-            model_name=self.document_embed_model,
-            separator=" ",
-            disallowed_special=(),
-        )
-
     def ingest_data(self):
         batch_size = self.ingest_batch_size
         documents = self.load_documents()
@@ -91,12 +105,19 @@ class DocumentStore:
         return documents[:k]
 
 
+class EmptyDocumentStore(DocumentStore):
+    pass
+
+
 DOCUMENT_STORE = Optional[DocumentStore]
 
 
 def init_document_store():
     global DOCUMENT_STORE
-    DOCUMENT_STORE = DocumentStore()
+    if settings.DATA_DIR:
+        DOCUMENT_STORE = WeaviateDocumentStore()
+    else:
+        DOCUMENT_STORE = EmptyDocumentStore()
 
 
 def get_document_store() -> DocumentStore:

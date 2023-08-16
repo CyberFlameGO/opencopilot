@@ -22,6 +22,8 @@ def execute(
         text_splitter=None
 ) -> List[Document]:
     files = []
+    if not data_dir or not os.path.isdir(data_dir):
+        return []
     ignore_files = ['.DS_Store']
     for (dir_path, dir_names, file_names) in os.walk(data_dir):
         for file_name in file_names:

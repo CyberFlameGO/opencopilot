@@ -3,7 +3,6 @@ import json
 from datetime import datetime
 from typing import AsyncGenerator
 from typing import List
-from typing import Optional
 
 from langchain.schema import Document
 
@@ -15,10 +14,8 @@ from opencopilot.src.domain.chat.entities import StreamingChunk
 from opencopilot.src.domain.chat.entities import UserMessageInput
 from opencopilot.src.domain.chat.results import get_gpt_result_use_case
 from opencopilot.src.domain.chat.utils import get_system_message
-from opencopilot.src.domain.chat.utils import get_unity_communication_prompt
 from opencopilot.src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
-from opencopilot.src.repository.conversation_user_context_repository import ConversationUserContextRepositoryLocal
 from opencopilot.src.repository.documents.document_store import DocumentStore
 from opencopilot.src.utils.callbacks.callback_handler import CustomAsyncIteratorCallbackHandler
 
@@ -30,7 +27,6 @@ async def execute(
         document_store: DocumentStore,
         history_repository: ConversationHistoryRepositoryLocal,
         logs_repository: ConversationLogsRepositoryLocal,
-        context_repository: Optional[ConversationUserContextRepositoryLocal] = None,
 ) -> AsyncGenerator[StreamingChunk, None]:
     system_message = get_system_message()
 
@@ -43,7 +39,6 @@ async def execute(
 
     callback = CustomAsyncIteratorCallbackHandler()
 
-    unity_communication_prompt = get_unity_communication_prompt(domain_input, history_repository)
     task = asyncio.create_task(
         get_gpt_result_use_case.execute(
             domain_input,
@@ -51,9 +46,7 @@ async def execute(
             context,
             logs_repository=logs_repository,
             history_repository=history_repository,
-            context_repository=context_repository,
             callback=callback,
-            unity_communication_prompt=unity_communication_prompt,
         )
     )
 
