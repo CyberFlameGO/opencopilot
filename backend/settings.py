@@ -30,7 +30,7 @@ assert OPENAI_API_KEY, "OPEN_AI_API_KEY must be set."
 CONVERSATIONS_DIR: str = "conversations"
 # Configure based on model?
 PROMPT_HISTORY_INCLUDED_COUNT: int = 4
-MAX_CONTEXT_DOCUMENTS_COUNT: int = 4
+MAX_CONTEXT_DOCUMENTS_COUNT: int = 2
 MAX_TOKEN_COUNT: int = 2048
 MAX_DOCUMENT_SIZE_MB = int(os.getenv("MAX_DOCUMENT_SIZE_MB", 50))
 

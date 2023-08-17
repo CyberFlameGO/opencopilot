@@ -17,7 +17,7 @@ logger = api_logger.get()
 
 class DocumentStore:
     document_embed_model = "text-embedding-ada-002"
-    document_chunk_size = 2000
+    document_chunk_size = 1000
     ingest_batch_size = 100
 
     weaviate_index_name = "LangChain"  # TODO: Weaviate specific?
