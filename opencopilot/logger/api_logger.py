@@ -1,5 +1,6 @@
 import logging
 import os
+from typing import Optional
 
 from opencopilot import settings
 from uuid import UUID
@@ -7,8 +8,13 @@ from pythonjsonlogger import jsonlogger
 
 LOGGING_MESSAGE_FORMAT = "%(asctime)s %(name)-12s %(levelname)s %(message)s"
 
+logger: Optional[any] = None
+
 
 def get(agent_id: UUID = None):
+    global logger
+    if logger:
+        return logger
     name = settings.APPLICATION_NAME
     file_handler = get_file_logger()
     console_handler = get_console_logger()

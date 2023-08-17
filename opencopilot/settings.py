@@ -21,14 +21,20 @@ APPLICATION_NAME = os.getenv("APPLICATION_NAME", "backend-service")
 LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "../logs/logs-backend-service.log")
 
 WEAVIATE_URL = os.getenv("WEAVIATE_URL", "")
-assert WEAVIATE_URL
 WEAVIATE_READ_TIMEOUT = int(os.getenv("WEAVIATE_READ_TIMEOUT", 120))
 
 MODEL = os.getenv("MODEL", "gpt-3.5-turbo-16k")
 assert MODEL in ["gpt-3.5-turbo-16k", "gpt-4"], 'Model must be "gpt-3.5-turbo-16k" or "gpt-4".'
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+
+
+def set_openai_api_key(api_key: str):
+    global OPENAI_API_KEY
+    os.environ["OPENAI_API_KEY"] = api_key
+    OPENAI_API_KEY = api_key
+
+
 MODEL_URL = os.getenv("MODEL_URL", "")
-assert OPENAI_API_KEY, "OPEN_AI_API_KEY must be set."
 
 CONVERSATIONS_DIR: str = "conversations"
 # Configure based on model?

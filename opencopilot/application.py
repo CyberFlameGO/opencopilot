@@ -1,4 +1,6 @@
+import os
 from typing import Callable
+from typing import Optional
 
 import uvicorn
 from langchain.schema import Document
@@ -11,6 +13,7 @@ class OpenCopilot:
 
     def __init__(
             self,
+            openai_api_key: Optional[str] = None,
             copilot_name: str = "default",
             api_base_url: str = "http://127.0.0.1/",
             api_port: int = 3000,
@@ -20,7 +23,13 @@ class OpenCopilot:
             max_document_size_mb: int = 50,
             helicone_api_key: str = ""
     ):
+        if not openai_api_key:
+            openai_api_key = os.getenv("OPENAI_API_KEY")
+        assert openai_api_key, "OPENAI_API_KEY must be passed to OpenCopilot or be set in the environment."
+        settings.set_openai_api_key(openai_api_key)
+
         settings.init_copilot(copilot_name)
+        settings.WEAVIATE_URL = weaviate_url
         self.api_port = api_port
         self.data_loaders = []
         self.documents = []
