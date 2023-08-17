@@ -90,3 +90,10 @@ if AUTH_TYPE == "none" or AUTH_TYPE == "None" or AUTH_TYPE.strip() == "":
 JWT_CLIENT_ID: str = os.getenv("JWT_CLIENT_ID", "")
 JWT_CLIENT_SECRET: str = os.getenv("JWT_CLIENT_SECRET", "")
 JWT_TOKEN_EXPIRATION_SECONDS: int = int(os.getenv("JWT_TOKEN_EXPIRATION_SECONDS", timedelta(days=1).total_seconds()))
+
+RETRIEVAL_PROMPT_TEMPLATE = """Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.
+
+Chat History:
+{chat_history}
+Follow Up Input: {question}
+Standalone question:"""

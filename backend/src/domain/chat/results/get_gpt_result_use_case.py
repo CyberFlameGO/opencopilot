@@ -18,7 +18,7 @@ from langchain.schema import HumanMessage
 import settings
 from logger import api_logger
 from src.domain.chat import get_token_count_use_case
-from src.domain.chat import utils
+from src.domain.chat.utils import History
 from src.domain.chat.entities import LoadingMessage
 from src.domain.chat.entities import UserMessageInput
 from src.domain.chat.results import format_context_documents_use_case
@@ -37,18 +37,12 @@ async def execute(
         system_message: str,
         context: List[Document],
         logs_repository: ConversationLogsRepositoryLocal,
-        history_repository: ConversationHistoryRepositoryLocal,
+        history: History,
         context_repository: Optional[ConversationUserContextRepositoryLocal] = None,
         callback: CustomAsyncIteratorCallbackHandler = None,
         unity_communication_prompt: str = None,
 ) -> str:
     llm = get_llm.execute(domain_input.email, callback)
-
-    history = utils.add_history(
-        system_message,
-        domain_input.chat_id,
-        history_repository,
-    )
     logs_repository.log_history(
         domain_input.chat_id,
         domain_input.message,

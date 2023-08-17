@@ -18,7 +18,9 @@ def execute(
         model_name=settings.MODEL,
         streaming=callback is not None,
         callbacks=[callback] if callback is not None else None,
-        headers=_get_headers(email)
+        model_kwargs= {
+            "headers": _get_headers(email)
+        }
     )
     return llm
 
@@ -29,6 +31,7 @@ def _get_headers(email: str = None) -> Optional[Dict]:
             email = ""
         return {
             "Helicone-Auth": "Bearer " + settings.HELICONE_API_KEY,
-            "Helicone-User-Id": email
+            "Helicone-User-Id": email,
+            "Helicone-Cache-Enabled": "true",
         }
     return None

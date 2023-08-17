@@ -15,6 +15,8 @@ from src.domain.chat.entities import StreamingChunk
 from src.domain.chat.entities import UserMessageInput
 from src.domain.chat.results import get_gpt_result_use_case
 from src.domain.chat.utils import get_system_message
+from src.domain.chat.utils import add_history
+from src.domain.chat.utils import get_context_query
 from src.domain.chat.utils import get_unity_communication_prompt
 from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
 from src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
@@ -33,9 +35,14 @@ async def execute(
         context_repository: Optional[ConversationUserContextRepositoryLocal] = None,
 ) -> AsyncGenerator[StreamingChunk, None]:
     system_message = get_system_message()
-
+    history = add_history(
+        system_message,
+        domain_input.chat_id,
+        history_repository,
+    )
+    context_query = get_context_query(domain_input.message, history)
     context = _get_context(
-        domain_input,
+        context_query,
         system_message,
         document_store
     )
@@ -50,7 +57,7 @@ async def execute(
             system_message,
             context,
             logs_repository=logs_repository,
-            history_repository=history_repository,
+            history=history,
             context_repository=context_repository,
             callback=callback,
             unity_communication_prompt=unity_communication_prompt,
@@ -100,7 +107,7 @@ async def execute(
 
 
 def _get_context(
-        domain_input: UserMessageInput,
+        query: str,
         system_message: str,
         document_store: DocumentStore
 ) -> List[Document]:
@@ -110,7 +117,7 @@ def _get_context(
         context = []
         context.extend(
             document_store.find(
-                domain_input.message,
+                query,
                 k=settings.MAX_CONTEXT_DOCUMENTS_COUNT - len(context)
             )
         )

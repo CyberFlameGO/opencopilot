@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass
 from uuid import UUID
+from langchain.chat_models import ChatOpenAI
 
 import settings
 from src.domain.chat.entities import UserMessageInput
@@ -58,3 +59,13 @@ def get_unity_communication_prompt(domain_input: UserMessageInput,
         return unity_history.template_with_history.replace('{question}', domain_input.message, 1)
 
     return None
+
+def get_context_query(query: str, history: History) -> str:
+    if history.formatted_history:
+        try:
+            llm = ChatOpenAI(model_name="gpt-3.5-turbo-16k")
+            prompt = settings.RETRIEVAL_PROMPT_TEMPLATE.format(chat_history=history.formatted_history, question=query)
+            query = llm.predict(prompt)
+        except:
+            pass
+    return query
