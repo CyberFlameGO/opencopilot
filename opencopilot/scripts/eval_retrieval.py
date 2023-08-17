@@ -130,7 +130,7 @@ def _log_wandb(summary_evaluation: RetrievalSummaryEvaluation):
 
 
 def main(dataset_path: str, draw_curve: bool, output_path: str = None, limit: int = None):
-    document_store.init_document_store()
+    # TODO: document_store.init_document_store()
     if draw_curve:
         _draw_curve(dataset_path, limit=limit)
     else:

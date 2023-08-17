@@ -28,6 +28,7 @@ async def execute(
         history_repository,
         logs_repository=logs_repository,
     )
+    print("\nDomain Response:", domain_response)
     return ChatResponse(
         response="OK",
         chat_id=str(chat_id),

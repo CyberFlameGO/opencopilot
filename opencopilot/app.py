@@ -102,7 +102,7 @@ app.add_exception_handler(Exception, custom_exception_handler)
 # Overrides default Pydantic request validation errors
 # app.add_exception_handler(RequestValidationError, validation_exception_handler)
 
-document_store.init_document_store()
+# TODO: document_store.init_document_store()
 
 
 def get_api_info() -> ApiInfo:

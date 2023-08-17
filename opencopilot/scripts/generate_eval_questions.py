@@ -52,7 +52,7 @@ class DocumentQueries:
 def main(dataset_path: str) -> None:
     print("question generation starting!")
     llm = ChatOpenAI(temperature=0.3, model_name="gpt-4")
-    document_store.init_document_store()
+    # TODO: document_store.init_document_store()
     store = document_store.get_document_store()
     documents = store.load_documents()
     generated_questions = []
