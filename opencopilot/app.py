@@ -70,13 +70,13 @@ def custom_openapi():
 
 def _get_servers():
     servers = []
-    if settings.is_production():
+    if settings.get().is_production():
         pass
     else:
-        base_url = settings.API_BASE_URL
+        base_url = settings.get().API_BASE_URL
         if base_url.endswith("/"):
             base_url = base_url[:-1]
-        servers.append({"url": f"{base_url}:{settings.API_PORT}"})
+        servers.append({"url": f"{base_url}:{settings.get().API_PORT}"})
     return servers
 
 
@@ -85,7 +85,7 @@ app.openapi = custom_openapi
 # order of middleware matters! first middleware called is the last one added
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=settings.get().ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -119,6 +119,6 @@ def get_api_info() -> ApiInfo:
     description="Returns API information",
     response_description="API information with title, description and version.",
     response_model=ApiInfo,
-    include_in_schema=not settings.is_production())
+    include_in_schema=not settings.get().is_production())
 def root():
     return routing_utils.to_json_response(get_api_info().dict())

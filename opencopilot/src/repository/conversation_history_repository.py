@@ -12,21 +12,18 @@ DEFAULT_CONVERSATIONS_DIR = "conversations"
 
 logger = api_logger.get()
 
-QUESTION_KEY = f"{settings.PROMPT_QUESTION_KEY}"
-RESPONSE_KEY = f"{settings.PROMPT_ANSWER_KEY}"
-
 
 class ConversationHistoryRepositoryLocal:
 
     def __init__(
             self,
             conversations_dir: str = DEFAULT_CONVERSATIONS_DIR,
-            question_key: str = QUESTION_KEY,
-            response_key: str = RESPONSE_KEY,
+            question_key: str = "",
+            response_key: str = "",
     ):
         self.conversations_dir = conversations_dir
-        self.question_key = question_key
-        self.response_key = response_key
+        self.question_key = question_key or settings.get().PROMPT_QUESTION_KEY
+        self.response_key = response_key or settings.get().PROMPT_ANSWER_KEY
 
     def get_prompt_history(self, chat_id: UUID, count: Optional[int]) -> str:
         try:

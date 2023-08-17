@@ -1,5 +1,8 @@
 import pytest
 from unittest.mock import patch
+
+from opencopilot import settings
+from opencopilot.settings import Settings
 from opencopilot.src.service import error_responses
 import opencopilot.src.authorization.validate_api_key_use_case as use_case
 
@@ -29,10 +32,39 @@ async def test_execute_bearer_api_key(mock_validate_jwt, mock_settings):
     assert result == "sub_value"
 
 
-@patch("opencopilot.src.authorization.validate_api_key_use_case.settings")
+@patch("opencopilot.src.authorization.validate_api_key_use_case.settings.get")
 @patch("opencopilot.src.authorization.validate_api_key_use_case.jwt")
 @pytest.mark.asyncio
 async def test_validate_jwt_success(mock_jwt, mock_settings):
+    settings.get.return_value = Settings(
+        COPILOT_NAME="unit_tests",
+        API_PORT=3000,
+        API_BASE_URL="http://localhost:3000/",
+        ENVIRONMENT="test",
+        ALLOWED_ORIGINS="*",
+        APPLICATION_NAME="unit_tests_app",
+        LOG_FILE_PATH="mock",
+
+        WEAVIATE_URL="mock_url",
+        WEAVIATE_READ_TIMEOUT=120,
+
+        MODEL="gpt-4",
+
+        OPENAI_API_KEY="None",
+
+        MAX_DOCUMENT_SIZE_MB=1,
+
+        SLACK_WEBHOOK="",
+
+        AUTH_TYPE=None,
+        API_KEY="",
+
+        JWT_CLIENT_ID="",
+        JWT_CLIENT_SECRET="secret",
+        JWT_TOKEN_EXPIRATION_SECONDS=3600,
+
+        HELICONE_API_KEY=""
+    )
     mock_settings.JWT_CLIENT_SECRET = "secret"
     mock_jwt.decode.return_value = {"sub": "sub_value"}
     result = await use_case._validate_jwt("valid_payload")

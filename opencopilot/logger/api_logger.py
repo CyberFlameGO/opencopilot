@@ -15,7 +15,7 @@ def get(agent_id: UUID = None):
     global logger
     if logger:
         return logger
-    name = settings.APPLICATION_NAME
+    name = settings.get().APPLICATION_NAME
     file_handler = get_file_logger()
     console_handler = get_console_logger()
     logger = logging.getLogger(name)
@@ -32,8 +32,8 @@ def get(agent_id: UUID = None):
 
 
 def get_file_logger() -> logging.FileHandler:
-    os.makedirs(os.path.dirname(settings.LOG_FILE_PATH), exist_ok=True)
-    file_handler = logging.FileHandler(settings.LOG_FILE_PATH)
+    os.makedirs(os.path.dirname(settings.get().LOG_FILE_PATH), exist_ok=True)
+    file_handler = logging.FileHandler(settings.get().LOG_FILE_PATH)
     file_handler.setLevel(logging.DEBUG)
     return file_handler
 

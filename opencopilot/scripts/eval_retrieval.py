@@ -151,7 +151,7 @@ def main(dataset_path: str, draw_curve: bool, output_path: str = None, limit: in
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--dataset_path", type=str, default=f"../copilots/{settings.COPILOT_NAME}/eval_data/retrieval_human.json"
+        "--dataset_path", type=str, default=f"../copilots/{settings.get().COPILOT_NAME}/eval_data/retrieval_human.json"
     )
     parser.add_argument(
         "-n", "--num_examples", type=int, default=None, help="Limit how many examples are evaluated from dataset. Default: all examples used."

@@ -104,7 +104,7 @@ def _parse_questions(
 
 
 if __name__ == "__main__":
-    assert settings.OPENAI_API_KEY, "OpenAI API key needs to be present"
+    assert settings.get().OPENAI_API_KEY, "OpenAI API key needs to be present"
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--dataset_path",

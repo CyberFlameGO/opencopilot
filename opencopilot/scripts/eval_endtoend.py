@@ -55,10 +55,10 @@ def _print_metrics(evaluations: EndToEndSummaryEvaluation) -> None:
 
 def _get_api_url() -> str:
     global url
-    base_url = settings.API_BASE_URL
+    base_url = settings.get().API_BASE_URL
     if base_url.endswith("/"):
         base_url = base_url[:-1]
-    return f"{base_url}:{settings.API_PORT}"
+    return f"{base_url}:{settings.get().API_PORT}"
 
 
 def _is_backend_running(api_url: str) -> bool:
@@ -118,7 +118,7 @@ if __name__ == "__main__":
         "--dataset_path",
         type=str,
         required=False,
-        default=f"../copilots/{settings.COPILOT_NAME}/eval_data/endtoend_human.json",
+        default=f"../copilots/{settings.get().COPILOT_NAME}/eval_data/endtoend_human.json",
     )
     parser.add_argument(
         "-n",
@@ -140,5 +140,5 @@ if __name__ == "__main__":
     url: str = _get_api_url()
     assert _is_backend_running(url), "Backend not running."
 
-    assert settings.OPENAI_API_KEY, "OpenAI API key needs to be present"
+    assert settings.get().OPENAI_API_KEY, "OpenAI API key needs to be present"
     main(args.dataset_path, url, args.wandb, limit=args.num_examples)

@@ -31,7 +31,7 @@ for router_to_include in routers_to_include:
 
 def _add_custom_endpoints():
     try:
-        module_package = os.path.abspath(settings.COPILOT_DIRECTORY)
+        module_package = os.path.abspath(settings.get().COPILOT_DIRECTORY)
         module_path = "custom_endpoints"
         sys.path.append(module_package)
         custom_endpoints_module = importlib.import_module(module_path, package=module_package)

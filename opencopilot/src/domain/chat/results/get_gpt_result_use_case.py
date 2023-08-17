@@ -100,7 +100,7 @@ def _get_context(
         context = format_context_documents_use_case.execute(documents)
         token_count = get_token_count_use_case.execute(context, llm)
         # Naive solution: leaving 25% for non-context in prompt
-        if token_count < (settings.get_max_token_count() * 0.75):
+        if token_count < (settings.get().get_max_token_count() * 0.75):
             return context, len(documents)
         documents = documents[:-1]
     return "", 0
@@ -126,7 +126,7 @@ def _get_prompt_text(
             "question": domain_input.message
         }).to_string()
 
-        if get_token_count_use_case.execute(prompt_text, llm) > settings.get_max_token_count():
+        if get_token_count_use_case.execute(prompt_text, llm) > settings.get().get_max_token_count():
             prompt_text = ""
         logs_repository.log_context(
             domain_input.chat_id,

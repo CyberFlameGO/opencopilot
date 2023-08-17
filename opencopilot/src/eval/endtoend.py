@@ -58,7 +58,7 @@ def evaluate_endtoend_single(
     llm = ChatOpenAI(temperature=0, model_name="gpt-4")
 
     # patch it for context token limit - TODO is this still needed?
-    settings.MODEL = "gpt-4"
+    settings.get().MODEL = "gpt-4"
 
     eval_chain = QAEvalChain.from_llm(llm=llm, prompt=PROMPT)
     eval_example = {"query": example.query, "answer": example.answer}

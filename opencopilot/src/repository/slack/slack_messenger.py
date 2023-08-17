@@ -5,7 +5,6 @@ import requests
 from opencopilot import settings
 from opencopilot.logger import api_logger
 
-url = settings.SLACK_WEBHOOK
 HEADERS = {
     "Content-type": "application/json"
 }
@@ -18,6 +17,7 @@ def post_error(error_type: str, error: str):
 
 
 def _post_message(error_description: str, error: str):
+    url = settings.get().SLACK_WEBHOOK
     if url is None or url == "":
         logger.error(f"Slack notification would be sent: {error_description} - {error}")
         return

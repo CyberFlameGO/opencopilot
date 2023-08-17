@@ -17,9 +17,9 @@ def add_history(
         chat_id: UUID,
         history_repository: ConversationHistoryRepositoryLocal,
 ) -> History:
-    os.makedirs(settings.CONVERSATIONS_DIR, exist_ok=True)
+    os.makedirs(settings.get().CONVERSATIONS_DIR, exist_ok=True)
     history = history_repository.get_prompt_history(
-        chat_id, settings.PROMPT_HISTORY_INCLUDED_COUNT)
+        chat_id, settings.get().PROMPT_HISTORY_INCLUDED_COUNT)
     history = history.replace("{", "{{").replace("}", "}}")
     return History(
         template_with_history=template.replace("{history}", history, 1),
@@ -29,7 +29,7 @@ def add_history(
 
 def get_system_message() -> str:
     try:
-        with open(settings.PROMPT_FILE, "r") as f:
+        with open(settings.get().PROMPT_FILE, "r") as f:
             return f.read()
     except:
-        return settings.DEFAULT_PROMPT
+        return settings.get().DEFAULT_PROMPT

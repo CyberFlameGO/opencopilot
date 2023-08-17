@@ -11,11 +11,11 @@ def execute(
         email: str = None,
         callback: CustomAsyncIteratorCallbackHandler = None,
 ) -> ChatOpenAI:
-    if settings.HELICONE_API_KEY:
-        openai.api_base = settings.HELICONE_BASE_URL
+    if settings.get().HELICONE_API_KEY:
+        openai.api_base = settings.get().HELICONE_BASE_URL
     llm = ChatOpenAI(
         temperature=0.0,
-        model_name=settings.MODEL,
+        model_name=settings.get().MODEL,
         streaming=callback is not None,
         callbacks=[callback] if callback is not None else None,
         headers=_get_headers(email)
@@ -24,11 +24,11 @@ def execute(
 
 
 def _get_headers(email: str = None) -> Optional[Dict]:
-    if settings.HELICONE_API_KEY:
+    if settings.get().HELICONE_API_KEY:
         if email is None:
             email = ""
         return {
-            "Helicone-Auth": "Bearer " + settings.HELICONE_API_KEY,
+            "Helicone-Auth": "Bearer " + settings.get().HELICONE_API_KEY,
             "Helicone-User-Id": email
         }
     return None

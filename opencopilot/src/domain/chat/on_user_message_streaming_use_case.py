@@ -104,7 +104,7 @@ def _get_context(
         context.extend(
             document_store.find(
                 domain_input.message,
-                k=settings.MAX_CONTEXT_DOCUMENTS_COUNT - len(context)
+                k=settings.get().MAX_CONTEXT_DOCUMENTS_COUNT - len(context)
             )
         )
     return context
