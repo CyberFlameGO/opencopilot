@@ -1,9 +1,9 @@
-name: Unit tests
+name: Test setup
 
 on: [ push ]
 
 jobs:
-  unit-tests:
+  test-setup:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
