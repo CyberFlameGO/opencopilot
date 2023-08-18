@@ -27,7 +27,6 @@ setup(
         'pypdf',
         'unstructured',
         'pdf2image',
-        'sentence_transformers',
         'beautifulsoup4',
         'openai',
         'unstructured',
