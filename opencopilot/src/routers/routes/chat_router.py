@@ -159,7 +159,7 @@ async def post_context(
     tags=[TAG]
 )
 async def handle_conversation_streaming(
-        email: str | None = Header(default=None),
+        email: Optional[str] = Header(default=None),
         conversation_id: str = Path(..., description="The ID of the conversation."),
         payload: ConversationInput = Body(...,
                                           description="Input and parameters for the conversation."),
