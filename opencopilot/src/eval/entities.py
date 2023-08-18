@@ -1,9 +1,7 @@
 from dataclasses import dataclass
-from dataclasses_json import dataclass_json
-from typing import List, TypeAlias
+from typing import List
 
-# Define Document ID explicitly; it is currently just a URL string, but may in future be something more structured.
-DocumentID: TypeAlias = str
+from dataclasses_json import dataclass_json
 
 
 @dataclass_json
@@ -12,7 +10,7 @@ class RetrievalExample:
     # User query
     query: str
     # Relevant documents
-    documents: List[DocumentID]
+    documents: List[str]
 
 
 @dataclass_json
@@ -25,7 +23,7 @@ class RetrievalDataset:
 @dataclass(frozen=True)
 class RetrievalResult:
     # Returned documents
-    documents: List[DocumentID]
+    documents: List[str]
 
 
 @dataclass_json
@@ -33,9 +31,9 @@ class RetrievalResult:
 class RetrievalSingleEvaluation:
     example: RetrievalExample
     result: RetrievalResult
-    true_positives: List[DocumentID]
-    false_positives: List[DocumentID]
-    false_negatives: List[DocumentID]
+    true_positives: List[str]
+    false_positives: List[str]
+    false_negatives: List[str]
     precision: float
     recall: float
 
@@ -48,18 +46,19 @@ class RetrievalSummaryEvaluation:
     average_recall: float
 
 
-
 @dataclass_json
 @dataclass(frozen=True)
 class EndToEndExample:
     query: str
     answer: str
 
+
 @dataclass_json
 @dataclass(frozen=True)
 class EndToEndResult:
     answer: str
-    documents: List[DocumentID]
+    documents: List[str]
+
 
 @dataclass_json
 @dataclass(frozen=True)
