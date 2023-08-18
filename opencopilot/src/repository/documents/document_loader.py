@@ -82,7 +82,6 @@ def execute(
             new_documents = loader.load()
         else:
             try:
-                print("UnstructuredFileLoader, file_path:", file_path)
                 loader = UnstructuredFileLoader(file_path)
                 new_documents = loader.load()
             except Exception as e:

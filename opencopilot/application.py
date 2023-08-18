@@ -9,8 +9,6 @@ from langchain.schema import Document
 
 from . import settings
 from .settings import Settings
-from .src.repository.documents import document_loader, document_store
-from .src.repository.documents.document_store import WeaviateDocumentStore, EmptyDocumentStore
 
 
 class OpenCopilot:
@@ -71,6 +69,10 @@ class OpenCopilot:
         self.documents = []
 
     def __call__(self, *args, **kwargs):
+        from .src.repository.documents import document_loader
+        from .src.repository.documents import document_store
+        from .src.repository.documents.document_store import WeaviateDocumentStore
+        from .src.repository.documents.document_store import EmptyDocumentStore
         print("__call__")
         print(" - data_loaders:", self.data_loaders)
         print(" - local_files_dirs:", self.local_files_dirs)
