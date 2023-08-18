@@ -2,10 +2,14 @@ import os
 from dataclasses import dataclass
 from uuid import UUID
 from langchain.chat_models import ChatOpenAI
+from langchain.callbacks import get_openai_callback
 
 import settings
+from logger import api_logger
 from src.domain.chat.entities import UserMessageInput
 from src.repository.conversation_history_repository import ConversationHistoryRepositoryLocal
+
+logger = api_logger.get()
 
 
 @dataclass(frozen=True)
@@ -63,9 +67,13 @@ def get_unity_communication_prompt(domain_input: UserMessageInput,
 def get_context_query(query: str, history: History) -> str:
     if history.formatted_history:
         try:
-            llm = ChatOpenAI(model_name="gpt-3.5-turbo-16k")
             prompt = settings.RETRIEVAL_PROMPT_TEMPLATE.format(chat_history=history.formatted_history, question=query)
-            query = llm.predict(prompt)
+            logger.info(f"PROMPT {prompt}")
+            with get_openai_callback() as cb:
+                llm = ChatOpenAI(model_name="gpt-3.5-turbo-16k")
+                query = llm.predict(prompt)
+            logger.info(cb)
         except:
             pass
+    logger.info(f"RETRIEVAL QUERY {query}")
     return query

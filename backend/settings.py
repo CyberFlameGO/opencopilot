@@ -30,7 +30,7 @@ assert OPENAI_API_KEY, "OPEN_AI_API_KEY must be set."
 CONVERSATIONS_DIR: str = "conversations"
 # Configure based on model?
 PROMPT_HISTORY_INCLUDED_COUNT: int = 4
-MAX_CONTEXT_DOCUMENTS_COUNT: int = 4
+MAX_CONTEXT_DOCUMENTS_COUNT: int = 2
 MAX_TOKEN_COUNT: int = 2048
 MAX_DOCUMENT_SIZE_MB = int(os.getenv("MAX_DOCUMENT_SIZE_MB", 50))
 
@@ -91,9 +91,13 @@ JWT_CLIENT_ID: str = os.getenv("JWT_CLIENT_ID", "")
 JWT_CLIENT_SECRET: str = os.getenv("JWT_CLIENT_SECRET", "")
 JWT_TOKEN_EXPIRATION_SECONDS: int = int(os.getenv("JWT_TOKEN_EXPIRATION_SECONDS", timedelta(days=1).total_seconds()))
 
-RETRIEVAL_PROMPT_TEMPLATE = """Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.
+RETRIEVAL_PROMPT_TEMPLATE = """Given the following conversation and a Follow Up Input, rephrase the Follow Up Input to be a standalone question.
+If it is not a question, say NOT_A_QUESTION.
 
 Chat History:
 {chat_history}
 Follow Up Input: {question}
 Standalone question:"""
+
+# set this to 1.0 in .env file to keep all the retrieved documents
+RETRIEVAL_DISTANCE_THRESHOLD = float(os.getenv("RETRIEVAL_DISTANCE_THRESHOLD", 0.22))

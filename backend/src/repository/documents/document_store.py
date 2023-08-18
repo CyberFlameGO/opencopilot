@@ -84,9 +84,15 @@ class DocumentStore:
         k = kwargs.get("k") or settings.MAX_CONTEXT_DOCUMENTS_COUNT
         documents = self.vector_store.similarity_search(
             query,
-            k=k
+            k=k,
+            additional="distance"
         )
-        return documents[:k]
+        relevant_documents = [
+            document 
+            for document in documents 
+            if document.metadata["_additional"]["distance"] < settings.RETRIEVAL_DISTANCE_THRESHOLD
+        ]   
+        return relevant_documents[:k]
 
 
 DOCUMENT_STORE = Optional[DocumentStore]
