@@ -30,6 +30,9 @@ jobs:
         run: |
           export OPENAI_API_KEY="$OPENAI_API_KEY"
           # export HELICONE_API_KEY="$HELICONE_API_KEY"
+      - name: "Start Weaviate"
+        run: |
+          cd opencopilot && docker-compose -f docker-compose-weaviate.yml up -d
       - name: "Start Copilot"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
