@@ -45,6 +45,20 @@ Copilot is running and can be interacted through OpenAPI docs in your browser: [
 
 There are three main ways you can customize your copilot: *Static Knowledge base, Dynamic Knowledge base* and *Prompts* that change the copilot's behaviour.
 
+If you are adding any data to Copilot you need to run Weaviate vector store.
+
+```shell
+docker run \
+  -e CONTEXTIONARY_URL="contextionary:9999" \
+  -e QUERY_DEFAULTS_LIMIT="25" \
+  -e AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED="true" \
+  -e PERSISTENCE_DATA_PATH="/var/lib/weaviate" \
+  -e CLUSTER_HOSTNAME="node1" \
+  -p 8080:8080 \
+  semitechnologies/weaviate:1.19.6 \
+    --host 0.0.0.0 --port '8080' --scheme http
+```
+
 ### **Static knowledge base**
 
 This is the set of documents that your copilot relies on when responding to you - you can think of it as the things you've taught it. The copilot has access to everything here when trying to answer your questions. To add things into the knowledge base, just drop files into a local folder.
