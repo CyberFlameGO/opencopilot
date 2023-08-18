@@ -2,10 +2,10 @@ name: E2E Test Linux CLI
 
 on:
   push:
-    branches: [ main, reconfigure-ci ]
+    branches: [ main, framework-data-dir-loading ]
 
 jobs:
-  e2e-test-linux-cli:
+  e2e-test-linux-e2e:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
@@ -20,41 +20,22 @@ jobs:
         run: |
           # $CONDA is an environment variable pointing to the root of the miniconda directory
           echo $CONDA/bin >> $GITHUB_PATH
-      - name: "Install SDK"
+      - name: "Install requirements"
         run: |
-          pip install -e .
-          opencopilot --help
+          pip install -r requirements.txt
       - name: "Create Copilot"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           HELICONE_API_KEY: ${{ secrets.HELICONE_API_KEY }}
         run: |
-          printf "1\n$OPENAI_API_KEY\ny\nCopilotName\n" | opencopilot create
-          echo "HELICONE_API_KEY = \"$HELICONE_API_KEY\"" >> backend/.env
+          export OPENAI_API_KEY="$OPENAI_API_KEY"
+          # export HELICONE_API_KEY="$HELICONE_API_KEY"
       - name: "Start Copilot"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          opencopilot start
-      - name: "Chat Copilot"
-        run: |
-          opencopilot chat "Hello"
+          nohup python example.py &> logs.log &
+          sleep 30
       - name: "Test Backend"
         run: |
-          cd backend && PYTHONPATH=. python tests/e2e/test_backend.py
-      - name: "Restart Copilot"
-        run: |
-          echo "Kaspar is frontend engineer\nKrešimir is backend engineer" > copilots/copilotname/data/company_data.txt
-          opencopilot restart
-      - name: "Chat after data change"
-        run: |
-          cd backend && PYTHONPATH=. python tests/e2e/test_chat_after_data_change.py
-      - name: "Stop Copilot"
-        run: |
-          opencopilot stop
-      - name: "Test is copilot stopped"
-        run: |
-          num_containers=$(docker ps -q | wc -l)
-          echo "num_containers: $num_containers"
-          if [ $num_containers -gt 0 ]; then exit 1; fi;
-          
+          PYTHONPATH=. python tests/e2e/test_backend.py

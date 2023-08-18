@@ -4,12 +4,12 @@ from pydantic import BaseModel
 from starlette.middleware.cors import CORSMiddleware
 
 from opencopilot import settings
-from opencopilot.src.repository.documents import document_store
 from opencopilot.src.routers import main_router
 from opencopilot.src.routers import routing_utils
 from opencopilot.src.service.exception_handlers.exception_handlers import custom_exception_handler
 from opencopilot.src.service.middleware.main_middleware import MainMiddleware
-from opencopilot.src.service.middleware.request_enrichment_middleware import RequestEnrichmentMiddleware
+from opencopilot.src.service.middleware.request_enrichment_middleware import \
+    RequestEnrichmentMiddleware
 
 app = FastAPI()
 
@@ -97,12 +97,11 @@ app.add_middleware(RequestEnrichmentMiddleware)
 # Handles API error responses
 app.add_exception_handler(Exception, custom_exception_handler)
 
+
 # Overrides FastAPI error responses, eg: authorization, not found
 # app.add_exception_handler(StarletteHTTPException, custom_http_exception_handler)
 # Overrides default Pydantic request validation errors
 # app.add_exception_handler(RequestValidationError, validation_exception_handler)
-
-document_store.init_document_store()
 
 
 def get_api_info() -> ApiInfo:

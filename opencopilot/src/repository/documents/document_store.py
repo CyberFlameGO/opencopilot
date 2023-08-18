@@ -1,14 +1,14 @@
 from typing import List, Optional
 
-from opencopilot import settings
 import tqdm
 import weaviate
 from langchain.schema import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import TextSplitter
 from langchain.vectorstores import Weaviate
+
+from opencopilot import settings
 from opencopilot.logger import api_logger
-from opencopilot.src.repository.documents import document_loader, document_scraper
 from opencopilot.src.utils import get_embedding_model_use_case
 from opencopilot.src.utils.get_embedding_model_use_case import CachedOpenAIEmbeddings
 
@@ -18,12 +18,6 @@ logger = api_logger.get()
 class DocumentStore:
     document_embed_model = "text-embedding-ada-002"
     document_chunk_size = 2000
-
-    def scrape_documents(self):
-        pass
-
-    def load_documents(self, data_dir=None, is_loading_deprecated=False) -> List[Document]:
-        return []
 
     def get_embeddings_model(self) -> CachedOpenAIEmbeddings:
         return get_embedding_model_use_case.execute(use_local_cache=True)
@@ -36,7 +30,7 @@ class DocumentStore:
             disallowed_special=(),
         )
 
-    def ingest_data(self):
+    def ingest_data(self, documents: List[Document]):
         pass
 
     def find(self, query: str, **kwargs) -> List[Document]:
@@ -49,6 +43,7 @@ class WeaviateDocumentStore(DocumentStore):
     weaviate_index_name = "LangChain"  # TODO: Weaviate specific?
 
     def __init__(self):
+        self.documents = []
         self.weaviate_client = self._get_weaviate_client()
         self.vector_store = self._get_vector_store()
 
@@ -59,8 +54,7 @@ class WeaviateDocumentStore(DocumentStore):
         )
 
     def _get_vector_store(self):
-        documents = self.load_documents()
-        metadatas = [d.metadata for d in documents]
+        metadatas = [d.metadata for d in self.documents]
         attributes = list(metadatas[0].keys()) if metadatas else None
         return Weaviate(
             self.weaviate_client,
@@ -71,21 +65,9 @@ class WeaviateDocumentStore(DocumentStore):
             by_text=False
         )
 
-    def scrape_documents(self):
-        document_scraper.execute()
-
-    def load_documents(
-            self,
-            data_dir=None,
-            is_loading_deprecated=False
-    ) -> List[Document]:
-        if not data_dir:
-            data_dir = settings.get().DATA_DIR
-        return document_loader.execute(data_dir, is_loading_deprecated, self.get_text_splitter())
-
-    def ingest_data(self):
+    def ingest_data(self, documents: List[Document]):
+        self.documents = documents
         batch_size = self.ingest_batch_size
-        documents = self.load_documents()
         print(f"Got {len(documents)} documents, embedding with batch size: {batch_size}")
         embeddings = self.get_embeddings_model()
         self.weaviate_client.schema.delete_all()
@@ -95,6 +77,7 @@ class WeaviateDocumentStore(DocumentStore):
             self.vector_store.add_documents(batch)
 
         embeddings.save_local_cache()
+        self.vector_store = self._get_vector_store()
 
     def find(self, query: str, **kwargs) -> List[Document]:
         k = kwargs.get("k") or settings.get().MAX_CONTEXT_DOCUMENTS_COUNT
@@ -112,12 +95,9 @@ class EmptyDocumentStore(DocumentStore):
 DOCUMENT_STORE = Optional[DocumentStore]
 
 
-def init_document_store():
+def init_document_store(document_store: DocumentStore):
     global DOCUMENT_STORE
-    if settings.get().DATA_DIR:
-        DOCUMENT_STORE = WeaviateDocumentStore()
-    else:
-        DOCUMENT_STORE = EmptyDocumentStore()
+    DOCUMENT_STORE = document_store
 
 
 def get_document_store() -> DocumentStore:

@@ -1,15 +1,13 @@
 import uuid
 
 import requests
-import settings
-from scripts import chat
+from opencopilot.scripts import chat
 
 conversation_id = uuid.uuid4()
-base_url = f"http://0.0.0.0:{settings.API_PORT}"
+base_url = f"http://0.0.0.0:3000"
 headers = {
     "accept": "application/json",
-    "Content-Type": "application/json",
-    "Authorization": settings.API_KEY
+    "Content-Type": "application/json"
 }
 
 

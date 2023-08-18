@@ -21,13 +21,13 @@ from typing import List
 import matplotlib.pyplot as plt
 from pathlib import Path
 from langchain.schema import Document
-from src.repository.documents import document_store
+from opencopilot.src.repository.documents import document_store
 
 from tqdm import tqdm
 
-import settings
-from src.eval.retrieval import evaluate_retrieval_dataset
-from src.eval.entities import (
+from opencopilot import settings
+from opencopilot.src.eval.retrieval import evaluate_retrieval_dataset
+from opencopilot.src.eval.entities import (
     RetrievalDataset,
     RetrievalResult,
     RetrievalSummaryEvaluation,
@@ -130,7 +130,7 @@ def _log_wandb(summary_evaluation: RetrievalSummaryEvaluation):
 
 
 def main(dataset_path: str, draw_curve: bool, output_path: str = None, limit: int = None):
-    document_store.init_document_store()
+    # TODO: document_store.init_document_store()
     if draw_curve:
         _draw_curve(dataset_path, limit=limit)
     else:

@@ -33,7 +33,7 @@ class OpenCopilot:
             jwt_client_id: str = "",
             jwt_client_secret: str = "",
             jwt_token_expiration_seconds: int = timedelta(days=1).total_seconds(),
-            helicone_api_key: str = ""
+            helicone_api_key: str = "",
     ):
         if not openai_api_key:
             openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -64,14 +64,35 @@ class OpenCopilot:
 
         self.api_port = api_port
         self.data_loaders = []
+        self.local_files_dirs = []
+        self.local_file_paths = []
         self.documents = []
 
     def __call__(self, *args, **kwargs):
-        print("__call__, data_loaders:", self.data_loaders)
+        from .src.repository.documents import document_loader
+        from .src.repository.documents import document_store
+        from .src.repository.documents.document_store import WeaviateDocumentStore
+        from .src.repository.documents.document_store import EmptyDocumentStore
+        print("__call__")
+        print(" - data_loaders:", self.data_loaders)
+        print(" - local_files_dirs:", self.local_files_dirs)
+        print(" - local_file_paths:", self.local_file_paths)
+        if self.data_loaders or self.local_files_dirs or self.local_file_paths:
+            self.document_store = WeaviateDocumentStore()
+        else:
+            self.document_store = EmptyDocumentStore()
+        document_store.init_document_store(self.document_store)
+
         for data_loader in self.data_loaders:
             self.documents.extend(data_loader())
 
+        for data_dir in self.local_files_dirs:
+            text_splitter = self.document_store.get_text_splitter()
+            self.documents.extend(document_loader.execute(data_dir, False, text_splitter))
+
         print("All Docs:", self.documents)
+        if self.documents:
+            self.document_store.ingest_data(self.documents)
 
         from .app import app
         uvicorn.run(app, port=self.api_port)
@@ -80,16 +101,6 @@ class OpenCopilot:
     def add_prompt(prompt_file: str) -> None:
         settings.init_prompt_file_location(prompt_file)
 
-    @staticmethod
-    def add_data_dir(data_dir: str) -> None:
-        settings.init_data_dir(data_dir)
-
-    @staticmethod
-    def ingest_data() -> None:
-        from . import ingest_data
-        print("Ingesting data")
-        ingest_data.execute()
-
     def data_loader(
             self,
             function: Callable[[], Document]
@@ -97,4 +108,7 @@ class OpenCopilot:
         self.data_loaders.append(function)
 
     def add_local_files_dir(self, files_dir: str) -> None:
-        pass
+        self.local_files_dirs.append(files_dir)
+
+    # def add_local_file(self, file_path: str) -> None:
+    #    self.local_file_paths.append(file_path)
