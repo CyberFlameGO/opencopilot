@@ -20,11 +20,11 @@ jobs:
           # cache: "pip"
           # cache-dependency-path: pyproject.toml
       - name: "Setup opencopilot"
+        run: |
+          pip install -e .
+      - name: "Import opencopilot"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           export OPENAI_API_KEY="$OPENAI_API_KEY"
-          pip install -e .
-      - name: "Import opencopilot"
-        run: |
           python tests/assets/example_without_run.py
