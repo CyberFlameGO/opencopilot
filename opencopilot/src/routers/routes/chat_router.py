@@ -87,7 +87,7 @@ class ConversationInput(BaseModel):
     tags=[TAG]
 )
 async def handle_conversation(
-        email: str | None = Header(default=None),
+        email: Optional[str] = Header(default=None),
         conversation_id: str = Path(...,
                                     description="The ID of the conversation. To start a new conversation, you should pass in a random uuid (Python: `import uuid; uuid.uuid4()`). To continue a conversation, re-use the same uuid."),
         payload: ConversationInput = Body(...,
@@ -159,7 +159,7 @@ async def post_context(
     tags=[TAG]
 )
 async def handle_conversation_streaming(
-        email: str | None = Header(default=None),
+        email: Optional[str] = Header(default=None),
         conversation_id: str = Path(..., description="The ID of the conversation."),
         payload: ConversationInput = Body(...,
                                           description="Input and parameters for the conversation."),
