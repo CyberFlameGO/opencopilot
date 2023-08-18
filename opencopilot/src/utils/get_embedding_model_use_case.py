@@ -16,7 +16,7 @@ class CachedOpenAIEmbeddings(OpenAIEmbeddings):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         object.__setattr__(self, "_cache", {})
-        object.__setattr__(self, "_embeddings_cache_filename", os.path.join(settings.COPILOT_DIRECTORY, "embeddings_cache.pkl"))
+        object.__setattr__(self, "_embeddings_cache_filename", os.path.join(settings.get().COPILOT_DIRECTORY, "embeddings_cache.pkl"))
         self._load_local_cache()
 
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
@@ -62,10 +62,10 @@ class CachedOpenAIEmbeddings(OpenAIEmbeddings):
 def execute(use_local_cache: bool = False):
     openai_api_base = None
     headers = None
-    if settings.HELICONE_API_KEY:
-        openai_api_base = settings.HELICONE_BASE_URL
+    if settings.get().HELICONE_API_KEY:
+        openai_api_base = settings.get().HELICONE_BASE_URL
         headers = {
-            "Helicone-Auth": "Bearer " + settings.HELICONE_API_KEY,
+            "Helicone-Auth": "Bearer " + settings.get().HELICONE_API_KEY,
             "Helicone-Cache-Enabled": "true",
         }
     return CachedOpenAIEmbeddings(

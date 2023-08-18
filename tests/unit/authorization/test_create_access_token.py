@@ -5,6 +5,8 @@ import jwt
 import pytest
 
 import opencopilot.src.authorization.create_access_token as use_case
+from opencopilot import settings
+from opencopilot.settings import Settings
 from opencopilot.src.service import error_responses
 
 
@@ -17,13 +19,39 @@ def test_execute_invalid_credentials(mock_settings):
                          user_id="user_id")
 
 
-@patch("opencopilot.src.authorization.create_access_token.settings")
+@patch("opencopilot.src.authorization.create_access_token.settings.get")
 @patch("opencopilot.src.authorization.create_access_token.time")
 def test_execute_valid_credentials(mock_time, mock_settings):
-    mock_settings.JWT_CLIENT_ID = "valid_client_id"
-    mock_settings.JWT_CLIENT_SECRET = "valid_client_secret"
-    mock_settings.JWT_TOKEN_EXPIRATION_SECONDS = 3600
-    # generate 1 second old token   
+    settings.get.return_value = Settings(
+        COPILOT_NAME="unit_tests",
+        API_PORT=3000,
+        API_BASE_URL="http://localhost:3000/",
+        ENVIRONMENT="test",
+        ALLOWED_ORIGINS="*",
+        APPLICATION_NAME="unit_tests_app",
+        LOG_FILE_PATH="mock",
+
+        WEAVIATE_URL="mock_url",
+        WEAVIATE_READ_TIMEOUT=120,
+
+        MODEL="gpt-4",
+
+        OPENAI_API_KEY="None",
+
+        MAX_DOCUMENT_SIZE_MB=1,
+
+        SLACK_WEBHOOK="",
+
+        AUTH_TYPE=None,
+        API_KEY="",
+
+        JWT_CLIENT_ID="valid_client_id",
+        JWT_CLIENT_SECRET="valid_client_secret",
+        JWT_TOKEN_EXPIRATION_SECONDS=3600,
+
+        HELICONE_API_KEY=""
+    )
+    # generate 1 second old token
     current_timestamp = time.time() - 1
     mock_time.time.return_value = current_timestamp
     result = use_case.execute(

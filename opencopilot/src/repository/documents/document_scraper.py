@@ -29,13 +29,13 @@ LOADERS_MAP = {
 
 
 def execute():
-    if settings.copilot_config and settings.copilot_config.data.loaders:
-        for data_group in settings.copilot_config.data.loaders:
+    if settings.get().copilot_config and settings.get().copilot_config.data.loaders:
+        for data_group in settings.get().copilot_config.data.loaders:
             if loader := LOADERS_MAP.get(data_group):
-                configuration = settings.copilot_config.data.loaders[data_group]
+                configuration = settings.get().copilot_config.data.loaders[data_group]
                 _scrape(
                     os.path.join(
-                        settings.DATA_DIR,
+                        settings.get().DATA_DIR,
                         configuration["output"],
                     ),
                     loader,
@@ -59,6 +59,6 @@ def _scrape(
         json_docs = [d.json() for d in scraped_documents]
         formatted_docs = [json.loads(d) for d in json_docs]
 
-        os.makedirs(settings.DATA_DIR, exist_ok=True)
+        os.makedirs(settings.get().DATA_DIR, exist_ok=True)
         with open(file_dump_path, "w") as f:
             f.write(json.dumps(formatted_docs, indent=4))

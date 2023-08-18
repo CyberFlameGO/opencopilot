@@ -17,7 +17,7 @@ logger = api_logger.get()
 
 
 def execute(
-        data_dir=settings.DATA_DIR,
+        data_dir: str,
         is_loading_deprecated=False,
         text_splitter=None
 ) -> List[Document]:
@@ -39,9 +39,9 @@ def execute(
     documents = []
     for file_path in files:
         new_documents = []
-        if (file_size := _get_file_size(file_path)) > settings.MAX_DOCUMENT_SIZE_MB:
+        if (file_size := _get_file_size(file_path)) > settings.get().MAX_DOCUMENT_SIZE_MB:
             logger.error(
-                f"Document {file_path} too big ({file_size} > {settings.MAX_DOCUMENT_SIZE_MB}), skipping.")
+                f"Document {file_path} too big ({file_size} > {settings.get().MAX_DOCUMENT_SIZE_MB}), skipping.")
             continue
         if file_path.endswith('.csv'):
             with open(file_path, newline='') as csvfile:
@@ -68,7 +68,7 @@ def execute(
                 document_dicts = json.load(f)
             for document in document_dicts:
                 metadata = document["metadata"]
-                if metadata["source"] in settings.copilot_config.data.get("ignore", []):
+                if metadata["source"] in settings.get().copilot_config.data.get("ignore", []):
                     continue
                 if "deprecated" in metadata["source"]:
                     if not is_loading_deprecated:

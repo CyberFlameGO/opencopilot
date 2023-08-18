@@ -54,8 +54,8 @@ class WeaviateDocumentStore(DocumentStore):
 
     def _get_weaviate_client(self):
         return weaviate.Client(
-            url=settings.WEAVIATE_URL,
-            timeout_config=(10, settings.WEAVIATE_READ_TIMEOUT)
+            url=settings.get().WEAVIATE_URL,
+            timeout_config=(10, settings.get().WEAVIATE_READ_TIMEOUT)
         )
 
     def _get_vector_store(self):
@@ -80,7 +80,7 @@ class WeaviateDocumentStore(DocumentStore):
             is_loading_deprecated=False
     ) -> List[Document]:
         if not data_dir:
-            data_dir = settings.DATA_DIR
+            data_dir = settings.get().DATA_DIR
         return document_loader.execute(data_dir, is_loading_deprecated, self.get_text_splitter())
 
     def ingest_data(self):
@@ -97,7 +97,7 @@ class WeaviateDocumentStore(DocumentStore):
         embeddings.save_local_cache()
 
     def find(self, query: str, **kwargs) -> List[Document]:
-        k = kwargs.get("k") or settings.MAX_CONTEXT_DOCUMENTS_COUNT
+        k = kwargs.get("k") or settings.get().MAX_CONTEXT_DOCUMENTS_COUNT
         documents = self.vector_store.similarity_search(
             query,
             k=k
@@ -114,7 +114,7 @@ DOCUMENT_STORE = Optional[DocumentStore]
 
 def init_document_store():
     global DOCUMENT_STORE
-    if settings.DATA_DIR:
+    if settings.get().DATA_DIR:
         DOCUMENT_STORE = WeaviateDocumentStore()
     else:
         DOCUMENT_STORE = EmptyDocumentStore()

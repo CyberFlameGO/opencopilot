@@ -9,6 +9,7 @@ from opencopilot.src.service.debug.entities import ValueWithTokens
 
 
 def setup():
+    service.api_logger = MagicMock()
     service.message_debug_use_case = MagicMock()
     service.utils = MagicMock()
     service.utils.get_uuid.return_value = UUID("2ba94f1d-c9e1-442a-954d-b681d989bd92")
