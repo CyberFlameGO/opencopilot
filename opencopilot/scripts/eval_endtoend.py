@@ -7,9 +7,9 @@ from uuid import uuid4
 import requests
 import tqdm
 
-import settings
-from src.eval.endtoend import evaluate_endtoend_dataset
-from src.eval.entities import (
+from opencopilot import settings
+from opencopilot.src.eval.endtoend import evaluate_endtoend_dataset
+from opencopilot.src.eval.entities import (
     EndToEndDataset,
     EndToEndResult,
     EndToEndSummaryEvaluation,

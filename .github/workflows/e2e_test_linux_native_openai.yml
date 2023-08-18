@@ -41,15 +41,3 @@ jobs:
       - name: "Test Backend"
         run: |
           cd backend && PYTHONPATH=. python tests/e2e/test_backend.py
-      - name: "Eval e2e"
-        env:
-          WANDB_API: ${{ secrets.WANDB_API_KEY }}
-        run: |
-          wandb login "$WANDB_API"
-          cd backend && PYTHONPATH=. python scripts/eval_endtoend.py --wandb
-      - name: "Log retrieval metrics"
-        env:
-          WANDB_API: ${{ secrets.WANDB_API_KEY }}
-        run: |
-          wandb login "$WANDB_API"
-          cd backend && PYTHONPATH=. python scripts/eval_retrieval.py --wandb
