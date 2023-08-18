@@ -36,6 +36,7 @@ jobs:
         run: |
           PYTHONPATH=. nohup python tests/assets/e2e_example.py &> logs.log &
           sleep 30
+          cat logs.log
       - name: "Test Backend"
         run: |
           PYTHONPATH=. python tests/e2e/test_backend_e2e_example.py
