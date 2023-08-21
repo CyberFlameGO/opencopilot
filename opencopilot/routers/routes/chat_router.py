@@ -68,6 +68,7 @@ class ConversationInput(BaseModel):
     )
 
     @validator("response_message_id")
+    # pylint: disable-next=no-self-argument
     def id_check(cls, v, values):
         if v:
             utils.get_uuid(v, "response_message_id")

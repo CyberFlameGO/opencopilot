@@ -2,7 +2,7 @@ name: E2E Test Linux CLI e2e full
 
 on:
   push:
-    branches: [ main, framework ]
+    branches: [ main, ci-e2e-and-linter ]
 
 jobs:
   e2e-test-linux-e2e-full:
@@ -32,7 +32,16 @@ jobs:
           # export HELICONE_API_KEY="$HELICONE_API_KEY"
       - name: "Start Weaviate"
         run: |
-          cd opencopilot && docker-compose -f docker-compose-weaviate.yml up -d
+          docker run \
+            -e CONTEXTIONARY_URL="contextionary:9999" \
+            -e QUERY_DEFAULTS_LIMIT="25" \
+            -e AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED="true" \
+            -e PERSISTENCE_DATA_PATH="/var/lib/weaviate" \
+            -e CLUSTER_HOSTNAME="node1" \
+            -p 8080:8080 \
+            -d \
+            semitechnologies/weaviate:1.19.6 \
+              --host 0.0.0.0 --port '8080' --scheme http
       - name: "Start Copilot"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
