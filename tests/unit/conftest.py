@@ -37,7 +37,8 @@ def pytest_sessionstart(session):
         JWT_CLIENT_SECRET="",
         JWT_TOKEN_EXPIRATION_SECONDS=1,
 
-        HELICONE_API_KEY=""
+        HELICONE_API_KEY="",
+        HELICONE_RATE_LIMIT_POLICY="",
     ))
 
     api_logger.get = MagicMock()

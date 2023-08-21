@@ -63,7 +63,8 @@ async def test_validate_jwt_success(mock_jwt, mock_settings):
         JWT_CLIENT_SECRET="secret",
         JWT_TOKEN_EXPIRATION_SECONDS=3600,
 
-        HELICONE_API_KEY=""
+        HELICONE_API_KEY="",
+        HELICONE_RATE_LIMIT_POLICY="",
     )
     mock_settings.JWT_CLIENT_SECRET = "secret"
     mock_jwt.decode.return_value = {"sub": "sub_value"}

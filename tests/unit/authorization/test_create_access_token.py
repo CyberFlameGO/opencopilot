@@ -49,7 +49,8 @@ def test_execute_valid_credentials(mock_time, mock_settings):
         JWT_CLIENT_SECRET="valid_client_secret",
         JWT_TOKEN_EXPIRATION_SECONDS=3600,
 
-        HELICONE_API_KEY=""
+        HELICONE_API_KEY="",
+        HELICONE_RATE_LIMIT_POLICY="",
     )
     # generate 1 second old token
     current_timestamp = time.time() - 1
