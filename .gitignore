@@ -46,3 +46,6 @@ __pycache__
 *.bin
 opencopilot/downloads
 embeddings_cache.pkl
+
+dist
+opencopilot_ai.egg-info
