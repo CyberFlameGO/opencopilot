@@ -28,21 +28,12 @@ opencopilot/conversation_logs/*
 opencopilot/conversation_contexts/*
 opencopilot/copilot_configurations/*
 
-frontend/.DS_Store
-frontend/.vscode/
-frontend/node_modules
-frontend/build
-frontend/package
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-frontend/vite.config.js.timestamp-*
-frontend/vite.config.ts.timestamp-*
 .DS_Store
 __pycache__
 .venv
 *.bin
 opencopilot/downloads
 embeddings_cache.pkl
+
+dist
+opencopilot_ai.egg-info
