@@ -2,7 +2,7 @@
   <a href="https://docs.opencopilot.dev"><img src="https://mintlify.s3-us-west-1.amazonaws.com/opencopilot/logo/light.svg" alt="OpenCopilot"></a>
 </p>
 <p align="center">
-    <em>OpenCopilot is a Python framework for building and embedding AI Copilots into your product with ease.</em>
+    <em>Python framework for building and embedding AI Copilots into your product with ease.</em>
 </p>
 <p align="center">
 
