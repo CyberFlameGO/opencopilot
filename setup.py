@@ -15,7 +15,7 @@ extra_files = package_files('opencopilot')
 
 setup(
     name='opencopilot-ai',
-    version='0.2.0',
+    version='0.3.0',
     packages=["opencopilot"],
     package_data={'': extra_files},
     license="MIT",
