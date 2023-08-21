@@ -40,6 +40,7 @@ class Settings:
     JWT_TOKEN_EXPIRATION_SECONDS: int
 
     HELICONE_API_KEY: str
+    HELICONE_RATE_LIMIT_POLICY: str
 
     CONVERSATIONS_DIR: str = "conversations"
     # Configure based on model?
