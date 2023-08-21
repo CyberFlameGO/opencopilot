@@ -19,7 +19,7 @@ class CachedOpenAIEmbeddings(OpenAIEmbeddings):
         object.__setattr__(self, "_embeddings_cache_filename", settings.get().COPILOT_NAME + "_embeddings_cache.pkl")
         self._load_local_cache()
 
-    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+    def embed_documents(self, texts: List[str], **kwargs) -> List[List[float]]:
         if self.use_local_cache:
             return self._embed_documents_cached(texts)
         return super().embed_documents(texts)
@@ -31,10 +31,12 @@ class CachedOpenAIEmbeddings(OpenAIEmbeddings):
         embeddings = []
         for text in texts:
             text_hash = self._hash(text)
+            # pylint: disable-next=no-member
             if embedding := self._cache.get(text_hash):
                 embeddings.append(embedding)
             else:
                 embedding = super().embed_documents([text])[0]
+                # pylint: disable-next=no-member
                 self._cache[text_hash] = embedding
                 embeddings.append(embedding)
         return embeddings
@@ -44,6 +46,7 @@ class CachedOpenAIEmbeddings(OpenAIEmbeddings):
 
     def _load_local_cache(self):
         try:
+            # pylint: disable-next=no-member
             with open(self._embeddings_cache_filename, "rb") as f:
                 data = pickle.load(f)
                 object.__setattr__(self, "_cache", data)
