@@ -4,13 +4,13 @@ from unittest.mock import patch
 import jwt
 import pytest
 
-import opencopilot.src.authorization.create_access_token as use_case
+import opencopilot.authorization.create_access_token as use_case
 from opencopilot import settings
 from opencopilot.settings import Settings
-from opencopilot.src.service import error_responses
+from opencopilot.service import error_responses
 
 
-@patch("opencopilot.src.authorization.create_access_token.settings")
+@patch("opencopilot.authorization.create_access_token.settings")
 def test_execute_invalid_credentials(mock_settings):
     mock_settings.JWT_CLIENT_ID = "valid_client_id"
     mock_settings.JWT_CLIENT_SECRET = "valid_client_secret"
@@ -19,8 +19,8 @@ def test_execute_invalid_credentials(mock_settings):
                          user_id="user_id")
 
 
-@patch("opencopilot.src.authorization.create_access_token.settings.get")
-@patch("opencopilot.src.authorization.create_access_token.time")
+@patch("opencopilot.authorization.create_access_token.settings.get")
+@patch("opencopilot.authorization.create_access_token.time")
 def test_execute_valid_credentials(mock_time, mock_settings):
     settings.get.return_value = Settings(
         COPILOT_NAME="unit_tests",

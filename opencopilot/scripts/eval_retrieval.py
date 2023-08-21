@@ -21,13 +21,13 @@ from typing import List
 import matplotlib.pyplot as plt
 from pathlib import Path
 from langchain.schema import Document
-from opencopilot.src.repository.documents import document_store
+from opencopilot.repository.documents import document_store
 
 from tqdm import tqdm
 
 from opencopilot import settings
-from opencopilot.src.eval.retrieval import evaluate_retrieval_dataset
-from opencopilot.src.eval.entities import (
+from opencopilot.eval.retrieval import evaluate_retrieval_dataset
+from opencopilot.eval.entities import (
     RetrievalDataset,
     RetrievalResult,
     RetrievalSummaryEvaluation,

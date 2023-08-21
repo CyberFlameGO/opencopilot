@@ -4,12 +4,10 @@ from pydantic import BaseModel
 from starlette.middleware.cors import CORSMiddleware
 
 from opencopilot import settings
-from opencopilot.src.routers import main_router
-from opencopilot.src.routers import routing_utils
-from opencopilot.src.service.exception_handlers.exception_handlers import custom_exception_handler
-from opencopilot.src.service.middleware.main_middleware import MainMiddleware
-from opencopilot.src.service.middleware.request_enrichment_middleware import \
-    RequestEnrichmentMiddleware
+from opencopilot.routers import main_router, routing_utils
+from opencopilot.service.exception_handlers.exception_handlers import custom_exception_handler
+from opencopilot.service.middleware.main_middleware import MainMiddleware
+from opencopilot.service.middleware.request_enrichment_middleware import RequestEnrichmentMiddleware
 
 app = FastAPI()
 
