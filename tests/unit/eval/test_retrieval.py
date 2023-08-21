@@ -1,8 +1,8 @@
-from opencopilot.src.eval.entities import RetrievalExample
-from opencopilot.src.eval.entities import RetrievalResult
-from opencopilot.src.eval.entities import RetrievalSingleEvaluation
-from opencopilot.src.eval.retrieval import evaluate_retrieval_single
-from opencopilot.src.eval.retrieval import get_confusion_matrix
+from opencopilot.eval.entities import RetrievalExample
+from opencopilot.eval.entities import RetrievalResult
+from opencopilot.eval.entities import RetrievalSingleEvaluation
+from opencopilot.eval.retrieval import evaluate_retrieval_single
+from opencopilot.eval.retrieval import get_confusion_matrix
 
 
 def test_get_confusion_matrix_one_relevant():

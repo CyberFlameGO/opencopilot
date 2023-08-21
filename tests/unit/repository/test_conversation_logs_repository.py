@@ -3,7 +3,7 @@ from uuid import UUID
 
 from langchain.schema import Document
 
-from opencopilot.src.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
+from opencopilot.repository.conversation_logs_repository import ConversationLogsRepositoryLocal
 
 CONVERSATION_LOGS_DIR = "tests/assets/conversation_logs"
 

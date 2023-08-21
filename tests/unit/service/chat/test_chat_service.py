@@ -3,10 +3,10 @@ from unittest.mock import AsyncMock
 from unittest.mock import MagicMock
 from uuid import UUID
 
-from opencopilot.src.domain.chat.entities import MessageModel
-from opencopilot.src.service.chat import chat_service as service
-from opencopilot.src.service.chat.entities import ChatRequest
-from opencopilot.src.service.chat.entities import ChatResponse
+from opencopilot.domain.chat.entities import MessageModel
+from opencopilot.service.chat import chat_service as service
+from opencopilot.service.chat.entities import ChatRequest
+from opencopilot.service.chat.entities import ChatResponse
 
 CHAT_ID = UUID("5a78244b-5c12-4366-b16a-00799bce7040")
 

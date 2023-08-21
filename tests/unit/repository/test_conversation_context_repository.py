@@ -6,8 +6,8 @@ from uuid import UUID
 
 from langchain.schema import Document
 
-from opencopilot.src.domain.chat.entities import ChatContextInput
-from opencopilot.src.repository.conversation_user_context_repository import \
+from opencopilot.domain.chat.entities import ChatContextInput
+from opencopilot.repository.conversation_user_context_repository import \
     ConversationUserContextRepositoryLocal
 
 CONTEXT_DIR = "tests/assets/contexts"
@@ -70,7 +70,7 @@ def test_save_context():
     )
     repository = ConversationUserContextRepositoryLocal(CONTEXT_DIR)
     mock_now = datetime.datetime(2023, 7, 10, 12, 27, 5)
-    with patch("opencopilot.src.repository.conversation_user_context_repository.datetime") as mock_datetime:
+    with patch("opencopilot.repository.conversation_user_context_repository.datetime") as mock_datetime:
         mock_datetime.now.return_value = mock_now
         repository.save_context(
             context_input

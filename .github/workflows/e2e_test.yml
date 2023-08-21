@@ -2,7 +2,7 @@ name: E2E Test Linux CLI e2e
 
 on:
   push:
-    branches: [ main, framework-ci-e2e ]
+    branches: [ main, framework-remove-src ]
 
 jobs:
   e2e-test-linux-e2e:

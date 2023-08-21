@@ -8,8 +8,8 @@ import requests
 import tqdm
 
 from opencopilot import settings
-from opencopilot.src.eval.endtoend import evaluate_endtoend_dataset
-from opencopilot.src.eval.entities import (
+from opencopilot.eval.endtoend import evaluate_endtoend_dataset
+from opencopilot.eval.entities import (
     EndToEndDataset,
     EndToEndResult,
     EndToEndSummaryEvaluation,
