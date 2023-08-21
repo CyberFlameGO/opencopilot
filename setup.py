@@ -1,9 +1,23 @@
+import os
+
 from setuptools import setup
+
+
+def package_files(directory):
+    paths = []
+    for (path, directories, filenames) in os.walk(directory):
+        for filename in filenames:
+            paths.append(os.path.join('..', path, filename))
+    return paths
+
+
+extra_files = package_files('opencopilot')
 
 setup(
     name='opencopilot-ai',
     version='0.2.0',
     packages=["opencopilot"],
+    package_data={'': extra_files},
     license="MIT",
     description="OpenCopilot Backend",
     author="OpenCopilot",
