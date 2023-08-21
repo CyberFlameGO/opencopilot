@@ -1,220 +1,121 @@
-# OpenCopilot 🕊️
+<p align="center">
+  <a href="https://docs.opencopilot.dev"><img src="https://mintlify.s3-us-west-1.amazonaws.com/opencopilot/logo/light.svg" alt="OpenCopilot"></a>
+</p>
+<p align="center">
+    <em>OpenCopilot is a Python framework for building custom and private copilots.</em>
+</p>
+<p align="center">
 
-[![Unit tests](https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml)
-[![E2E Test Linux Native](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml)
-[![E2E Test Linux CLI](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_cli.yml/badge.svg)](https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_cli.yml)
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/opencopilot.svg?style=social&label=Follow%20%40OpenCopilot)](https://twitter.com/OpenCopilot)
-![Discord](https://img.shields.io/discord/1133675019478782072?logo=discord&label=OpenCopilot)
+<a href="https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml" target="_blank">
+    <img src="https://github.com/opencopilotdev/opencopilot/actions/workflows/unit_test.yml/badge.svg" alt="Unit tests">
+</a>
+
+<a href="https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml" target="_blank">
+    <img src="https://github.com/opencopilotdev/opencopilot/actions/workflows/e2e_test_linux_native_openai.yml/badge.svg" alt="E2E Test Linux Native">
+</a>
+
+<a href="https://twitter.com/OpenCopilot" target="_blank">
+    <img src="https://img.shields.io/twitter/url/https/twitter.com/opencopilot.svg?style=social&label=Follow%20%40OpenCopilot" alt="Package version">
+</a>
+
+<a href="https://twitter.com/OpenCopilot" target="_blank">
+    <img src="https://img.shields.io/discord/1133675019478782072?logo=discord&label=OpenCopilot" alt="Package version">
+</a>
+
+<a href="https://pypi.org/project/opencopilot-ai" target="_blank">
+    <img src="https://img.shields.io/pypi/v/opencopilot-ai?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+</p>
+
+<p align="center">
+  <b>Documentation:</b> <a href="https://docs.opencopilot.dev/">docs.opencopilot.dev</a>
+</p>
 
 
-# Overview
+## Overview
 
-Copilots are becoming the new dominant way users are interacting with LLM-based applications, akin to how websites in the 90's simplified the Internet for consumers. Yet, building a Copilot today is extremely complex as it is time-consuming, expensive and feels like a massive undertaking. Moreover, other solutions such as Microsoft Copilot stack are closed. OpenCopilot solves this problem so developers can now build their own custom Copilot in a single day that actually works, without previous experience. Built by devs, for devs. 
+OpenCopilot is a Python framework for building custom and private copilots.
+It's designed to be **fast to get started, extensible, and easy to use**.
+Using OpenCopilot, you can see your copilot come live in 5 minutes, and
+making a fully functional copilot should take you **less than a day**.
 
-**Example Copilots built with OpenCopilot**
 
-* [Ready Player Me Copilot](https://rpm.opencopilot.dev/) which helps developers integrate RPM avatar SDK into their games
-* [Unity Copilot](https://unity.opencopilot.dev/) which helps Unity developers debug, write code and speed up their development flow.
+Example Copilots built with OpenCopilot
 
-# Quick Start
+- [Ready Player Me Copilot](https://rpm.opencopilot.dev/) which helps developers integrate RPM avatar SDK into their games.
+- [Unity Copilot](https://unity.opencopilot.dev/) which helps Unity developers debug, write code and speed up their development flow.
 
-1. Download the repo
+## Quickstart
 
-```bash
-git clone git@github.com:opencopilotdev/opencopilot.git && cd opencopilot
-```
-
-2. Make sure you have the following dependancies:
-
-```md
-Python 3.8+
-Docker
-Docker Compose
-Conda (optional for development)
-pnpm (optional for front-end development)
-```
-
-3. Install Python CLI:
-
-```bash
-pip install -e .
-```
- 
-4. Create a new Copilot:
-
-```bash
-opencopilot create
-```
-
-5. Start the Copilot:
-
-```bash
-opencopilot start
-```
-
-6. Copilot is running 🎉
-
-To chat from CLI, run `opencopilot chat <message>`.
-
-To chat from the front-end, visit this URL in your browser: [http://0.0.0.0:3001](http://0.0.0.0:3001)
-
-Alright, you now have created a copilot, but you haven't really made it yours. The next section will show you how to customize your copilot.
-
-# Customizing Your Copilot
-
-There are three main ways you can customize your copilot: _Knowledge base_ and _Prompts_ that change the copilot's behaviour, and _Front-end configuration_ that changes how it is presented. To see these in action, you can check out several examples in the `copilots/` directory -- to use one of the provided examples, just copy over the relevant files.
-
-### Knowledge base
-
-The [**knowledge base**] is the set of documents that your copilot relies on when responding to you - you can think of it as the things you've taught it. The copilot has access to everything here when trying to answer your questions. To add things into the knowledge base, just drop files into `copilots/<my-copilot>/data/` directory.
-
-The following file formats are supported:
-
-* `pdf` files
-* `csv`, `tsv` and `xls`/`xlsx` (Excel) files
-* `txt` files
-* `json` files
-
-Thus, to add new knowledge and your own data to the Copilot simply add your own files to `copilots/<my-copilot>/data` folder and run:
+### 1. Install the Python package
 
 ```bash
-opencopilot restart
+pip install opencopilot-ai
 ```
 
-This will chunk the files, embed them and add them to the vector store so your Copilot can access it. **You need to restart the Copilot in order to ingest new data.**
+### 2. Create a minimal Copilot
 
-### Prompt Engineering
+Into a Python file (for example, `copilot.py`), add:
 
-In the `copilots/<my-copilot>/prompts/prompt_template.txt` you instruct your copilot about its goals, behaviour, style, etc. There aren't many hard rules to this; you can start from one of our provided [copilots](https://github.com/nftport/opencopilot/tree/master/copilots) and iterate to improve the copilot's behaviour. Prompt engineering is a deep topic; for a more in-depth overview, see [OpenAI's list of prompting guides](https://github.com/openai/openai-cookbook#prompting-guides). But if you only have time for one tip: in addition to describing the desired behaviour, also give examples.
 
-The prompt is not a static piece of text. It is a template that will be filled at runtime, after the user has messaged the copilot but before sending the request to the LLM. For this reason, you should always place three template variables into the prompt template file (ideally at the end), and they will be substituted as follows:
+```python
+from opencopilot import OpenCopilot
 
-* `{context}`: the most relevant documents retrieved from your [knowledge base](#knowledge-base).
-* `{history}`: the conversation history between the user and the copilot.
-* `{question}`: the most recent input from the user -- the message they just sent.
+copilot = OpenCopilot()
+copilot()
+```
 
-**Do not remove or add any variables in prompts, variables that are in curly braces {}. (For example: {context})**
+### 3. Run the Copilot
 
-Hot-loading is supported meaning you can change the prompt file any time and during next request, Copilot will use the updated prompt.
-
-### Testing
-
-You can use Debug mode in the front-end which helps you test and iterate your Copilot. 
-
-<img width="1339" alt="Debug mode" src="https://i.imgur.com/MhZaadl.png">
-
-### Evaluating
-
-You can evaluate the performance of your copilot, by adding questions and expected answers to `copilots/<my-copilot>/eval_data/endtoend_human.json`,
-and running:
 ```bash
-opencopilot evaluate
-```
-To see an example of this, check the file in `copilots/rpm/eval_data/endtoend_human.json`.
-
-This is especially helpful in trying to figure out if some data changes or prompt changes actually made the copilot better.
-
-# Integration
-
-### REST API
-
-You can use the REST API to integrate Copilot to your products. See this [gist script](https://gist.github.com/taivop/8c702809f60021c8280101301cc0f402) on how to call the API, or the [full API docs](http://0.0.0.0:3000/docs) after your Copilot is running. Currently, the REST API is unauthenticated (but a measure of privacy is provided by the fact that you can only access a chat's history if you know its uuid).
-
-### Analytics & Monitoring
-
-If you wish to monitor your Copilot usage and have per user analytics, then you can do that with [Helicone](https://www.helicone.ai/). Add your HELICONE_API_KEY to backend/.env and run opencopilot restart.
-
-# Stack
-
-The stack is simple to use, iterate and develop further on for production use:
-
-1. 🧠 LLM: OpenAI GPT-4 by default; any LLM can be used
-1. 🤖 OpenCopilot back-end
-    1. Python & [FastAPI](https://fastapi.tiangolo.com/) server
-    1. 🔗 [Langchain](https://github.com/hwchase17/langchain) for prompting and chaining
-    1. 📃 Weaviate for memory and retrieval 
-    1. 📚 Simple to use data ingestion
-1. 🖼️ Front-end: Next.js and [Vercel AI SDK](https://sdk.vercel.ai/docs)
-1. 📊 Analytics: [Helicone](https://www.helicone.ai/) (optional)
-
-At the core of the OpenCopilot stack is the OpenCopilot Server. The server sits on top of the LLM but under your application, and implements the logic of the copilot: ingesting data, retrieving context at runtime, prompting, and parsing the results.
-
-You can use any LLM and embedding model with the OpenCopilot Server, and any front-end. We provide default templates for both for a quicker start.
-
-<img src="https://i.imgur.com/qJuQUj5.png" alt="Stack diagram of OpenCopilot" style="max-width: 50%;" />
-
-# Development guide
-
-OpenCopilot is built modularly so you can customize it further based on your own needs easily. 
-
-## 1. Backend
-
-Create `backend/.env` if it has not been created through `python cli.py create`: 
-
-```shell
-cd backend
-cp template.env .env
+python copilot.py
 ```
 
-Spin up Weaviate for vector storage:
+That's it! The copilot is now running as an API service! 🎉 You can now chat with it: TODO how? (CLI, frontend, etc)
 
-```shell
-docker-compose -f docker-compose-weaviate.yml up -d
+OpenCopilot by default helps you setup a Python API service for your copilot. That is intentional: we expect most people to integrate the functionality into their own application. However, if you want to setup a front-end for your copilot, we provide a working NextJS application out of the box. Follow the steps below to do so.
+
+
+### Front-end
+
+As a pre-requisite, you need to have [`pnpm`](https://pnpm.io/) installed.
+
+First, clone the repo you're in: [opencopilotdev/opencopilot](https://github.com/opencopilotdev/opencopilot):
+
+```bash
+git clone git@github.com:opencopilotdev/opencopilot.git
 ```
 
-Setup conda environment
-```shell
-conda env create -f environment.yml
-conda activate backend-service
-```
+Then, setup the environment variables:
 
-Ingest data - ***You will need to repeat this step each time you add new data in the data folder***
-
-***Optional***: To improve document loading experience, use 
-[libmagic1](https://github.com/ahupp/python-magic#installation) and 
-[tesseract](https://github.com/madmaze/pytesseract#installation) libraries
-
-```shell
-python ingest_data.py
-```
-
-Run backend REST AP:
-
-```shell
-python wsgi.py
-```
-
-After some time you should see
-```
-..........
-INFO:     Application startup complete.
-```
-
-Visit [0.0.0.0:3000/docs](http://0.0.0.0:3000/docs) to verify.
-
-## 2. Frontend
-
-Create `frontend/.env` if it has not been created through `python cli.py create`: 
-
-```shell
-cd frontend
+```bash
+cd opencopilot/frontend
 cp .env.example .env
 ```
 
-Install dependencies
-```
+Install the dependencies:
+
+```bash
 pnpm install
 ```
 
-Run frontend app:
-```
+Run the front-end application:
+
+```bash
 pnpm run dev
 ```
 
-Visit [localhost:3001](localhost:3001) to verify.
+You can now access the front-end at http://localhost:3001.
 
+### What next?
 
-You are now ready to change any part of the copilot!
+* Make the copilot yours: [customize your copilot](https://docs.opencopilot.dev/improve/customize-your-copilot) by prompting, adding context, etc.
+* Read more about the core features and stack choices of OpenCopilot in [Overview](https://docs.opencopilot.dev/welcome/overview).
 
-**You need to restart the docker services to deploy the changes.**
-  
+### Getting help
+
+If you have any questions about OpenCopilot, feel free to do any of the following:
+
+* Join our [Discord](https://discord.gg/todo) and ask in the **#support** channel.
+* Report bugs or feature requests in [GitHub issues](https://github.com/opencopilotdev/opencopilot/issues).
+* Directly email Taivo, Co-founder & CTO of OpenCopilot: `taivo [at] opencopilot.dev`.

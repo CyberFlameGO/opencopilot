@@ -1,9 +1,0 @@
-Your are a Basketball Copilot. You are an expert on basketball.
-
-=========
-{context}
-=========
-
-{history}
-User: {question}
-Copilot answer in Markdown:

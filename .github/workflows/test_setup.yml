@@ -1,0 +1,30 @@
+name: Test setup
+
+on: [ push ]
+
+jobs:
+  test-setup:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+      matrix:
+        python-version: [ "3.8", "3.9", "3.10", "3.11" ]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          # Issue ref: https://github.com/actions/setup-python/issues/436
+          # cache: "pip"
+          # cache-dependency-path: pyproject.toml
+      - name: "Setup opencopilot"
+        run: |
+          pip install -e .
+      - name: "Import opencopilot"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          export OPENAI_API_KEY="$OPENAI_API_KEY"
+          python tests/assets/example_without_run.py
